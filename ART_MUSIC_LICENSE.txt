@@ -1,0 +1,114 @@
+
+AUDIO
+===============
+
+MUSIC
+---------------
+
+
+
+SOUNDS
+---------------
+
+
+
+
+
+ASSORTED IMAGES
+===============
+BIGMAP
+---------------
+difficulty images
+	by FancySnacks https://opengameart.org/content/pixel-art-skull (CC0)
+	with modifications by Dalas (CC BY-SA 4.0)
+
+
+HALO
+---------------
+fire-aura-small
+shield
+	pre-existing wesnoth image from the "The Deceiver's Gambit" campaign (GPL v2.0 or later)
+
+
+ICONS
+---------------
+
+
+ITEMS
+---------------
+konrad-weapons
+	made by Dalas by modifying pre-existing wesnoth images (GPL v2.0 or later)
+
+bed
+boxes
+chair
+counter
+desk
+flower-blue
+flower-orange
+flower-red
+	Heindal aka Mathias Lang, Strange Legacy RPG (GPL v2.0 or later)
+	with modifications by Dalas (GPL v2.0 or later)
+
+bookshelves
+	pre-existing wesnoth image from the "The Deceiver's Gambit" campaign (GPL v2.0 or later)
+
+
+MAPS
+---------------
+httt.webp
+	pre-existing wesnoth image from the "Heir to the Throne" campaign (GPL v2.0 or later)
+
+
+PORTRAITS
+---------------
+mostly pre-existing wesnoth images from the "Heir to the Throne" campaign (GPL v2.0 or later)
+
+ethiliel
+	pre-existing wesnoth image from the "The South Guard" campaign (GPL v2.0 or later)
+
+
+
+
+
+SCENERY
+---------------
+
+
+SOUNDS
+---------------
+water
+	pre-existing wesnoth image from the "The Deceiver's Gambit" campaign (GPL v2.0 or later)
+
+
+
+STORY
+---------------
+
+
+TERRAIN
+---------------
+
+
+
+UNITS
+---------------
+civilian elves
+	base images from Shield/Tzalmavet, with modifications by dalas (GPL v2.0 or later)
+
+delfador
+	base images from Maksiu, with modifications by dalas (CC BY-SA 4.0)
+
+konrad-fighter-sleeping
+konrad-fighter-unarmed
+	made by Dalas by modifying pre-existing wesnoth images (GPL v2.0 or later)
+
+konrad-captain
+	by OrcSteve (CC BY-SA 4.0)
+
+konrad
+li'sar
+asheviere
+gryphon-sleeping
+	pre-existing wesnoth images from the "Heir to the Throne" campaign (GPL v2.0 or later)
+
