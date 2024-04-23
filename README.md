@@ -4,6 +4,8 @@
 
 Hello! This is a WIP HttT revision for Battle for Wesnoth. If you're interested in collaborating, please reach out to Dalas via the Wesnoth discord or forum.
 
+Status: Intro scenario finished. Bigmap for next 3 scenarios finished.
+
 
 //############################
 // CONTRIBUTORS - READ THIS FIRST
