@@ -242,7 +242,7 @@ S15 Dan'tonk (unassigned)
 
 S17 Elensefar (unassigned)
 - 3-to-4-skull difficulty
-- Rewards: Thieves, Store
+- Rewards: Thieves, Shop
 - completing this scenario ends Phase 1
 - change konrad to use human portrait
 
