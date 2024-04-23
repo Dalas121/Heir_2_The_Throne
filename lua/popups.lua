@@ -154,7 +154,7 @@ function display_scenario_preview(cfg)
 				-- Gold Carryover
 				T.row{ T.column{ 
 					horizontal_alignment="left",
-					T.label{  use_markup=true,  label="You will probably exit this scenario with <b>"..gold.."</b> gold carryover",  },
+					T.label{  use_markup=true,  label="You will probably finish this scenario\nwith <b>"..gold.."</b> gold carryover",  },
 				}},
 			}},
 		}}}},
