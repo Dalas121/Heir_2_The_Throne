@@ -238,6 +238,7 @@ S15 Dan'tonk (unassigned)
 
 S17 Elensefar (unassigned)
 - 3-to-4-skull difficulty
+- Rewards: Thieves, Store
 - completing this scenario ends Phase 1
 - change konrad to use human portrait
 
@@ -250,6 +251,12 @@ S18 The Ford of Abez (unassigned)
 //--------------------
 // PHASE 2 (SEEKING THE SCEPTRE)
 //--------------------
+Planned available rewards:
+- Elvish Shaman
+- Kalenz
+- 2 scenarios that give dwarves
+- Orcs? Trolls? Naga?
+
 
 //--------------------
 // PHASE 2.5 (JOINING LI'SAR)
