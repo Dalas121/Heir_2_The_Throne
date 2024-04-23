@@ -104,7 +104,7 @@ Li'sar
 - to ensure your scenario's ToD reflects the overworld, use `{SCHEDULE_DYNAMIC $current_time}`
 - to ensure all companions get recalled properly, please use `{RECALL_KONRAD_AND_COMPANIONS $x $y}`
  - companions need custom dialogue in many scenarios, to help them feel alive!
- - right now Moremirmu and an unnamed Ulf are planned to be options in Phase 1, and Kalenz is planned to be an option in Phase 2. There will probably be more.
+ - right now Moremirmu and an unnamed Ulf are planned to be options in Phase 1, and Kalenz is planned to be an option in Phase 2. There will be more, especially in Phase 1.
 
 //--------------------
 // DIFFICULTY
