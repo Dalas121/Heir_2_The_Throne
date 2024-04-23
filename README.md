@@ -168,6 +168,8 @@ Konrad Artwork (Mechanical)
 //############################
 // SCENARIOS TO WRITE
 //############################
+(Occasional gaps in scenario numbers are deliberate. That way if we need to add a new scenario sometime we don't have to renumber everything.)
+
 //--------------------
 // OVERWORLD AND INTRO
 //--------------------
