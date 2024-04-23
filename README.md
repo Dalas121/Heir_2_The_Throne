@@ -7,9 +7,9 @@
 Hello! This is a WIP HttT revision for Battle for Wesnoth. If you're interested in collaborating, please reach out to Dalas via the Wesnoth discord or forum.
 
 
-//############################
+//============================
 // CONTRIBUTORS - READ THIS FIRST
-//############################
+//============================
 focus on writing scenarios on phase 1. That's the core of what were doing here
 we dont' need to go over 
 between both me and Yumi, a lot of your stuff will be overwritten
@@ -19,12 +19,12 @@ pick a scenario, then draft a script/outline for the scenario and post it
 these are guidelines, not required
 
 
-//###############################################################################################################################################################################
+//===============================================================================================================================================================================
 // DESIGN OVERVIEW
-//###############################################################################################################################################################################
-//############################
+//===============================================================================================================================================================================
+//============================
 // THE OVERWORLD
-//############################
+//============================
 - after each scenario the player gets sent to the "overworld", an in-game map of the great continent
 - the player chooses their next scenario via the overworld. Only some scenarios are available at a time, depending on the current "phase"
 - after playing a certain number of scenarios (varies by difficulty), the player is forcibly advanced to the next phase
@@ -45,9 +45,9 @@ these are guidelines, not required
 - rewards can be given at the beginning of the scenario, at the end, in the overworld, or anywhere in between
 
 
-//############################
+//============================
 // NARRATIVE DESIGN
-//############################
+//============================
 //--------------------
 // PLOT
 //--------------------
@@ -95,9 +95,9 @@ Li'sar
 - calls Asheviere "mother", like Eldred did. But their relationship is quite distant
 
 
-//############################
+//============================
 // SCENARIO DESIGN
-//############################
+//============================
 //--------------------
 // GLOBAL INCLUDES
 //--------------------
@@ -158,17 +158,17 @@ Drakes: orange
 - please include an achievement in every scenario! Could be a difficult challenge, a hint towards some content the player might miss, or anything else.
 
 
-//###############################################################################################################################################################################
+//===============================================================================================================================================================================
 // TASKLIST
-//###############################################################################################################################################################################
-//############################
+//===============================================================================================================================================================================
+//============================
 // OTHER
-//############################
+//============================
 Konrad Artwork (Mechanical)
 
-//############################
+//============================
 // SCENARIOS TO WRITE
-//############################
+//============================
 //--------------------
 // OVERWORLD AND INTRO
 //--------------------
