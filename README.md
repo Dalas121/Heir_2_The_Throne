@@ -175,14 +175,14 @@ S01: The Elves Besieged (Dalas)
 // PHASE 1 (WESTERN WESNOTH)
 //--------------------
 S02: Elven Exodus (unassigned)
-- 1-or-2-skull difficulty. Rewards: Elvish Archer, Elvish Fighter, Elvish Scout
+- 1-to-3-skull difficulty. Rewards: Elvish Archer, Elvish Fighter, Elvish Scout
 - elves are fleeing from the top right while humans man the flanks. Similar to the first scenario of Dirty Blood
  - Ethiliel/Ithelden may or may not still be alive ($ethiliel_alive/$ithelden_alive), depending on the player's performance in the intro scenario
 - the more elves who die, the fewer recruits you get (e.g. if 10 elves die you only get archers)
 - the player might have Delfador in this scenario. Balance accordingly
 
 S03: Blackwater Port (ForestDragon)
-- 1-or-2-skull difficulty. Rewards: Cavalryman, Horseman, Peasant, Woodsman
+- 1-to-3-skull difficulty. Rewards: Cavalryman, Horseman, Peasant, Woodsman
 - the player might have Delfador in this scenario. Balance accordingly.
 - Asheviere's humans start in control of the port, but not the town. You need to defeat them to gain access to the port
  - if Kaylan dies, you can still win, but you won't get to recruit Horsemen/Cavalrymen
@@ -191,7 +191,7 @@ S03: Blackwater Port (ForestDragon)
  - And on top of that, the port was too heavily militarized - no place to raise a child.
 
 S05: Bay of Pearls (unassigned)
-- 1-or-2-skull difficulty. Rewards: Merfolk Brawler, Merfolk Fighter, Merfolk Hunter, Merfolk Initiate
+- 1-to-3-skull difficulty. Rewards: Merfolk Brawler, Merfolk Fighter, Merfolk Hunter, Merfolk Initiate
 - fight orcs and free merfolk.
 - remember to include the sea orc event, and use the new image/portrait once that PR finishes
 - no storm trident please. It's a really cool item, but this campaign is already complicated enough.
