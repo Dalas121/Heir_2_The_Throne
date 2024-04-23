@@ -7,9 +7,9 @@
 Hello! This is a WIP HttT revision for Battle for Wesnoth. If you're interested in collaborating, please reach out to Dalas via the Wesnoth discord or forum.
 
 
-//============================
-// CONTRIBUTORS - READ THIS FIRST
-//============================
+=############################
+= CONTRIBUTORS - READ THIS FIRST
+=############################
 focus on writing scenarios on phase 1. That's the core of what were doing here
 we dont' need to go over 
 between both me and Yumi, a lot of your stuff will be overwritten
@@ -19,12 +19,12 @@ pick a scenario, then draft a script/outline for the scenario and post it
 these are guidelines, not required
 
 
-//===============================================================================================================================================================================
-// DESIGN OVERVIEW
-//===============================================================================================================================================================================
-//============================
-// THE OVERWORLD
-//============================
+=###############################################################################################################################################################################
+= DESIGN OVERVIEW
+=###############################################################################################################################################################################
+=############################
+= THE OVERWORLD
+=############################
 - after each scenario the player gets sent to the "overworld", an in-game map of the great continent
 - the player chooses their next scenario via the overworld. Only some scenarios are available at a time, depending on the current "phase"
 - after playing a certain number of scenarios (varies by difficulty), the player is forcibly advanced to the next phase
@@ -36,21 +36,21 @@ these are guidelines, not required
  - reward: other
 - after playing each scenario, the season of the year changes. Spring, Summer, Fall, Winter. Summer/Winter seasons result in battle scenarios with longer/shorter daytime.
 
-//--------------------
-// REWARDS
-//--------------------
+=--------------------
+= REWARDS
+=--------------------
 - Konrad starts with 0 recruits. In Phase 1 and Phase 2, he builds up his recruit list depending on which scenarios he chooses to play.
 - many Phase 1 and Phase 2 scenarios also give loyal companions as rewards, who're auto-recalled in each scenario and have custom dialogue.
 - Phase 3 scenarios focus on hindering Asheviere. For example, completing "Test of the Clans" might get rid of Asheviere's cavalry in the final comfrontation.
 - rewards can be given at the beginning of the scenario, at the end, in the overworld, or anywhere in between
 
 
-//============================
-// NARRATIVE DESIGN
-//============================
-//--------------------
-// PLOT
-//--------------------
+=############################
+= NARRATIVE DESIGN
+=############################
+=--------------------
+= PLOT
+=--------------------
 Phase 1
 - Konrad and Delfador are driven from the Aethenwood by Asheviere's human armies
 - Konrad and Delfador complete 1 scenario together
@@ -76,9 +76,9 @@ Phase 3
 - player plays 2-3 more phase 3 scenarios (varies by difficulty)
 - Konrad and Li'sar confront Asheviere at Weldyn. Delfador is rescued; Asheviere dies/flees/etc. Hooray!
 
-//--------------------
-// CHARACTERS
-//--------------------
+=--------------------
+= CHARACTERS
+=--------------------
 Konrad (phase 1)
 - sees the good right in front of him (contrast this with Delfador)
 - calls people "Mister", "Ma'am", "Miss". Does NOT call Delfador "Master", since this sounds too similar to TDG
@@ -95,21 +95,21 @@ Li'sar
 - calls Asheviere "mother", like Eldred did. But their relationship is quite distant
 
 
-//============================
-// SCENARIO DESIGN
-//============================
-//--------------------
-// GLOBAL INCLUDES
-//--------------------
+=############################
+= SCENARIO DESIGN
+=############################
+=--------------------
+= GLOBAL INCLUDES
+=--------------------
 - to make it easy to tweak Konrad, please define side 1 with `{KONRAD_SIDE {ON_DIFFICULTY4 100 80 65 50}`. `FOG=yes` and `SHROUD=yes` optional
 - to ensure your scenario's ToD reflects the overworld, use `{SCHEDULE_DYNAMIC $current_time}`
 - to ensure all companions get recalled properly, please use `{RECALL_KONRAD_AND_COMPANIONS $x $y}`
  - companions need custom dialogue in many scenarios, to help them feel alive!
  - right now Moremirmu and an unnamed Ulf are planned to be options in Phase 1, and Kalenz is planned to be an option in Phase 2. There will probably be more.
 
-//--------------------
-// DIFFICULTY
-//--------------------
+=--------------------
+= DIFFICULTY
+=--------------------
 Easy should be nigh-unloseable. Nightmare should be seriously difficult even for you or me.
 
 These are my recommended difficulty modifiers. You don't need to use this if you don't want to (or if it doesn't make sense for the scenario), but please ensure the difficulty scales similarly so all scenarios stay in balance.
@@ -119,26 +119,26 @@ These are my recommended difficulty modifiers. You don't need to use this if you
 - Nightmare: 2.5x enemy/ally strength,  50% starting gold (ignoring carryover)
 - Additionally, on higher difficulties the player gets less time in each phase before being pushed on to the next one, which reduces your rewards/XP.
 
-//--------------------
-// XP FEEDING
-//--------------------
+=--------------------
+= XP FEEDING
+=--------------------
 Leveling units is fun! I want players to be able to continue to level units throughout the campaign, instead of maxing-out their army halfway through. With this in mind, please try to restrict available XP.
 - small player armies; 50-100 gold (plus carryover) on Nightmare is a good guideline for the average scenario
 - use lower-level enemies where possible. 1 Warlord is easy to farm for XP; 3 Grunts are much harder; 6 Goblins even more so.
 - enemies should retreat and regroup where appropriate, instead of trickling. See EI's Xenophobia for an example.
 - end scenarios sooner rather than later. If there's no threat after the first 10 turns, don't ask the player to survive for 20.
 
-//--------------------
-// AI DESIGN
-//--------------------
+=--------------------
+= AI DESIGN
+=--------------------
 - where applicable, reminder to have a weak AI retreat and regroup instead of trickling. See EI's Xenophobia for an example.
 - where applicable, AI should be less aggressive at unfavorable ToD (regardless of the player's favorable ToD). See EI's Xenophobia for an example.
 - where applicable, if an AI side is defending, please use proper defensive AI with `[avoid]` and similar. See TDG's "Ring of Swords" for an example.
 - if you have AI allies, I suggest scaling their gold so they always feel useful. For example, if my ally is 1/2 as strong as the enemy on Easy, they could be 1/2 as strong on Nightmare too.
 
-//--------------------
-// TEAMS AND COLORS
-//--------------------
+=--------------------
+= TEAMS AND COLORS
+=--------------------
 (not mandatory, but let's try to stay more-or-less consistent please)
 Konrad: red
 Asheviere/Li'sar: purple
@@ -150,34 +150,34 @@ Whitefangs: white (these guys use lots of goblins and goblin riders)
 Undead: white
 Drakes: orange
 
-//--------------------
-// OTHER
-//--------------------
+=--------------------
+= OTHER
+=--------------------
 - if your scenario has a time limit, please include at least a basic "time over" cutscene as well as "we're running out of time" dialogue some turns beforehand
  - instead of using `name=time over`, trigger this event on `side 1 turn {SCENARIO_TURN_LIMIT} end`, so that we don't waste the player's time when they've already lost
 - please include an achievement in every scenario! Could be a difficult challenge, a hint towards some content the player might miss, or anything else.
 
 
-//===============================================================================================================================================================================
-// TASKLIST
-//===============================================================================================================================================================================
-//============================
-// OTHER
-//============================
+=###############################################################################################################################################################################
+= TASKLIST
+=###############################################################################################################################################################################
+=############################
+= OTHER
+=############################
 Konrad Artwork (Mechanical)
 
-//============================
-// SCENARIOS TO WRITE
-//============================
-//--------------------
-// OVERWORLD AND INTRO
-//--------------------
+=############################
+= SCENARIOS TO WRITE
+=############################
+=--------------------
+= OVERWORLD AND INTRO
+=--------------------
 S00: The Great Continent (Dalas)
 S01: The Elves Besieged (Dalas)
 
-//--------------------
-// PHASE 1 (WESTERN WESNOTH)
-//--------------------
+=--------------------
+= PHASE 1 (WESTERN WESNOTH)
+=--------------------
 S02: Elven Exodus (unassigned)
 - 1-or-2-skull difficulty. Rewards: Elvish Archer, Elvish Fighter, Elvish Scout
 - elves are fleeing from the top right while humans man the flanks. Similar to the first scenario of Dirty Blood
@@ -248,18 +248,18 @@ S18 The Ford of Abez (unassigned)
 - change konrad to use human portrait
 
 
-//--------------------
-// PHASE 2 (SEEKING THE SCEPTRE)
-//--------------------
+=--------------------
+= PHASE 2 (SEEKING THE SCEPTRE)
+=--------------------
 
-//--------------------
-// PHASE 2.5 (JOINING LI'SAR)
-//--------------------
+=--------------------
+= PHASE 2.5 (JOINING LI'SAR)
+=--------------------
 how do we handle attacking the 
 
-//--------------------
-// PHASE 3 (OVERTHROWING ASHEVIERE)
-//--------------------
+=--------------------
+= PHASE 3 (OVERTHROWING ASHEVIERE)
+=--------------------
 
 
 
