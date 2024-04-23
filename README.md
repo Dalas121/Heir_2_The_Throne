@@ -11,7 +11,8 @@ Status: Intro scenario finished. Bigmap for next 3 scenarios finished.
 // CONTRIBUTORS - READ THIS FIRST
 //############################
 - Right now, let's focus on writing the scenarios for Phase 1.
-- Read through this document. Some scenarios have more info, some have less. These are just my thoughts, not necessarily a must-have.
+- Read through this document. Some scenarios have more info, some have less.
+ - These are just my thoughts, not necessarily a must-have.
 - Pick out a scenario you're interested in working on. Update this document to assign yourself.
 - Work on a script/outline for the scenario. Post that here or in the discord for review.
 - Once approved, write the WML itself.
