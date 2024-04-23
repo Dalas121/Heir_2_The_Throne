@@ -236,7 +236,9 @@ S14: Valley of Death (unassigned)
 
 S15 Dan'tonk (unassigned)
 - 5-skull difficulty. Rewards: TBD
-- similar to "The Human Army" from SotBE
+- similar to "The Human Army" from SotBE. Fighting Li'sar
+- if you're really an overachiever (or more likely, cheating), you can beat this scenario and rush straight to Asheviere without Li'sar/Sceptre/etc.
+ - this is obviously non-canon, and we should include a message about that
 
 S17 Elensefar (unassigned)
 - 3-to-4-skull difficulty
@@ -246,6 +248,7 @@ S17 Elensefar (unassigned)
 
 S18 The Ford of Abez (unassigned)
 - 2-to-3-skull difficulty
+- fighting Li'sar
 - completing this scenario ends Phase 1
 - change konrad to use human portrait
 
