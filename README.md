@@ -15,7 +15,7 @@ Status: Intro scenario finished. Bigmap for next 3 scenarios finished.
  - These are just my thoughts, not necessarily a must-have.
 - Pick out a scenario you're interested in working on. Update this document to assign yourself.
 - Work on a script/outline for the scenario. Post that here or in the discord for review.
-- Once approved, write the WML itself.
+- Once approved, write the WML itself. When finished, make a PR and we'll all give it a try.
 
 
 //########################################################
