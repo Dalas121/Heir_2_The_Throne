@@ -148,7 +148,7 @@ Leveling units is fun! I want players to be able to continue to level units thro
 - Dwarves: brown
 - Blackcrests: black (these guys use lots of shamans)
 - Whitefangs: white (these guys use lots of goblins and goblin riders)
-- Undead: white
+- Undead: black/darkblue/white/etc (variety is fine)
 - Drakes: orange
 
 //--------------------
