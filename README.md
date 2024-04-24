@@ -40,7 +40,8 @@ Status: Intro scenario mostly finished. Bigmap for next 3 scenarios mostly finis
 //--------------------
 - Konrad starts with 0 recruits. In Phase 1 and Phase 2, he builds up his recruit list depending on which scenarios he chooses to play.
 - many Phase 1 and Phase 2 scenarios also give loyal companions as rewards, who're auto-recalled in each scenario and have custom dialogue.
-- Phase 3 scenarios focus on hindering Asheviere. For example, completing "Test of the Clans" might get rid of Asheviere's cavalry in the final comfrontation.
+- Phase 3 scenarios focus on hindering Asheviere. For example, completing "Test of the Clans" might get rid of Asheviere's cavalry in the final confrontation.
+ - possibly also scenarios that buff up Li'sar? (who's a separate side, not under the player's control)
 - rewards can be given at the beginning of the scenario, at the end, in the overworld, or anywhere in between
 
 
@@ -69,6 +70,7 @@ Phase 2.5
 - Konrad has a change of heart, and refuses to fight Li'sar. He joins her / is taken prisoner / something like that
 - Delfador worries Konrad will be executed once Li'sar reaches Weldyn. Delfador goes off to fight Asheviere by himself
 - Li'sar and Konrad fight Asheviere's ally Iliah'al (details TBD after AoA releases). They bond.
+ - Li'sar is always a separate allied side, not directly under the player's control
 
 Phase 3
 - we learn that Delfador has been captured by Asheviere, and will be executed in X months (not immediately, because Asheviere is trying to lure Konrad)
