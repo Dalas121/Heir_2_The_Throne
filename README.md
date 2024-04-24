@@ -52,7 +52,7 @@ Status: Intro scenario mostly finished. Bigmap for next 3 scenarios mostly finis
 //--------------------
 Phase 1
 - Konrad and Delfador are driven from the Aethenwood by Asheviere's human armies
-- Konrad and Delfador complete 1 scenario together
+- Konrad and Delfador complete 1 scenario together (limited choice here; only Exodus, Blackwater, or Pearls)
 - Delfador leaves to help in the defense of Elensefar
 - player plays 2-4 more phase 1 scenarios (varies by difficulty)
 - Elensefar falls. Delfador returns, and exhorts Konrad to flee north, either via the Ford of Abez or via Elensefar
