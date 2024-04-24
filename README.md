@@ -197,7 +197,7 @@ S03: Blackwater Port (ForestDragon)
 - lore: Sir Kaylan wanted Delfador to raise Konrad at the port among his own kind, but Delfador thought the Aethenwood was better: both more powerful and safer.
  - And on top of that, the port was too heavily militarized - no place to raise a child.
 
-S05: Bay of Pearls (unassigned)
+S05: Bay of Pearls (Ankeron)
 - 1-to-2-skull difficulty. Rewards: Merfolk Brawler, Merfolk Fighter, Merfolk Hunter, Merfolk Initiate
 - fight orcs and free merfolk.
 - remember to include the sea orc event, and use the new image/portrait once that PR finishes
