@@ -65,16 +65,16 @@ function display_scenario_preview(cfg)
 	-------------------------
 	-- REWARD: RECRUITS
 	-------------------------
-	local recruit1 = cfg.recruit1 and cfg.recruit1.."~RC(magenta>lightblue)" or "misc/blank-hex.png"
-	local recruit2 = cfg.recruit2 and cfg.recruit2.."~RC(magenta>lightblue)" or "misc/blank-hex.png"
-	local recruit3 = cfg.recruit3 and cfg.recruit3.."~RC(magenta>lightblue)" or "misc/blank-hex.png"
-	local recruit4 = cfg.recruit4 and cfg.recruit4.."~RC(magenta>lightblue)" or "misc/blank-hex.png"
+	local recruit1 = cfg.recruit1 and cfg.recruit1.."~RC(magenta>red)" or "misc/blank-hex.png"
+	local recruit2 = cfg.recruit2 and cfg.recruit2.."~RC(magenta>red)" or "misc/blank-hex.png"
+	local recruit3 = cfg.recruit3 and cfg.recruit3.."~RC(magenta>red)" or "misc/blank-hex.png"
+	local recruit4 = cfg.recruit4 and cfg.recruit4.."~RC(magenta>red)" or "misc/blank-hex.png"
 	
 	-------------------------
 	-- REWARD: COMPANION
 	-------------------------
-	local companion1 = cfg.companion1 and cfg.companion1.."~RC(magenta>lightblue)~BLIT(misc/loyal-icon.png)" or "misc/blank-hex.png"
-	local companion2 = cfg.companion2 and cfg.companion2.."~RC(magenta>lightblue)~BLIT(misc/loyal-icon.png)" or "misc/blank-hex.png"
+	local companion1 = cfg.companion1 and cfg.companion1.."~RC(magenta>red)~BLIT(misc/loyal-icon.png)" or "misc/blank-hex.png"
+	local companion2 = cfg.companion2 and cfg.companion2.."~RC(magenta>red)~BLIT(misc/loyal-icon.png)" or "misc/blank-hex.png"
 	
 	-------------------------
 	-- REWARD: SHOP
