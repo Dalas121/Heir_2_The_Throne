@@ -177,7 +177,7 @@ Example:
 		message=_"Delfador what shall we do?."
 	[/message]
 	[message]
-		speaker=Moremirmu
+		speaker=Delfador
 		message=_"I shall blast these undead with scary lighting!"
 	[/message]
 )} [/elseif]
