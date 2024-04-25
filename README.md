@@ -156,10 +156,10 @@ Leveling units is fun! I want players to be able to continue to level units thro
 // CHARACTER INTERACTIONS
 //--------------------
 - in each scenario, please include 0-2 interactions between Konrad and his companions, at suitable moments
-- if the preferred companions aren't present, fall back to firing a "say_companion_interaction" event so we can follow some global companion storylines too
-	- please set $scenario_number beforehand (e.g. "s14"), in case that matters for the global companion storylines
+- if the preferred companions aren't present, fall back to firing a "say_companion_interaction" event so we can follow some scenario-independent companion storylines too
+	- please set $scenario_number beforehand (e.g. "s14"), in case that matters for the scenario-independent companion storylines
 	- "say_companion_interaction" will be implemented via macros in _main.cfg and unified_characters.cfg (probably by Dalas)
-	- the first 3 scenarios (Exodus/Blackwater/Pearls) need at least 1 "say_companion_interaction", so we can foreshadow Delfador's departure
+
 Example:
 [if] {HAVE_UNIT id=Moremirmu} {THEN(
 	[message]
@@ -225,15 +225,17 @@ S02: Elven Exodus (unassigned)
 	- Ethiliel/Ithelden may or may not still be alive ($ethiliel_alive/$ithelden_alive), depending on the player's performance in the intro scenario
 - the more elves who die, the fewer recruits you get (e.g. if 10 elves die you only get archers)
 - the player might have Delfador in this scenario. Balance accordingly
+	- if $bm_turns==1, foreshadow Delfador's impending departure
 
 S03: Blackwater Port (ForestDragon)
 - 1-to-2-skull difficulty. Rewards: Cavalryman, Horseman, Peasant, Woodsman
-- the player might have Delfador in this scenario. Balance accordingly.
 - Asheviere's humans start in control of the port, but not the town. You need to defeat them to gain access to the port
 	- if Kaylan dies, you can still win, but you won't get to recruit Horsemen/Cavalrymen
 	- if Kaylan dies, set bm_kaylan_dead=yes, so I can modify the bigmap to reflect that
 - lore: Sir Kaylan wanted Delfador to raise Konrad at the port among his own kind, but Delfador thought the Aethenwood was better: both more powerful and safer.
 	- And on top of that, the port was too heavily militarized - no place to raise a child.
+- the player might have Delfador in this scenario. Balance accordingly.
+	- if $bm_turns==1, foreshadow Delfador's impending departure
 
 S05: Bay of Pearls (Ankeron)
 - 1-to-2-skull difficulty. Rewards: Merfolk Brawler, Merfolk Fighter, Merfolk Hunter, Merfolk Initiate
@@ -241,6 +243,7 @@ S05: Bay of Pearls (Ankeron)
 - remember to include the sea orc event, and use the new image/portrait once that PR finishes
 - no storm trident please. It's a really cool item, but this campaign is already complicated enough.
 - the player might have Delfador in this scenario. Balance accordingly.
+	- if $bm_turns==1, foreshadow Delfador's impending departure
 
 S06: Isle of Alduin (unassigned)
 - 1-to-3-skull difficulty. Rewards: Rogue Mage, Mage (Red advancement only)
