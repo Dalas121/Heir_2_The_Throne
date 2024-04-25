@@ -12,7 +12,7 @@ Status: Intro scenario mostly finished. Bigmap for next 3 scenarios mostly finis
 //############################
 - Right now, let's focus on writing the scenarios for Phase 1.
 - Read through this document. Some scenarios have more info, some have less.
- - These are just my thoughts, not necessarily a must-have.
+	- These are just my thoughts, not necessarily a must-have.
 - Pick out a scenario you're interested in working on. Update this document to assign yourself.
 - Work on a script/outline for the scenario. Post that here or in the discord for review.
 - Once approved, write the WML itself. When finished, make a PR and we'll all give it a try.
@@ -28,11 +28,11 @@ Status: Intro scenario mostly finished. Bigmap for next 3 scenarios mostly finis
 - the player chooses their next scenario via the overworld. Only some scenarios are available at a time, depending on the current "phase"
 - after playing a certain number of scenarios (varies by difficulty), the player is forcibly advanced to the next phase
 - each scenario has a preview, including:
- - difficulty (1 skull, 2 skulls, etc)
- - reward: gold carryover (no/low/high)
- - reward: new recruits
- - reward: loyal companions
- - reward: other
+	- difficulty (1 skull, 2 skulls, etc)
+	- reward: gold carryover (no/low/high)
+	- reward: new recruits
+	- reward: loyal companions
+	- reward: other
 - after playing each scenario, the season of the year changes. Spring, Summer, Fall, Winter. Summer/Winter seasons result in battle scenarios with longer/shorter daytime.
 
 //--------------------
@@ -41,7 +41,7 @@ Status: Intro scenario mostly finished. Bigmap for next 3 scenarios mostly finis
 - Konrad starts with 0 recruits. In Phase 1 and Phase 2, he builds up his recruit list depending on which scenarios he chooses to play.
 - many Phase 1 and Phase 2 scenarios also give loyal companions as rewards, who're auto-recalled in each scenario and have custom dialogue.
 - Phase 3 scenarios focus on hindering Asheviere. For example, completing "Test of the Clans" might get rid of Asheviere's cavalry in the final confrontation.
- - possibly also scenarios that buff up Li'sar? (who's a separate side, not under the player's control)
+	- possibly also scenarios that buff up Li'sar? (who's a separate side, not under the player's control)
 - rewards can be given at the beginning of the scenario, at the end, in the overworld, or anywhere in between
 
 
@@ -70,7 +70,7 @@ Phase 2.5
 - Konrad has a change of heart, and refuses to fight Li'sar. He joins her / is taken prisoner / something like that
 - Delfador worries Konrad will be executed once Li'sar reaches Weldyn. Delfador goes off to fight Asheviere by himself
 - Li'sar and Konrad fight Asheviere's ally Iliah'al (details TBD after AoA releases). They bond.
- - Li'sar is always a separate allied side, not directly under the player's control
+	- Li'sar is always a separate allied side, not directly under the player's control
 
 Phase 3
 - we learn that Delfador has been captured by Asheviere, and will be executed in X months (not immediately, because Asheviere is trying to lure Konrad)
@@ -105,8 +105,8 @@ Li'sar
 - to make it easy to tweak Konrad, please define side 1 with `{KONRAD_SIDE {ON_DIFFICULTY4 100 80 65 50}`. `FOG=yes` and `SHROUD=yes` optional
 - to ensure your scenario's ToD reflects the overworld, use `{SCHEDULE_DYNAMIC $current_time}`
 - to ensure all companions get recalled properly, please use `{RECALL_KONRAD_AND_COMPANIONS $x $y}`
- - companions need custom dialogue in many scenarios, to help them feel alive!
- - right now Moremirmu and an unnamed Ulf are planned to be options in Phase 1, and Kalenz is planned to be an option in Phase 2. There will be more, especially in Phase 1.
+	- companions need custom dialogue in many scenarios, to help them feel alive!
+	- right now Moremirmu and an unnamed Ulf are planned to be options in Phase 1, and Kalenz is planned to be an option in Phase 2. There will be more, especially in Phase 1.
 
 //--------------------
 // DIFFICULTY
@@ -126,6 +126,7 @@ These are my recommended difficulty modifiers. You don't need to use this if you
 Leveling units is fun! I want players to be able to continue to level units throughout the campaign, instead of maxing-out their army halfway through. With this in mind, please try to restrict available XP.
 - small player armies; 50-75 initial gold (plus carryover) on Nightmare is a good guideline for the average scenario
 - use lower-level enemies where possible. 1 Warlord is easy to farm for XP; 3 Grunts are much harder; 6 Goblins even more so.
+- don't include a large amount of villages, unless carryover gold is the scenario's primary reward
 - enemies should retreat and regroup where appropriate, instead of trickling. See EI's Xenophobia for an example.
 - end scenarios sooner rather than later. If there's no threat after the first 10 turns, don't ask the player to survive for 20.
 
@@ -152,11 +153,47 @@ Leveling units is fun! I want players to be able to continue to level units thro
 - Drakes: orange
 
 //--------------------
+// CHARACTER INTERACTIONS
+//--------------------
+- in each scenario, please include 0-2 interactions between Konrad and his companions, at suitable moments
+- if the preferred companions aren't present, fall back to firing a "say_companion_interaction" event so we can follow some global companion storylines too
+	- please set $scenario_number beforehand (e.g. "s14"), in case that matters for the global companion storylines
+	- "say_companion_interaction" will be implemented via macros in _main.cfg and unified_characters.cfg (probably by Dalas)
+	- the first 3 scenarios (Exodus/Blackwater/Pearls) need at least 1 "say_companion_interaction", so we can foreshadow Delfador's departure
+Example:
+[if] {HAVE_UNIT id=Moremirmu} {THEN(
+	[message]
+		speaker=Moremirmu
+		message=_"Undead are bad. I'm a holy guy. Let's beat these undead who are attacking."
+	[/message]
+	[message]
+		speaker=Konrad
+		message=_"Yeah let's do it."
+	[/message]
+)}
+[elseif] {HAVE_UNIT id=Delfador} {THEN(
+	[message]
+		speaker=Konrad
+		message=_"Delfador what shall we do?."
+	[/message]
+	[message]
+		speaker=Moremirmu
+		message=_"I shall blast these undead with scary lighting!"
+	[/message]
+)} [/elseif]
+{ELSE(
+	{VARIABLE scenario_number s14}
+	{FIRE_EVENT say_companion_interaction}
+	{CLEAR_VARIABLE scenario_number}
+)}
+
+//--------------------
 // OTHER
 //--------------------
 - if your scenario has a time limit, please include at least a basic "time over" cutscene as well as "we're running out of time" dialogue some turns beforehand
- - instead of using `name=time over`, trigger this event on `side 1 turn {SCENARIO_TURN_LIMIT} end`, so that we don't waste the player's time when they've already lost
+	- instead of using `name=time over`, trigger this event on `side 1 turn {SCENARIO_TURN_LIMIT} end`, so that we don't waste the player's time when they've already lost
 - please include an achievement in every scenario! Could be a difficult challenge, a hint towards some content the player might miss, or anything else.
+- please avoid giving the player non-loyal companions. This is partially a style thing, partially to give players fewer "I'll reload if this unit dies" units, and partially to keep the overworld rewards preview simpler
 
 
 //########################################################
@@ -181,10 +218,11 @@ S01: The Elves Besieged (Dalas)
 //--------------------
 // PHASE 1 (WESTERN WESNOTH)
 //--------------------
+----Western Scenarios:
 S02: Elven Exodus (unassigned)
 - 1-to-2-skull difficulty. Rewards: Elvish Archer, Elvish Fighter, Elvish Scout
 - elves are fleeing from the top right while humans man the flanks. Similar to the first scenario of Dirty Blood
- - Ethiliel/Ithelden may or may not still be alive ($ethiliel_alive/$ithelden_alive), depending on the player's performance in the intro scenario
+	- Ethiliel/Ithelden may or may not still be alive ($ethiliel_alive/$ithelden_alive), depending on the player's performance in the intro scenario
 - the more elves who die, the fewer recruits you get (e.g. if 10 elves die you only get archers)
 - the player might have Delfador in this scenario. Balance accordingly
 
@@ -192,10 +230,10 @@ S03: Blackwater Port (ForestDragon)
 - 1-to-2-skull difficulty. Rewards: Cavalryman, Horseman, Peasant, Woodsman
 - the player might have Delfador in this scenario. Balance accordingly.
 - Asheviere's humans start in control of the port, but not the town. You need to defeat them to gain access to the port
- - if Kaylan dies, you can still win, but you won't get to recruit Horsemen/Cavalrymen
- - if Kaylan dies, set bm_kaylan_dead=yes, so I can modify the bigmap to reflect that
+	- if Kaylan dies, you can still win, but you won't get to recruit Horsemen/Cavalrymen
+	- if Kaylan dies, set bm_kaylan_dead=yes, so I can modify the bigmap to reflect that
 - lore: Sir Kaylan wanted Delfador to raise Konrad at the port among his own kind, but Delfador thought the Aethenwood was better: both more powerful and safer.
- - And on top of that, the port was too heavily militarized - no place to raise a child.
+	- And on top of that, the port was too heavily militarized - no place to raise a child.
 
 S05: Bay of Pearls (Ankeron)
 - 1-to-2-skull difficulty. Rewards: Merfolk Brawler, Merfolk Fighter, Merfolk Hunter, Merfolk Initiate
@@ -212,43 +250,54 @@ S07: Muff Malal's Peninsula (unassigned)
 
 S08: Isle of the Damned (unassigned)
 - 1-to-3-skull difficulty. Rewards: Thug, Footpad, Poacher
- - possibly a companion as an alternative reward? Something riffing off of TRoW's Vampire Lady?
+	- possibly a companion as an alternative reward? Something riffing off of TRoW's Vampire Lady?
 
-S10 Fort Tahn (unassigned)
-- TBD difficulty. Rewards: TBD
-- Selli? Oren? HI? Fencers? Shop? Let's wait until after TSG/AoA releases and then decide what to do here
-
-S12: Crossroads (unassigned)
-- 2-to-3-skull difficulty. Rewards: companion Ulf, Dwarvish Miner(L0 unit, advances to Fighter/Guardsman/Ulf)
-- Li'sar is the enemy here. She has a bunch of dwarvish miner prisoners digging holes in the mountainside where her forces can hide and ambush Konrad
- - Li'sar treats the dwarves pretty well. Once they're done digging, she releases them as a fair reward.
- - Except the dwarves are angry, and move to the unoccupied part of the crossroads, set up a keep, and start attacking her (which also triggers a bunch of her ambushes)
- - or something like that; I'm just making stuff up here
-- companion Ulf is gibbeted at the middle of the crossroads. When you reach him, he joins you. Perhaps he was a particularly angry miner who's being punished. With some interesting backstory
-- the player's starting position is dependent on which direction Konrad approached the crossroads from on the overworld
-
-S13: Gryphon Mountain
-- 1-to-2-skull difficulty. Rewards: Gryphon Rider, maybe other stuff too?
-- we either need to justify gryphon riders being dwarvish (maybe theres dwarves here, and you can also gain scouts as a recruit?), or make them human-ridden
-- no rider-less gryphons please; I don't think that makes sense lore-wise
-
-S14: Valley of Death (unassigned)
-- 3-to-4-skull difficulty. Rewards: Mage (White advancement only)
-- bit weird to have random liches running around the middle of Wesnoth. Let's try to figure out a good lore reason for this that ties them into other things (or at least tells us something about Asheviere's character)
-
-S15 Dan'tonk (unassigned)
-- 5-skull difficulty. Rewards: TBD
-- similar to "The Human Army" from SotBE. Fighting Li'sar
-- if you're really an overachiever (or more likely, cheating), you can beat this scenario and rush straight to Asheviere without Li'sar/Sceptre/etc.
- - this is obviously non-canon, and we should include a message about that
-
-S17 Elensefar (unassigned)
+S10 Elensefar (unassigned)
 - 3-to-4-skull difficulty
 - Rewards: Thieves, Shop
 - completing this scenario ends Phase 1
 - change konrad to use human portrait
 
-S18 The Ford of Abez (unassigned)
+
+----Eastern Scenarios:
+S11 AToTB part 1
+- 1-to-3-skull difficulty. Rewards: Arvith
+- Arvith is trying to get past a group of guards at the Fort Tahn ford and find his brother (i.e. AToTB S2)
+- during this scenario, Arvith explains the events of the original AToTB's "Rooting Out A Mage."
+- where Arvith expects to find his brother, we instead encounter and kill the necromancer brother Mordak (who says some foreshadowy / brotherly bond-y stuff). Arvith despairs of finding his brother again.
+
+S12 AToTB part 2
+- 1-to-3-skull difficulty. Rewards: Baran
+- Konrad and Arvith approach Rotharik's castle (i.e. AToTB S3). After various hijinks, they defeat Rotharik, and find and rescue Baran inside the castle.
+- Baran and Arvith are surprisingly unenthusiastic to reunite (i.e. AToTB S1), but they both agree to join Konrad in his quest.
+- During the next few HttT scenarios, Arvith and Baran talk with each-other and with Konrad/Delfador. Or possibly we read some journal entries from them.
+	- We learn why/how the brothers don't like each other (events at Toen Caric, perhaps part of Garard's war against the orcs). We hint about "The Snow Plains".
+
+S15: Crossroads (unassigned)
+- 2-to-3-skull difficulty. Rewards: companion Ulf, Dwarvish Miner(L0 unit, advances to Fighter/Guardsman/Ulf)
+- Li'sar is the enemy here. She has a bunch of dwarvish miner prisoners digging holes in the mountainside where her forces can hide and ambush Konrad
+	- Li'sar treats the dwarves pretty well. Once they're done digging, she releases them as a fair reward.
+	- Except the dwarves are angry, and move to the unoccupied part of the crossroads, set up a keep, and start attacking her (which also triggers a bunch of her ambushes)
+	- or something like that; I'm just making stuff up here
+- companion Ulf is gibbeted at the middle of the crossroads. When you reach him, he joins you. Perhaps he was a particularly angry miner who's being punished. With some interesting backstory
+- the player's starting position is dependent on which direction Konrad approached the crossroads from on the overworld
+
+S16: Gryphon Mountain
+- 1-to-2-skull difficulty. Rewards: Gryphon Rider, maybe other stuff too?
+- we either need to justify gryphon riders being dwarvish (maybe theres dwarves here, and you can also gain scouts as a recruit?), or make them human-ridden
+- no rider-less gryphons please; I don't think that makes sense lore-wise
+
+S17: Valley of Death (unassigned)
+- 3-to-4-skull difficulty. Rewards: Mage (White advancement only)
+- bit weird to have random liches running around the middle of Wesnoth. Let's try to figure out a good lore reason for this that ties them into other things (or at least tells us something about Asheviere's character)
+
+S18 Dan'tonk (unassigned)
+- 5-skull difficulty. Rewards: TBD
+- similar to "The Human Army" from SotBE. Fighting Li'sar
+- if you're really an overachiever (or more likely, cheating), you can beat this scenario and rush straight to Asheviere without Li'sar/Sceptre/etc.
+	- this is obviously non-canon, and we should include a message about that
+
+S20 The Ford of Abez (unassigned)
 - 2-to-3-skull difficulty
 - fighting Li'sar
 - completing this scenario ends Phase 1
