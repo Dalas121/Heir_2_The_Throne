@@ -137,6 +137,10 @@ Leveling units is fun! I want players to be able to continue to level units thro
 - where applicable, AI should be less aggressive at unfavorable ToD (regardless of the player's favorable ToD). See EI's Xenophobia for an example.
 - where applicable, if an AI side is defending, please use proper defensive AI with `[avoid]` and similar. See TDG's "Ring of Swords" for an example.
 - if you have AI allies, I suggest scaling their gold so they always feel useful. For example, if my ally is 1/2 as strong as the enemy on Easy, they could be 1/2 as strong on Nightmare too.
+- for consistency, I usually give AI sides a very very small general recruit list (e.g. just Spearman), and then allow for a few additional units with {LIMIT_CONTEMPORANEOUS_RECRUITS} (e.g. 0-2 Bowmen, 0-2 Cavalrymen)
+	- this is also a good way to let the AI recruit a couple higher-level units (e.g. Javelineer, Pikeman) without making the entire side easy to farm for XP
+- when creating AI guards, please use MAIs instead of status=guardian. For example, `{ZONE_GUARDIAN 14 14 x,y,radius=11,12,2}`. This also lets you sync up multiple guards so they fight together instead of being lured out 1-by-1.
+	- some campaigns use loyal icons for guards, some campaigns don't. For consistentcy, let's not use loyal icons for guards in HttT
 
 //--------------------
 // TEAMS AND COLORS
@@ -194,7 +198,6 @@ Example:
 	- instead of using `name=time over`, trigger this event on `side 1 turn {SCENARIO_TURN_LIMIT} end`, so that we don't waste the player's time when they've already lost
 - please include an achievement in every scenario! Could be a difficult challenge, a hint towards some content the player might miss, or anything else.
 - please avoid giving the player non-loyal companions. This is partially a style thing, partially to give players fewer "I'll reload if this unit dies" units, and partially to keep the overworld rewards preview simpler
-- when creating AI guards, please use MAIs instead of status=guardian. For example, `{ZONE_GUARDIAN 14 14 x,y,radius=11,12,2}`
 
 
 //########################################################
