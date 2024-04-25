@@ -124,7 +124,7 @@ These are my recommended difficulty modifiers. You don't need to use this if you
 // XP FEEDING
 //--------------------
 Leveling units is fun! I want players to be able to continue to level units throughout the campaign, instead of maxing-out their army halfway through. With this in mind, please try to restrict available XP.
-- small player armies; 50-100 gold (plus carryover) on Nightmare is a good guideline for the average scenario
+- small player armies; 50-75 initial gold (plus carryover) on Nightmare is a good guideline for the average scenario
 - use lower-level enemies where possible. 1 Warlord is easy to farm for XP; 3 Grunts are much harder; 6 Goblins even more so.
 - enemies should retreat and regroup where appropriate, instead of trickling. See EI's Xenophobia for an example.
 - end scenarios sooner rather than later. If there's no threat after the first 10 turns, don't ask the player to survive for 20.
