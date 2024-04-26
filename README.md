@@ -382,7 +382,8 @@ S26 The Dwarven Doors (unassigned)
 	- if the orcs were defeated beforehand, it's just Li'sar vs Konrad
 
 S28 The Lost General (unassigned)
-- TBD difficulty, Rewards: Naga Fighter, Troll Whelp
+- TBD difficulty, Rewards: Naga Fighter, Troll Whelp (can advance to Troll Shaman)
+- troll shamans create fire. Undead lionel is seeking the sceptre of fire.
 
 S29 Knalga (unassigned)
 - TBD difficulty. Rewards: Dwarvish Fighter, Dwarvish Guardsman, Shop (sell veterans, upgrade weapons, upgrade armor) (upgrades make all your recruits/recalls better, but also more expensive)
