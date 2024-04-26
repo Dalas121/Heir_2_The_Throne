@@ -171,7 +171,8 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 - someone who'll blast away zombies while quoting scripture (no specific religions plz; neither IRL ones nor Wesnoth ones)
 - quest: bring him to Valley of Death and do something with him there.
 ----ulf
-- 
+- hurls long strings of creative insults at his enemies
+- takes offense very, very easily
 ----Harper
 - 
 ----possibly Arvith/Baran
