@@ -84,7 +84,7 @@ Konrad (phase 1)
 - sees the good right in front of him (contrast this with Delfador)
 - calls people "Master", "Sir", "Uncle", "Ma'am", "Miss", "Aunt". Not every time, but occasionally.
 - humans are foreign and weird. He understands elves, not humans.
-- naive but good-hearted. Might get tricked or taken advantage of
+- naive but good-hearted. Might get tricked or taken advantage of. Think samwise gamgee manners
 - as he hits phase 2, phase 3, he starts to get more assertive and confident.
 
 Delfador
