@@ -256,7 +256,6 @@ S07: Muff Malal's Peninsula (unassigned)
 
 S08a: Isle of the Damned, part 1 (unassigned)
 - 2-skull difficulty. Rewards: Thug, Footpad, Poacher
-	- possibly a companion as an alternative reward? Something riffing off of TRoW's Vampire Lady?
 - we learn that Harper is trapped inside those catacombs where Morimerru used to be, setting up S08b (if the player chooses to go there)
 - need a good lore reason for the undead. Presumably the bandits have been living there peacefully since liberty, so the undead must be new
 	- maybe Harper awakened them from down in the catacombs, or maybe something else
