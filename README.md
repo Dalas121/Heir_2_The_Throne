@@ -252,7 +252,7 @@ S05: Bay of Pearls (Anekron)
 - the player might have Delfador in this scenario. Balance accordingly.
 	- if $bm_turns==1, foreshadow Delfador's impending departure
 
-S06: Isle of Alduin (unassigned)
+S06: Isle of Alduin (ForestDragon)
 - 1-skull difficulty. Rewards: Rogue Mage, Mage (Red advancement only)
 
 S07: Muff Malal's Peninsula (unassigned)
