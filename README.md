@@ -360,7 +360,7 @@ S20 The Ford of Abez (unassigned)
 S22 Outskirts of Glamdrol (unassigned)
 - TBD difficulty, Rewards: varies
 	- if you side with dwarves: Dwarvish Ulfserker, Dwarvish Thunderer
-	- if you side with orcs:    Shop (sell veterans, hire single-scenario orcish mercenaries, purchase orcish catapults)
+	- if you side with orcs:    Shop (sell veterans, hire single-scenario orcish mercenaries, purchase orcish catapults) (ensure you can't sell catapults)
 - battle involves fighting against orcish catapults (units with a true ranged attack)
 - orcs vs dwarves. You choose which side to ally with. Include some ambiguity; Dwarves shouldn't be the obviously "correct" side.
 	- perhaps orcs paid dwarves to build catapults. Dwarves claim they didn't get paid; orcs claim they did
