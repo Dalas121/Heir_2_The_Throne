@@ -98,6 +98,7 @@ Li'sar
 - she's a decent person. For example, she wouldn't fight unarmed civilians and would try to evacuate them before a military battle in their village
 	- but vs a military opponent, she'd hold back absolutely nothing and would have no problem being extremely brutal
 - disapproves of Asheviere's orcs
+- recruits primarily of HI and Fencers
 
 
 //############################
