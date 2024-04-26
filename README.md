@@ -429,7 +429,6 @@ before turn X...
 - on turn X, Li'sar receives permission from Asheviere to attack Elensefar, and heads there with a fleet of ships
 	- make sure this plays nice with other prestart Li'sar cutscenes. E.g. she's just been defeated at Crossroads
 	- crossroads becomes failed; Konrad can move freely though it
-	- Li'sar no longer arrives at Fort of Abez; instead it's a generic lieutenant
 	- Li'sar no longer moves to Dan'Tonk; instead it's a generic general
 - on turn X+1, Delfador reunites with Konrad
 	- Li'sar is now at Elensefar
