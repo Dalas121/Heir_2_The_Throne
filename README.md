@@ -310,6 +310,7 @@ S10 Elensefar (unassigned)
 //--------------------
 // PHASE 1 (CENTRAL WESNOTH)
 //--------------------
+if no AToTB in HttT, Mirion suggests making Arvith/Baran non-Konrad-side characters in a battle somewhere as backstory
 S12a AToTB, part 1 (Dalas) (may or may not do these, depending on other AToTB reworks)
 - 1-skull difficulty. Rewards: companion Arvith
 - Arvith is trying to get past a group of guards at the Fort Tahn ford and find his brother (i.e. AToTB S2)
@@ -342,6 +343,7 @@ S16: Gryphon Mountain
 
 S17a: Valley of Death, part 1 (unassigned)
 - 2-skull difficulty. Rewards: Heavy Infantryman
+- needs to make sense even if we did part 2 first
 - we encounter some HI trying to fight through undead and get help. They say they're warrior monks, whose home is besieged by undead.
 	 - HI names (including future recruits) should all start with "Brother"
 
@@ -385,14 +387,18 @@ S22 Outskirts of Glamdrol (unassigned)
 - battle involves fighting against orcish catapults (units with a true ranged attack)
 - orcs vs dwarves. You choose which side to ally with. Include some ambiguity; Dwarves shouldn't be the obviously "correct" side.
 	- perhaps orcs paid dwarves to build catapults. Dwarves claim they didn't get paid; orcs claim they did
+	- if the player recruits/recalls dwarves but fights against dwarves, we need some special voicelines related to this. Maybe "Surghan mercenaries", calling back to Sceptre of Fire
 
 S23 Northern Winter (unassigned)
 - TBD difficulty, Rewards: companion Runesmith
 - runesmith was frozen in the ice for ages; that's why he survived while all others perished
 - need to rename this, since it may not actually be winter. But keep the "terrain turns to snow" mechanic, and add to it
+- fight against wild animals who've been driven to starvation/madness from the cold
+	- while also dealing with harmful environmental effects
 
 S24a something wesmere, part 1 (unassigned)
 - TBD difficulty. Rewards: companion Kalenz
+- needs to make sense even if we did part 2 first
 
 S24b something wesmere, part 2 (unassigned)
 - TBD difficulty. Rewards: Elvish Shamans
