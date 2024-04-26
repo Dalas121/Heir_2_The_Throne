@@ -1,4 +1,4 @@
-```text
+f```text
 
 
 
@@ -266,6 +266,7 @@ S08a: Isle of the Damned, part 1 (unassigned)
 
 S08b: Isle of the Damned, part 2 (unassigned)
 - 2-skull difficulty. Rewards: companion Harper
+- need an older portrait
 
 S10 Elensefar (unassigned)
 - 3-skull difficulty. Rewards: Thieves, Shop (sell veterans, invest (spend now/bonus next scenario), smuggle to Wesmere, smuggle to Gryphon Mountains, smuggle to Dwarven Doors)
