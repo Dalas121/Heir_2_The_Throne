@@ -110,7 +110,6 @@ Li'sar
 - to ensure your scenario's ToD reflects the overworld, use `{SCHEDULE_DYNAMIC $current_time}`
 - to ensure all companions get recalled properly, please use `{RECALL_KONRAD_AND_COMPANIONS $x $y}`
 	- companions need custom dialogue in many scenarios, to help them feel alive!
-	- right now Moremirmu and an unnamed Ulf are planned to be options in Phase 1, and Kalenz is planned to be an option in Phase 2. There will be more, especially in Phase 1.
 
 //--------------------
 // DIFFICULTY
@@ -160,6 +159,27 @@ Leveling units is fun! I want players to be able to continue to level units thro
 - Whitefangs: white (these guys use lots of goblins and goblin riders)
 - Undead: white
 - Drakes: orange
+
+//--------------------
+// COMPANIONS
+//--------------------
+Each companion has a personality and a quest - a specific scenario that provides a special bonus if they get there.
+Maybe the quest reward is automatic (just complete the scenario), or maybe there's some special bonus objective.
+Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonus ability, or maybe you get the option to "trade in" your companion for some more significant bonus.
+----Morimeru
+- jolly, holy, clever warrior monk from the monestary featured in Valley of Death
+- someone who'll blast away zombies while quoting scripture (no specific religions plz; neither IRL ones nor Wesnoth ones)
+- quest: bring him to Valley of Death and do something with him there.
+----ulf
+- 
+----Harper
+- 
+----possibly Arvith/Baran
+- 
+----Kalenz
+- 
+----runesmith
+- 
 
 //--------------------
 // CHARACTER INTERACTIONS
@@ -314,10 +334,9 @@ S15: Crossroads (unassigned)
 	- companion joins you if he lives to the end of the scenario.
 
 S16: Gryphon Mountain
-- 1-skull difficulty. Rewards: Gryphon Rider, Young Ogre
-- we either need to justify gryphon riders being dwarvish (maybe theres dwarves here, and you can also gain scouts as a recruit?), or make them human-ridden
-	- no rider-less gryphons please; I don't think the lore for that makes sense
-- your enemies recruit ogres, like they do in the orignal HttT. You can capture ogres by surrounding them, like in EI. If you do so, you gain ogres as recruit options. (or something like that)
+- 1-skull difficulty. Rewards: Gryphon Rider, Dwarvish Scout
+- no rider-less gryphons please; I don't think the lore for that makes sense
+- not sure how to justify Dwarvish Scouts being here, but we'll need to somehow.
 
 S17a: Valley of Death, part 1 (unassigned)
 - 2-skull difficulty. Rewards: Heavy Infantryman
