@@ -301,13 +301,13 @@ S15: Crossroads (unassigned)
 - 2-skull difficulty. Rewards: companion Ulf, Dwarvish Miner(L0 unit, advances to Fighter/Guardsman)
 - bigmap approach: Hello “cousin”, if you really are Konrad and not an imposter. I am Li’sar, princess of Wesnoth and my mother’s most able commander.
 	- Your rebellion ends here. I will not allow you to sow any more chaos among my people — step forth and face me if you dare.
-- Li'sar is the enemy here. She has a bunch of dwarvish miner prisoners digging holes in the mountainside where her forces can hide and ambush Konrad
-	- Li'sar treats the dwarves pretty well. Once they're done digging, she releases them as a fair reward.
-	- Except the dwarves are angry, and move to the unoccupied part of the crossroads, set up a keep, and start attacking her (which also triggers a bunch of her ambushes)
-	- or something like that; I'm just making stuff up here
-- companion Ulf is gibbeted at the middle of the crossroads. When you reach him, he joins you. Perhaps he was a particularly angry miner who's being punished. With some interesting backstory
-	- Li'sar's lieutenant suggests she kill the Ulf in case he joins Konrad, but Li'sar refuses to execute a prisoner in cold blood.
 - the player's starting position is dependent on which direction Konrad approached the crossroads from on the overworld
+- there were once many dwarves and men mining together here, but the mines are long-since abandoned
+- Li'sar uses the mines to hide her troops and ambush Konrad.
+- companion Ulf is gibbeted at the middle of the crossroads
+	- lieutenant suggests Li'sar kill him so he can't join Konrad. Li'sar refuses to execute a prisoner in cold blood
+	- when rescued, companion Ulf move to the unoccupied corner of the crossroads and sets up an encampment (his units also end up triggering many ambushes)
+	- companion joins you if he lives to the end of the scenario.
 
 S16: Gryphon Mountain
 - 1-skull difficulty. Rewards: Gryphon Rider, Young Ogre
