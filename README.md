@@ -281,6 +281,7 @@ S10 Elensefar (unassigned)
 	- if turn is greater than X:
 		- 3-skull difficulty
 		- Maddock has fled on ship. Most of Asheviere's army is pursuing him. This is an opportunity to retake the city, at least temporarily!
+		- Orcs still in the north, or on your flank, or something.
 
 //--------------------
 // PHASE 1 (CENTRAL WESNOTH)
