@@ -94,6 +94,8 @@ Li'sar
 - stoic, proud, relentless.
 - prefers tricks, ambushes, and "clever" tactics, but doesn't shy away from a straight-up fight
 - calls Asheviere "mother", like Eldred did. But their relationship is quite distant
+- she's a decent person. For example, she wouldn't fight unarmed civilians and would try to evacuate them before a military battle in their village
+	- but vs a military opponent, she'd hold back absolutely nothing and would have no problem being extremely brutal
 
 
 //############################
