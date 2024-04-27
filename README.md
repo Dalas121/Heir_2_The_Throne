@@ -175,20 +175,25 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 - jolly, holy, clever warrior monk from the monestary featured in Valley of Death
 - someone who'll blast away zombies while quoting scripture (no specific religions plz; neither IRL ones nor Wesnoth ones)
 - quest: bring him to Valley of Death and do something with him there.
+
 ----Harper
 - 
+
 ----Allaril (the ulf)
 - hurls long strings of creative insults at his enemies
 - takes offense very, very easily 
 - ran away from Knalga when he was a child. Now the Dwarven Doors have fallen, Knalga is under siege, and he has no idea what happened to his family.
-- quest: bring him back to Knalga, and find his family's graves when there. Breaks down in tears, and gains a stoic defense-only "attack" that deals no damage but has high absorbs.
+- quest: bring him back to Knalga, and find his family's graves when there. Breaks down in tears, and gains some kind of useful buff
+
 ----Kalenz
 - 
-----Chantal (at Yumi's suggestion)
+
+----emo Chantal (at Yumi's suggestion)
 - she's determined to bring Deoran back from the dead
 	- not necromancy; no elf would ever practice necromancy. It's... aggressive healing. Aggressive after-death healing.
 - quest: she learns to accept his death and moves on
 	- maybe 2 versions of this? If you have Kalenz he helps her move on, if you don't things end badly
+
 ----Other companion ideas:
 - runesmith? Perhaps this portrait, with no ears: https://forums.wesnoth.org/viewtopic.php?t=49283&start=15
 - elvish halberdier? https://units.wesnoth.org/1.14/WarOfTheGods/en_US/WOTG_Elvish%20Halberdier.html
