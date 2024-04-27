@@ -209,9 +209,9 @@ Example:
 //--------------------
 // BACKSTORY/QUEST DIALOGUE
 //--------------------
-- try to include an opportunity for backstory/quest interactions between Konrad and his companions, at suitable moments
-- to do so, fire the "say_companion_interaction" event
-	- this event will check your existing comapnions, and play some backstory- or quest-related dialogue for one of them
+- 0-2 times in each scenario, try to include an opportunity for backstory/quest interactions between Konrad and his companions
+- to play the dialogue, fire the "say_companion_interaction" event
+	- this event will check your existing companions, and play some backstory- or quest-related dialogue for one of them, depending on what's previously been said
 	- Dalas is assigned to handle implementing this event
 
 //--------------------
