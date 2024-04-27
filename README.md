@@ -174,7 +174,8 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 ----ulf
 - hurls long strings of creative insults at his enemies
 - takes offense very, very easily
-- family from Knalga, but he's never been there. Breaks down in tears if we bring him to the tomb of his ancestors
+- ran away from Knalga when he was a child. Now the Dwarven Doors have fallen, Knalga is under siege, and he has no idea what happened to his family.
+- quest: bring him back to Knalga, and find his family's graves when there. Breaks down in tears, and gains a stoic defense-only "attack" that deals no damage but has high absorbs.
 ----Harper
 - 
 ----possibly Arvith/Baran
