@@ -194,39 +194,25 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 - elvish halberdier? https://units.wesnoth.org/1.14/WarOfTheGods/en_US/WOTG_Elvish%20Halberdier.html
 
 //--------------------
-// CHARACTER INTERACTIONS
+// "ADVISOR" DIALOGUE
 //--------------------
-- in each scenario, please include 0-2 interactions between Konrad and his companions, at suitable moments
-- if the preferred companions aren't present, fall back to firing a "say_companion_interaction" event so we can follow some scenario-independent companion storylines too
-	- please set $scenario_number beforehand (e.g. "s14"), in case that matters for the scenario-independent companion storylines
-	- "say_companion_interaction" will be implemented via macros in _main.cfg and unified_characters.cfg (probably by Dalas)
-
+- when something game-relevant needs to be said, please use the macro `{FIND_COMPANION_AND_SAY}`
+- this is perfect for "advisor" type dialogue with uncertain companions
 Example:
-[if] {HAVE_UNIT id=Moremirmu} {THEN(
-	[message]
-		speaker=Moremirmu
-		message=_"Undead are bad. I'm a holy guy. Let's beat these undead who are attacking."
-	[/message]
-	[message]
-		speaker=Konrad
-		message=_"Yeah let's do it."
-	[/message]
-)}
-[elseif] {HAVE_UNIT id=Delfador} {THEN(
-	[message]
-		speaker=Konrad
-		message=_"Delfador what shall we do?."
-	[/message]
-	[message]
-		speaker=Delfador
-		message=_"I shall blast these undead with scary lighting!"
-	[/message]
-)} [/elseif]
-{ELSE(
-	{VARIABLE scenario_number s14}
-	{FIRE_EVENT say_companion_interaction}
-	{CLEAR_VARIABLE scenario_number}
-)}
+{FIND_COMPANION_AND_SAY
+    PRIORITY=Moremirmu
+    MESSAGE_MOREMIRMU=_"Dark magic, Konrad! But the Lords of Light have shown me the way to victory — with the blessing of this holy water, we shall douse the graves and break the curse!"
+    MESSAGE_ALLARIL=  _"What sort o’ greasy tallow-keech magic be this? Ah’ know jus’ the ticket — we’ll drown the graves in holy water; that’ll keep the rottin’ buggers down!"
+    MESSAGE_GENERIC=  _"That graveyard is filled with some kind of dark magic. If we want to stop more undead from rising, we'll need to douse the graves with these vials of holy water."
+}
+
+//--------------------
+// BACKSTORY/QUEST DIALOGUE
+//--------------------
+- try to include an opportunity for backstory/quest interactions between Konrad and his companions, at suitable moments
+- to do so, fire the "say_companion_interaction" event
+	- this event will check your existing comapnions, and play some backstory- or quest-related dialogue for one of them
+	- Dalas is assigned to handle implementing this event
 
 //--------------------
 // OTHER
@@ -293,7 +279,7 @@ S07: Muff Malal's Peninsula (unassigned)
 
 S08a: Isle of the Damned, part 1 (unassigned)
 - 2-skull difficulty. Rewards: Thug, Footpad, Poacher
-- we learn that Harper is trapped inside those catacombs where Morimerru used to be, setting up S08b (if the player chooses to go there)
+- we learn that Harper is trapped inside those catacombs where Moremirmu used to be, setting up S08b (if the player chooses to go there)
 - need a good lore reason for the undead. Presumably the bandits have been living there peacefully since liberty, so the undead must be new
 	- maybe Harper awakened them from down in the catacombs, or maybe something else
 
@@ -322,8 +308,10 @@ S10 Elensefar (unassigned)
 // PHASE 1 (CENTRAL WESNOTH)
 //--------------------
 S12a something in Tath
+- 1-to-2-skull difficulty. Rewards: maybe companion?
 
 S12b something else in Tath
+- 1-to-2-skull difficulty. Rewards: maybe companion?
 
 [FINISHED] S15: Crossroads (Dalas)
 - 3-skull difficulty. Rewards: companion Ulf, Dwarvish Miner(L0 unit, advances to Fighter/Guardsman)
