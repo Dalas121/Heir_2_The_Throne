@@ -41,7 +41,7 @@ Status: Intro scenario mostly finished. Bigmap for next 3 scenarios mostly finis
 - Konrad starts with 0 recruits. In Phase 1 and Phase 2, he builds up his recruit list depending on which scenarios he chooses to play.
 - many Phase 1 and Phase 2 scenarios also give loyal companions as rewards, who're auto-recalled in each scenario and have custom dialogue.
 - Phase 3 scenarios focus on hindering Asheviere. For example, completing "Test of the Clans" might get rid of Asheviere's cavalry in the final confrontation.
-	- possibly also scenarios that buff up Li'sar? (who's a separate side, not under the player's control)
+	- possibly also scenarios that buff up Li'sar?
 - rewards can be given at the beginning of the scenario, at the end, in the overworld, or anywhere in between
 
 
@@ -98,7 +98,11 @@ Li'sar
 - she's a decent person. For example, she wouldn't fight unarmed civilians and would try to evacuate them before a military battle in their village
 	- but vs a military opponent, she'd hold back absolutely nothing and would have no problem being extremely brutal
 - disapproves of Asheviere's orcs
-- recruits primarily of HI and Fencers
+- Li'sar recruits small, very well-trained armies of primarily HI/Fencers/Bowmen. We represent this in-game with special abilities (replacing Initiative/First-Strike)
+	- Fencers get Backstab
+	- Bowmen get Marksman
+	- HI get March: "This unit ignores movement cost on most terrain."
+	- needs to be explained to the player the first time they encounter Li'sar
 
 
 //############################
@@ -152,8 +156,8 @@ Leveling units is fun! I want players to be able to continue to level units thro
 //--------------------
 (not mandatory, but let's try to stay more-or-less consistent please)
 - Konrad: red
-- Asheviere/Li'sar: purple
-- Li'sar (after joining Konrad): wesred
+- Asheviere/Army: purple
+- Li'sar: lisarcolor
 - Elves: brightgreen
 - Dwarves: brown
 - Blackcrests: black (these guys use lots of shamans)
@@ -171,17 +175,21 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 - jolly, holy, clever warrior monk from the monestary featured in Valley of Death
 - someone who'll blast away zombies while quoting scripture (no specific religions plz; neither IRL ones nor Wesnoth ones)
 - quest: bring him to Valley of Death and do something with him there.
-----ulf
-- hurls long strings of creative insults at his enemies
-- takes offense very, very easily
 ----Harper
 - 
-----possibly Arvith/Baran
-- 
+----Allaril (the ulf)
+- hurls long strings of creative insults at his enemies
+- takes offense very, very easily 
 ----Kalenz
 - 
-----runesmith
-- 
+----Chantal (at Yumi's suggestion)
+- she's determined to bring Deoran back from the dead
+	- not necromancy; no elf would ever practice necromancy. It's... aggressive healing. Aggressive after-death healing.
+- quest: she learns to accept his death and moves on
+	- maybe 2 versions of this? If you have Kalenz he helps her move on, if you don't things end badly
+----Other companion ideas:
+- runesmith? Perhaps this portrait, with no ears: https://forums.wesnoth.org/viewtopic.php?t=49283&start=15
+- elvish halberdier? https://units.wesnoth.org/1.14/WarOfTheGods/en_US/WOTG_Elvish%20Halberdier.html
 
 //--------------------
 // CHARACTER INTERACTIONS
@@ -225,6 +233,7 @@ Example:
 	- instead of using `name=time over`, trigger this event on `side 1 turn {SCENARIO_TURN_LIMIT} end`, so that we don't waste the player's time when they've already lost
 - please include an achievement in every scenario! Could be a difficult challenge, a hint towards some content the player might miss, or anything else.
 - please avoid giving the player non-loyal companions. This is partially a style thing, partially to give players fewer "I'll reload if this unit dies" units, and partially to keep the overworld rewards preview simpler
+- include PO hints! If we don't do them now we'll need to do them later.
 
 
 //########################################################
@@ -310,31 +319,12 @@ S10 Elensefar (unassigned)
 //--------------------
 // PHASE 1 (CENTRAL WESNOTH)
 //--------------------
-if no AToTB in HttT, Mirion suggests making Arvith/Baran non-Konrad-side characters in a battle somewhere as backstory
-S12a AToTB, part 1 (Dalas) (may or may not do these, depending on other AToTB reworks)
-- 1-skull difficulty. Rewards: companion Arvith
-- Arvith is trying to get past a group of guards at the Fort Tahn ford and find his brother (i.e. AToTB S2)
-- during this scenario, Arvith explains the events of the original AToTB's "Rooting Out A Mage."
-- where Arvith expects to find his brother, we instead encounter and kill the necromancer brother Mordak (who says some foreshadowy / brotherly bond-y stuff). Arvith despairs of finding his brother again.
+S12a something in Tath
 
-S12b AToTB, part 2 (Dalas) (may or may not do these, depending on other AToTB reworks)
-- 2-skull difficulty. Rewards: companion Baran
-- Konrad and Arvith approach Rotharik's castle (i.e. AToTB S3). After various hijinks, they defeat Rotharik, and find and rescue Baran inside the castle.
-- Baran and Arvith are surprisingly unenthusiastic to reunite (i.e. AToTB S1), but they both agree to join Konrad in his quest.
-- During the next few HttT scenarios, Arvith and Baran talk with each-other and with Konrad/Delfador. Or possibly we read some journal entries from them.
-	- We learn why/how the brothers don't like each other (events at Toen Caric, perhaps part of Garard's war against the orcs). We hint about "The Snow Plains".
+S12b something else in Tath
 
-S15: Crossroads (unassigned)
-- 2-skull difficulty. Rewards: companion Ulf, Dwarvish Miner(L0 unit, advances to Fighter/Guardsman)
-- bigmap approach: Hello “cousin”, if you really are Konrad and not an imposter. I am Li’sar, princess of Wesnoth and my mother’s most able commander.
-	- Your rebellion ends here. I will not allow you to sow any more chaos among my people — step forth and face me if you dare.
-- the player's starting position is dependent on which direction Konrad approached the crossroads from on the overworld
-- there were once many dwarves and men mining together here, but the mines are long-since abandoned
-- Li'sar uses the mines to hide her troops and ambush Konrad.
-- companion Ulf is gibbeted at the middle of the crossroads
-	- lieutenant suggests Li'sar kill him so he can't join Konrad. Li'sar refuses to execute a prisoner in cold blood
-	- when rescued, companion Ulf move to the unoccupied corner of the crossroads and sets up an encampment (his units also end up triggering many ambushes)
-	- companion joins you if he lives to the end of the scenario.
+[FINISHED] S15: Crossroads (Dalas)
+- 3-skull difficulty. Rewards: companion Ulf, Dwarvish Miner(L0 unit, advances to Fighter/Guardsman)
 
 S16: Gryphon Mountain
 - 1-skull difficulty. Rewards: Gryphon Rider, Dwarvish Scout
@@ -415,7 +405,7 @@ S26 The Dwarven Doors (unassigned)
 	- if the orcs were defeated beforehand, it's just Li'sar vs Konrad
 
 S28 The Lost General (unassigned)
-- TBD difficulty, Rewards: Naga Fighter, Troll Whelp (can advance to Troll Shaman)
+- TBD difficulty, Rewards: companion Chantal. Emo and stuff
 - troll shamans create fire. Undead lionel is seeking the sceptre of fire.
 
 S29 Knalga (unassigned)
