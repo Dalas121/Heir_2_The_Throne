@@ -82,9 +82,10 @@ Phase 3
 //--------------------
 Konrad (phase 1)
 - sees the good right in front of him (contrast this with Delfador)
-- calls people "Mister", "Ma'am", "Miss". Does NOT call Delfador "Master", since this sounds too similar to TDG
+- calls people "Master", "Sir", "Uncle", "Ma'am", "Miss", "Aunt". Not every time, but occasionally.
 - humans are foreign and weird. He understands elves, not humans.
-- naive but good-hearted. Might get tricked or taken advantage of
+- naive but good-hearted. Might get tricked or taken advantage of. Think samwise gamgee manners
+- as he hits phase 2, phase 3, he starts to get more assertive and confident.
 
 Delfador
 - for the greater good; i.e. needs of the many/few (contrast this with Konrad)
@@ -94,6 +95,10 @@ Li'sar
 - stoic, proud, relentless.
 - prefers tricks, ambushes, and "clever" tactics, but doesn't shy away from a straight-up fight
 - calls Asheviere "mother", like Eldred did. But their relationship is quite distant
+- she's a decent person. For example, she wouldn't fight unarmed civilians and would try to evacuate them before a military battle in their village
+	- but vs a military opponent, she'd hold back absolutely nothing and would have no problem being extremely brutal
+- disapproves of Asheviere's orcs
+- recruits primarily of HI and Fencers
 
 
 //############################
@@ -106,7 +111,6 @@ Li'sar
 - to ensure your scenario's ToD reflects the overworld, use `{SCHEDULE_DYNAMIC $current_time}`
 - to ensure all companions get recalled properly, please use `{RECALL_KONRAD_AND_COMPANIONS $x $y}`
 	- companions need custom dialogue in many scenarios, to help them feel alive!
-	- right now Moremirmu and an unnamed Ulf are planned to be options in Phase 1, and Kalenz is planned to be an option in Phase 2. There will be more, especially in Phase 1.
 
 //--------------------
 // DIFFICULTY
@@ -158,6 +162,29 @@ Leveling units is fun! I want players to be able to continue to level units thro
 - Drakes: orange
 
 //--------------------
+// COMPANIONS
+//--------------------
+Each companion has a personality and a quest - a specific scenario that provides a special bonus if they get there.
+Maybe the quest reward is automatic (just complete the scenario), or maybe there's some special bonus objective.
+Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonus ability, or maybe you get the option to "trade in" your companion for some more significant bonus.
+----Moremirmu
+- jolly, holy, clever warrior monk from the monestary featured in Valley of Death
+- someone who'll blast away zombies while quoting scripture (no specific religions plz; neither IRL ones nor Wesnoth ones)
+- quest: bring him to Valley of Death and do something with him there.
+----ulf
+- hurls long strings of creative insults at his enemies
+- takes offense very, very easily
+- family from Knalga, but he's never been there. Breaks down in tears if we bring him to the tomb of his ancestors
+----Harper
+- 
+----possibly Arvith/Baran
+- 
+----Kalenz
+- 
+----runesmith
+- 
+
+//--------------------
 // CHARACTER INTERACTIONS
 //--------------------
 - in each scenario, please include 0-2 interactions between Konrad and his companions, at suitable moments
@@ -207,7 +234,9 @@ Example:
 //############################
 // OTHER
 //############################
-Konrad Artwork (Mechanical)
+[IN PROGRESS] Konrad Artwork (Mechanical)
+[IN PROGRESS] S00: The Great Continent (Dalas)
+
 
 //############################
 // SCENARIOS TO WRITE
@@ -215,17 +244,13 @@ Konrad Artwork (Mechanical)
 (Occasional gaps in scenario numbers are deliberate. That way if we need to add a new scenario sometime we don't have to renumber everything.)
 
 //--------------------
-// OVERWORLD AND INTRO
-//--------------------
-[IN PROGRESS] S00: The Great Continent (Dalas)
-[FINISHED] S01: The Elves Besieged (Dalas)
-
-//--------------------
 // PHASE 1 (WESTERN WESNOTH)
 //--------------------
 ----Western Scenarios:
-S02: Elven Exodus (unassigned)
-- 2-skull difficulty. Rewards: Elvish Archer, Elvish Fighter, Elvish Scout
+[FINISHED] S01: The Elves Besieged (Dalas)
+
+S02: Exodus (unassigned)
+- 1-to-2-skull difficulty. Rewards: Elvish Archer, Elvish Fighter, Elvish Scout
 - elves are fleeing from the top right while humans man the flanks. Similar to the first scenario of Dirty Blood
 	- Ethiliel/Ithelden may or may not still be alive ($ethiliel_alive/$ithelden_alive), depending on the player's performance in the intro scenario
 - the more elves who die, the fewer recruits you get (e.g. if 10 elves die you only get archers)
@@ -233,7 +258,7 @@ S02: Elven Exodus (unassigned)
 	- if $bm_turns==1, foreshadow Delfador's impending departure
 
 [IN PROGRESS] S03: Blackwater Port (ForestDragon)
-- 2-skull difficulty. Rewards: Cavalryman, Horseman, Peasant, Woodsman
+- 1-to-2-skull difficulty. Rewards: Cavalryman, Horseman, Peasant, Woodsman
 - Asheviere's humans start in control of the port, but not the town. You need to defeat them to gain access to the port
 	- if Kaylan dies, you can still win, but you won't get to recruit Horsemen/Cavalrymen
 	- if Kaylan dies, set bm_kaylan_dead=yes, so I can modify the bigmap to reflect that
@@ -242,118 +267,167 @@ S02: Elven Exodus (unassigned)
 - the player might have Delfador in this scenario. Balance accordingly.
 	- if $bm_turns==1, foreshadow Delfador's impending departure
 
-S05: Bay of Pearls (Ankeron)
-- 2-skull difficulty. Rewards: Merfolk Brawler, Merfolk Fighter, Merfolk Hunter, Merfolk Initiate
+S05: Bay of Pearls (Anekron)
+- 1-to-2-skull difficulty. Rewards: Merfolk Brawler, Merfolk Fighter, Merfolk Hunter, Merfolk Initiate
 - fight orcs and free merfolk.
 - remember to include the sea orc event, and use the new image/portrait once that PR finishes
 - no storm trident please. It's a really cool item, but this campaign is already complicated enough.
 - the player might have Delfador in this scenario. Balance accordingly.
 	- if $bm_turns==1, foreshadow Delfador's impending departure
 
-S06: Isle of Alduin (unassigned)
+S06: Isle of Alduin (ForestDragon)
 - 1-skull difficulty. Rewards: Rogue Mage, Mage (Red advancement only)
 
 S07: Muff Malal's Peninsula (unassigned)
-- 1-skull difficulty. Rewards: Moremirmu
+- 1-skull difficulty. Rewards: companion Moremirmu
 
 S08a: Isle of the Damned, part 1 (unassigned)
 - 2-skull difficulty. Rewards: Thug, Footpad, Poacher
-	- possibly a companion as an alternative reward? Something riffing off of TRoW's Vampire Lady?
 - we learn that Harper is trapped inside those catacombs where Morimerru used to be, setting up S08b (if the player chooses to go there)
+- need a good lore reason for the undead. Presumably the bandits have been living there peacefully since liberty, so the undead must be new
+	- maybe Harper awakened them from down in the catacombs, or maybe something else
 
 S08b: Isle of the Damned, part 2 (unassigned)
-- 2-skull difficulty. Rewards: Harper
+- 2-skull difficulty. Rewards: companion Harper
+- need an older portrait
 
 S10 Elensefar (unassigned)
-- 3-skull difficulty
-- Rewards: Thieves, Shop (sell veterans, invest (spend now/bonus next scenario), smuggle to Wesmere, smuggle across Ford)
-- change konrad to use human portrait
+- 3-skull difficulty. Rewards: Thieves, Shop (sell veterans, invest (spend now/bonus next scenario), smuggle to Wesmere, smuggle to Gryphon Mountains, smuggle to Dwarven Doors)
+	- disable smuggling if Li'sar's currently at the sceptre, as it's possible for Konrad to be trapped if he hasn't completed the right scenarios
 - even after Elensefar, there should still be royal ships blocking travel up the river
+- this is basically 3 different scenarios, depending on what phase we're in. "X" represents the bm_turn in which Li'sar attacks
+	- if turn is less than X:
+		- 4-skull difficulty
+		- combat involves Delfador/Maddock inside and Konrad outside, with a huge human army in between. Also some orcs in the north
+	- if turn is equal to X:
+		- 5-skull difficulty
+		- similar to 3-skull, but Li'sar is also attacking from the north
+		- if you win here, you get the Elensefar achievement
+	- if turn is greater than X:
+		- 3-skull difficulty
+		- Maddock has fled on ship. Most of Asheviere's army is pursuing him. This is an opportunity to retake the city, at least temporarily!
+		- Orcs still in the north, or on your flank, or something.
 
 //--------------------
 // PHASE 1 (CENTRAL WESNOTH)
 //--------------------
+if no AToTB in HttT, Mirion suggests making Arvith/Baran non-Konrad-side characters in a battle somewhere as backstory
 S12a AToTB, part 1 (Dalas) (may or may not do these, depending on other AToTB reworks)
-- 1-skull difficulty. Rewards: Arvith
+- 1-skull difficulty. Rewards: companion Arvith
 - Arvith is trying to get past a group of guards at the Fort Tahn ford and find his brother (i.e. AToTB S2)
 - during this scenario, Arvith explains the events of the original AToTB's "Rooting Out A Mage."
 - where Arvith expects to find his brother, we instead encounter and kill the necromancer brother Mordak (who says some foreshadowy / brotherly bond-y stuff). Arvith despairs of finding his brother again.
 
 S12b AToTB, part 2 (Dalas) (may or may not do these, depending on other AToTB reworks)
-- 2-skull difficulty. Rewards: Baran
+- 2-skull difficulty. Rewards: companion Baran
 - Konrad and Arvith approach Rotharik's castle (i.e. AToTB S3). After various hijinks, they defeat Rotharik, and find and rescue Baran inside the castle.
 - Baran and Arvith are surprisingly unenthusiastic to reunite (i.e. AToTB S1), but they both agree to join Konrad in his quest.
 - During the next few HttT scenarios, Arvith and Baran talk with each-other and with Konrad/Delfador. Or possibly we read some journal entries from them.
 	- We learn why/how the brothers don't like each other (events at Toen Caric, perhaps part of Garard's war against the orcs). We hint about "The Snow Plains".
 
 S15: Crossroads (unassigned)
-- 2-skull difficulty. Rewards: companion Ulf, Dwarvish Miner(L0 unit, advances to Fighter/Guardsman/Ulf)
-- Li'sar is the enemy here. She has a bunch of dwarvish miner prisoners digging holes in the mountainside where her forces can hide and ambush Konrad
-	- Li'sar treats the dwarves pretty well. Once they're done digging, she releases them as a fair reward.
-	- Except the dwarves are angry, and move to the unoccupied part of the crossroads, set up a keep, and start attacking her (which also triggers a bunch of her ambushes)
-	- or something like that; I'm just making stuff up here
-- companion Ulf is gibbeted at the middle of the crossroads. When you reach him, he joins you. Perhaps he was a particularly angry miner who's being punished. With some interesting backstory
+- 2-skull difficulty. Rewards: companion Ulf, Dwarvish Miner(L0 unit, advances to Fighter/Guardsman)
+- bigmap approach: Hello “cousin”, if you really are Konrad and not an imposter. I am Li’sar, princess of Wesnoth and my mother’s most able commander.
+	- Your rebellion ends here. I will not allow you to sow any more chaos among my people — step forth and face me if you dare.
 - the player's starting position is dependent on which direction Konrad approached the crossroads from on the overworld
+- there were once many dwarves and men mining together here, but the mines are long-since abandoned
+- Li'sar uses the mines to hide her troops and ambush Konrad.
+- companion Ulf is gibbeted at the middle of the crossroads
+	- lieutenant suggests Li'sar kill him so he can't join Konrad. Li'sar refuses to execute a prisoner in cold blood
+	- when rescued, companion Ulf move to the unoccupied corner of the crossroads and sets up an encampment (his units also end up triggering many ambushes)
+	- companion joins you if he lives to the end of the scenario.
 
 S16: Gryphon Mountain
-- 1-skull difficulty. Rewards: Gryphon Rider, Young Ogre
-- we either need to justify gryphon riders being dwarvish (maybe theres dwarves here, and you can also gain scouts as a recruit?), or make them human-ridden
-	- no rider-less gryphons please; I don't think the lore for that makes sense
-- your enemies recruit ogres, like they do in the orignal HttT. You can capture ogres by surrounding them, like in EI. If you do so, you gain ogres as recruit options. (or something like that)
+- 1-skull difficulty. Rewards: Gryphon Rider, Dwarvish Scout
+- no rider-less gryphons please; I don't think the lore for that makes sense
+- not sure how to justify Dwarvish Scouts being here, but we'll need to somehow.
 
 S17a: Valley of Death, part 1 (unassigned)
 - 2-skull difficulty. Rewards: Heavy Infantryman
+- needs to make sense even if we did part 2 first
 - we encounter some HI trying to fight through undead and get help. They say they're warrior monks, whose home is besieged by undead.
+	 - HI names (including future recruits) should all start with "Brother"
 
 S17b: Valley of Death, part 2 (unassigned)
 - 3-skull difficulty. Rewards: Mage (White advancement only)
 - Konrad reaches the monastery in a dense fog. The monks (a White Mage and some normal Mages) are overjoyed. Everyone gets ready to leave.
-- Monks think the fog is suspicious. Casts a spell to illuminate the map, revealing the 3 liches from the original Valley of Death.
+	- White Mage names (including future promotions) should start with "Brother"/"Sister"
+- Monks think the fog is suspicious. They cast a spell to illuminate the map, revealing the 3 liches from the original Valley of Death.
+- overworld: ensure we can leave the area after completing part 2, even if we didn't do part 1 beforehand
 
 S18 Dan'tonk (unassigned)
-- 4-skull difficulty (3-skull to escape, 5-skull to complete). Rewards: none
-- similar to "The Human Army" from SotBE. Fighting Li'sar
+- 4-skull (3-skull to escape, 5-skull to conquer) difficulty. Rewards: Spearman, Bowman, Fencer
+- similar to "The Human Army" from SotBE
+- there's a stockpile of spears, bows, and swords in the city. To get the respective recruits, you need to send multiple units to grab equipment, and then escape with it all.
 - if you're really an overachiever (or more likely, cheating), you can beat this scenario and rush straight to Asheviere without Li'sar/Sceptre/etc.
-	- this is obviously non-canon, and we should include a message about that
+	- this is obviously non-canon, and we should include a message about that. We should also warn that this branch isn't well-tested, and plot elements may not make sense.
 
 S20 The Ford of Abez (unassigned)
 - 2-skull difficulty. Rewards: none
-- fighting Li'sar
-- change konrad to use human portrait
+- on the bigmap, orcs give you an opportunity to pay and get let through without combat (and without taking any time). If you refuse, you have to fight the orcs.
+	- they charge this fee EVERY TIME you want to cross the ford
+	Crossin' into Blackcrest land? That'll be 100 gold for passage, whelp.
+- if Li'sar tries to cross here:
+	Crossin' into Blackcrest land? That'll be 100 gold for passage, whelp.
+	Clan Blackcrest is an ally of the crown. Let me by or face the consequences.
+	Tha's right, miss princess. And bein' our allies, I'm sure you wouldn't mind donatin' them 100 gold pieces, har har har.
+	I don't think so. Infantry, form up! Prepare for battle!
+- this scenario needs 3 versions:
+	- by default, Konrad fights the orcs
+	- if Li'sar's there too, she fights against both sides
+	- if the orcs were defeated beforehand, it's just Li'sar vs Konrad
 
 
 //--------------------
 // PHASE 2 (SEEKING THE SCEPTRE)
 //--------------------
-S22 Glamdrol (unassigned)
-- TBD difficulty, Rewards: Shop (sell veterans, hire single-scenario orcish mercenaries, purchase orcish catapults)
+S22 Outskirts of Glamdrol (unassigned)
+- TBD difficulty, Rewards: varies
+	- if you side with dwarves: Dwarvish Ulfserker, Dwarvish Thunderer
+	- if you side with orcs:    Shop (sell veterans, hire single-scenario orcish mercenaries, purchase orcish catapults) (ensure you can't sell catapults)
 - battle involves fighting against orcish catapults (units with a true ranged attack)
-- some kind of orcish civil war maybe, and you choose which side to ally with?
+- orcs vs dwarves. You choose which side to ally with. Include some ambiguity; Dwarves shouldn't be the obviously "correct" side.
+	- perhaps orcs paid dwarves to build catapults. Dwarves claim they didn't get paid; orcs claim they did
+	- if the player recruits/recalls dwarves but fights against dwarves, we need some special voicelines related to this. Maybe "Surghan mercenaries", calling back to Sceptre of Fire
 
 S23 Northern Winter (unassigned)
-- TBD difficulty, Rewards: TBD
+- TBD difficulty, Rewards: companion Runesmith
+- runesmith was frozen in the ice for ages; that's why he survived while all others perished
+- need to rename this, since it may not actually be winter. But keep the "terrain turns to snow" mechanic, and add to it
+- fight against wild animals who've been driven to starvation/madness from the cold
+	- while also dealing with harmful environmental effects
 
-S24a something wesmere, part 1
-- TBD difficulty. Rewards: Kalenz
+S24a something wesmere, part 1 (unassigned)
+- TBD difficulty. Rewards: companion Kalenz
+- needs to make sense even if we did part 2 first
 
-S24b something wesmere, part 2
+S24b something wesmere, part 2 (unassigned)
 - TBD difficulty. Rewards: Elvish Shamans
-- this scenario can also be reached via smuggling (and upon completion you can walk out properlys, if you want to skip Kalenz
+- overworld: ensure we can leave the area after completing part 2, even if we didn't do part 1 beforehand
 
 S26 The Dwarven Doors (unassigned)
-- TBD difficulty, Rewards: TBD
+- TBD difficulty, Rewards: feel good about yourself at night
+- free as many slaves as you can, and evacuate them into the underground
+	- make a point of saying that this may not be as useful militarily as other scenarios would be, but it's the morally right thing to do
+	- include some kind of bonus and/or callback to this near the end of the game. Maybe you get a "good ending", or someting like that
+- this scenario needs 3 versions:
+	- by default, Konrad fights the orcs
+	- if Li'sar's there too, she fights against both sides
+	- if the orcs were defeated beforehand, it's just Li'sar vs Konrad
 
 S28 The Lost General (unassigned)
-- TBD difficulty, Rewards: TBD
+- TBD difficulty, Rewards: Naga Fighter, Troll Whelp (can advance to Troll Shaman)
+- troll shamans create fire. Undead lionel is seeking the sceptre of fire.
 
 S29 Knalga (unassigned)
-- TBD difficulty. Rewards: Fighter, Guardsman, Shop (sell veterans, upgrade weapons, upgrade armor) (upgrades make all your recruits/recalls better, but also more expensive)
-- involves mining through walls. Find a way to stop this from being a huge XP farm
+- TBD difficulty. Rewards: Dwarvish Fighter, Dwarvish Guardsman, Shop (sell veterans, upgrade weapons, upgrade armor) (upgrades make all your recruits/recalls better, but also more expensive)
+- involves using miners to mine through walls. Find a way to stop this from being a huge XP farm
+- try to keep lore consistent with NR please
 
 S30 The Sceptre of Fire (Dalas)
 - 4-skull difficulty. Rewards: the sceptre of fire
-- ensure the bigmap adjusts in such a way that it's impossible to get stuck/softlocked here
-	- including if the player uses Elensefar's smuggling
+- if player arrives early, tell them that this gives them a head start over Li'sar, but she'll still get here while we're searching for the sceptre
+	- also make it clear that you can't go back after this
 
 
 //--------------------
@@ -364,8 +438,79 @@ S30 The Sceptre of Fire (Dalas)
 //--------------------
 // PHASE 3 (OVERTHROWING ASHEVIERE)
 //--------------------
+characters we meet should make a big deal out of the sceptre
+	to justify everyone taking time off of a civil war to go find it
 
 
+//############################
+// LI'SAR'S MOVEMENT
+//############################
+//--------------------
+// BEFORE ELENSEFAR
+//--------------------
+before turn X...
+	check these things every prestart and every `name=enter hex` event
+- if Konrad is near Dan'Tonk, Li'sar is at Dan'Tonk.
+	- the first time this happens, she explains her ambush
+- else if Crossroads is incomplete, Li'sar is at Crossroads
+- else if Dan'Tonk is not fully conquered, Li'sar is at Dan'Tonk
+- else Li'sar is at Weldyn
+
+//--------------------
+// ELENSEFAR
+//--------------------
+----If Konrad Ignores Elensefar:
+- on turn X, Li'sar receives permission from Asheviere to attack Elensefar, and heads there with a fleet of ships
+	- make sure this plays nice with other prestart Li'sar cutscenes. E.g. she's just been defeated at Crossroads
+	- crossroads becomes failed; Konrad can move freely though it
+	- Li'sar no longer moves to Dan'Tonk; instead it's a generic general
+- on turn X+1, Delfador reunites with Konrad
+	- Li'sar is now at Elensefar
+	- storytext explain that Elensefar fell and Maddock fled. Burning, boats, etc.
+	- "what do we do now?" "With Maddock fled we cannot win through force of arms, but we can go for the sceptre"
+	- Li'sar's lieutenant is listening. Li'sar finds out, and resolves to beat Konrad to the sceptre. She vanishes into the fog
+	- show objectives
+
+----If Konrad Rescues Elensefar:
+TODO - also explain what happens if Konrad attacks ON turn X
+- before turn X, Konrad attacks and completes Elensefar
+storytext
+
+//--------------------
+// AFTER ELENSEFAR
+//--------------------
+- on turn X+2, Li'sar goes to the Ford
+	- dialogue should be a reminder that Li'sar is searching for the sceptre
+	- Konrad is allowed to fight her here, as 5-skull difficulty. If we actually defeat her, she retreats to regroup and vanishes from the bigmap for 1 turn
+		- Konrad may come from the north or south shore here
+		- no turn limit; no early finish; 40% gold carryover. Have Li'sar retreat when she's clearly lost, so she can't be farmed
+		- Li'sar has naval support here. Whatever that means
+	- reminder that Elensefar may or may not be retaken by Konrad at this point
+	- INCOMPLETE: she tries to cross, but the orcs demand payment. She's not impressed, and they fight
+	- COMPLETE: she comments that Konrad has already come this way
+	- IN PROGRESS: Li'sar attacks Konrad. We get an choice on the bigmap to either fight or flee.
+- on turn X+3, Li'sar goes to Dwarven Doors
+	- dialogue should be a reminder that Li'sar is searching for the sceptre
+	- Konrad is allowed to fight her here, as 5-skull difficulty. If we actually defeat her, she retreats to regroup and vanishes from the bigmap for 1 turn
+		- Konrad may come from the north or south entrance here
+		- no turn limit; no early finish; 40% gold carryover. Have Li'sar retreat when she's clearly lost, so she can't be farmed
+		- maybe do something interesting with the slaves here?
+	- INCOMPLETE: Li'sar and the orcs interact. The orcs would let her through, but she demands they free their slaves and they end up fighting.
+	- COMPLETE: The orcs are already beaten. Li'sar frees a few of their slaves, and passes through
+	- IN PROGRESS: Li'sar attacks Konrad. We get an choice on the bigmap to either fight or flee.
+- on turn X+4, Li'sar arrives at the sceptre
+	- overwrite the scenario preview for everything except Sceptre of Fire, to prevent Konrad from playing any other scenario
+	- ensure Konrad doesn't get softlocked. How do we achieve this?
+
+----TODO:
+- make sure positive elements of Li'sar's personality come through beforehand
+	- perhaps we somehow force the player to fight Li'sar at least once? Maybe she's at both Crossroads (guarding) and Elensefar (taking command of the victorious city)
+- ensure the bigmap adjusts in such a way that it's impossible to get stuck/softlocked when Li'sar reaches the sceptre
+	- Li'sar is guaranteed to conquer Ford of Abez,  at which point the scenario counts as failed (and Konrad can move through) 
+	- Li'sar is guaranteed to conquer Dwarven Doors, at which point the scenario counts as failed (and Konrad can move through)
+	- including if the player uses Elensefar's smuggling
+		- disable smuggling while Li'sar is at the sceptre, but Konrad can still smuggle just fine 1 turn before
+		- make sure that if we complete the two smuggling part 2s, that there's an exit (both valley of death and wesmere)
 
 
 ```
