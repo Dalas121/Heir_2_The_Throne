@@ -417,6 +417,9 @@ S30 The Sceptre of Fire (Dalas)
 	- also make it clear that you can't go back after this
 
 
+----ONCE WE FINISH PHASE 2, LET'S STOP, POLISH, AND RELEASE TO GET FEEDBACK BEFORE MOVING FURTHER ON----
+
+
 //--------------------
 // PHASE 2.5 (JOINING LI'SAR)
 //--------------------
