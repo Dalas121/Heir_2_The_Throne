@@ -171,7 +171,7 @@ Leveling units is fun! I want players to be able to continue to level units thro
 Each companion has a personality and a quest - a specific scenario that provides a special bonus if they get there.
 Maybe the quest reward is automatic (just complete the scenario), or maybe there's some special bonus objective.
 Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonus ability, or maybe you get the option to "trade in" your companion for some more significant bonus.
-----Morimeru
+----Moremirmu
 - jolly, holy, clever warrior monk from the monestary featured in Valley of Death
 - someone who'll blast away zombies while quoting scripture (no specific religions plz; neither IRL ones nor Wesnoth ones)
 - quest: bring him to Valley of Death and do something with him there.
@@ -180,6 +180,8 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 ----Allaril (the ulf)
 - hurls long strings of creative insults at his enemies
 - takes offense very, very easily 
+- ran away from Knalga when he was a child. Now the Dwarven Doors have fallen, Knalga is under siege, and he has no idea what happened to his family.
+- quest: bring him back to Knalga, and find his family's graves when there. Breaks down in tears, and gains a stoic defense-only "attack" that deals no damage but has high absorbs.
 ----Kalenz
 - 
 ----Chantal (at Yumi's suggestion)
@@ -380,7 +382,7 @@ S22 Outskirts of Glamdrol (unassigned)
 	- if the player recruits/recalls dwarves but fights against dwarves, we need some special voicelines related to this. Maybe "Surghan mercenaries", calling back to Sceptre of Fire
 
 S23 Northern Winter (unassigned)
-- TBD difficulty, Rewards: companion Runesmith
+- TBD difficulty, Rewards: maybe companion?
 - runesmith was frozen in the ice for ages; that's why he survived while all others perished
 - need to rename this, since it may not actually be winter. But keep the "terrain turns to snow" mechanic, and add to it
 - fight against wild animals who've been driven to starvation/madness from the cold
