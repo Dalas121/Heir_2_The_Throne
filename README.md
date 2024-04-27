@@ -174,6 +174,7 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 ----ulf
 - hurls long strings of creative insults at his enemies
 - takes offense very, very easily
+- family from Knalga, but he's never been there. Breaks down in tears if we bring him to the tomb of his ancestors
 ----Harper
 - 
 ----possibly Arvith/Baran
