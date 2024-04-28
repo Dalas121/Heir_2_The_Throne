@@ -117,6 +117,7 @@ Li'sar
 - to ensure your scenario's ToD reflects the overworld, use `{SCHEDULE_DYNAMIC $current_time}`
 - to ensure all companions get recalled properly, please use `{RECALL_KONRAD_AND_COMPANIONS $x $y}`
 	- companions need custom dialogue in many scenarios, to help them feel alive!
+- for recurring characters, use/add a `SINGLEUNITWML_` macro to unified_characters.cfg, so we stay consistent
 
 //--------------------
 // DIFFICULTY
