@@ -73,8 +73,8 @@ function display_scenario_preview(cfg)
 	-------------------------
 	-- REWARD: COMPANION
 	-------------------------
-	local companion1 = cfg.companion1 and cfg.companion1.."~RC(magenta>red)~BLIT(misc/loyal-icon.png)" or "misc/blank-hex.png"
-	local companion2 = cfg.companion2 and cfg.companion2.."~RC(magenta>red)~BLIT(misc/loyal-icon.png)" or "misc/blank-hex.png"
+	local companion1 = cfg.companion1 and cfg.companion1.."~RC(magenta>red)~BLIT(misc/loyal-icon.png,5,15)" or "misc/blank-hex.png"
+	local companion2 = cfg.companion2 and cfg.companion2.."~RC(magenta>red)~BLIT(misc/loyal-icon.png,5,15)" or "misc/blank-hex.png"
 	
 	-------------------------
 	-- REWARD: SHOP
@@ -154,7 +154,7 @@ function display_scenario_preview(cfg)
 				-- Gold Carryover
 				T.row{ T.column{ 
 					horizontal_alignment="left",
-					T.label{  use_markup=true,  label="You will probably finish this scenario\nwith <b>"..gold.."</b> gold carryover",  },
+					T.label{  use_markup=true,  label="<span color='#aaaaaa' size='small'>You will probably finish this scenario with...</span>\n<b>"..gold.."</b> gold carryover",  },
 				}},
 			}},
 		}}}},
