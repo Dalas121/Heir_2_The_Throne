@@ -4,7 +4,8 @@ AUDIO
 
 MUSIC
 ---------------
-
+hunted
+	by Scott Buckley www.scottbuckley.com.au (CC BY-SA 4.0)
 
 
 SOUNDS
@@ -51,6 +52,7 @@ flower-red
 	with modifications by Dalas (GPL v2.0 or later)
 
 bookshelves
+mine-entrance
 	pre-existing wesnoth image from the "The Deceiver's Gambit" campaign (GPL v2.0 or later)
 
 
@@ -78,6 +80,7 @@ SCENERY
 SOUNDS
 ---------------
 water
+skill-polymorph
 	pre-existing wesnoth image from the "The Deceiver's Gambit" campaign (GPL v2.0 or later)
 
 
