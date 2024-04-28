@@ -80,6 +80,7 @@ SCENERY
 SOUNDS
 ---------------
 water
+skill-polymorph
 	pre-existing wesnoth image from the "The Deceiver's Gambit" campaign (GPL v2.0 or later)
 
 

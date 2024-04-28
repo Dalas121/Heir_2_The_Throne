@@ -415,6 +415,7 @@ S30 The Sceptre of Fire (Dalas)
 - 4-skull difficulty. Rewards: the sceptre of fire
 - if player arrives early, tell them that this gives them a head start over Li'sar, but she'll still get here while we're searching for the sceptre
 	- also make it clear that you can't go back after this
+- Delfador should get progressively more exhausted/exasperated, leading into the joining Li'sar cutscene
 
 
 ----ONCE WE FINISH PHASE 2, LET'S STOP, POLISH, AND RELEASE TO GET FEEDBACK BEFORE MOVING FURTHER ON----
