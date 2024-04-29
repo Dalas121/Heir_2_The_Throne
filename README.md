@@ -187,7 +187,7 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 - hurls long strings of creative insults at his enemies
 - takes offense very, very easily 
 - ran away from Knalga when he was a child. Now the Dwarven Doors have fallen, Knalga is under siege, and he has no idea what happened to his family.
-- quest: bring him back to Knalga, and find his family's graves when there. Breaks down in tears, and gains some kind of useful buff
+- quest: bring him back to Knalga, and find his father's graves there. Breaks down in tears, and gains some kind of useful buff
 
 ----Kalenz
 - 
@@ -294,6 +294,8 @@ S08a: Isle of the Damned, part 1 (unassigned)
 
 S08b: Isle of the Damned, part 2 (unassigned)
 - 2-skull difficulty. Rewards: companion Harper
+- reference TRoW's vampire lady. Harper heard legends/rumors of someone like that, and came to see, inadvertantly awakening undead from the catacombs
+	- possibly motivated by Asheviere. Looking for a weapon, powerful magic, etc to use against her
 - need an older portrait
 
 S10 Elensefar (unassigned)
