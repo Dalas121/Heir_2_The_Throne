@@ -283,7 +283,7 @@ S05: Bay of Pearls (Anekron)
 S06: Isle of Alduin (ForestDragon)
 - 1-skull difficulty. Rewards: Rogue Mage, Mage (Red advancement only)
 
-S07: Muff Malal's Peninsula (unassigned)
+[IN PROGRESS] S07: Muff Malal's Peninsula (Dalas)
 - 1-skull difficulty. Rewards: companion Moremirmu
 
 S08a: Isle of the Damned, part 1 (unassigned)
