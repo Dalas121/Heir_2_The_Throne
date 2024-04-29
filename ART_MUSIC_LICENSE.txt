@@ -69,6 +69,9 @@ mostly pre-existing wesnoth images from the "Heir to the Throne" campaign (GPL v
 ethiliel
 	pre-existing wesnoth image from the "The South Guard" campaign (GPL v2.0 or later)
 
+halberdier
+	from ChaosRider (War of the Gods) (GPL v2.0 or later)
+
 
 
 
@@ -101,6 +104,12 @@ civilian elves
 
 delfador
 	base images from Maksiu, with modifications by dalas (CC BY-SA 4.0)
+
+halfelven-pikeman
+halfelven-halberdier
+	some base images from ChaosRider (Era of more units) (GPL v2.0 or later)
+	some base images from ChaosRider (War of the Gods)   (GPL v2.0 or later)
+	modifications by dalas (GPL v2.0 or later)
 
 konrad-fighter-sleeping
 konrad-fighter-unarmed
