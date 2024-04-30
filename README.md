@@ -176,21 +176,26 @@ Maybe the quest reward is automatic (just complete the scenario), or maybe there
 Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonus ability, or maybe you get the option to "trade in" your companion for some more significant bonus.
 
 ----Moremirmu
-- jolly, holy, clever warrior monk from the monestary featured in Valley of Death
-- someone who'll blast away zombies while quoting scripture (no specific religions plz; neither IRL ones nor Wesnoth ones)
+- warrior monk. Someone who'll blast away zombies while quoting scripture (no specific religions plz; neither IRL ones nor Wesnoth ones)
+"For at the end of days, the texts prophesy a great destruction, yea, the sun itself shall rain down from the heavens as sulfur and fire!"
+"And lo! The unclean shall be smitten down, and lo! There shall be eternal peace for all men."
+"But until then, ’tis up to I to do the smiting! [attacks some undead]"
 - quest: bring him to Valley of Death and do something with him there.
 
-----Harper
-- 
-
-----Allaril (the ulf)
-- hurls long strings of creative insults at his enemies
-- takes offense very, very easily 
+----Allaril:
+- high XP ulfserker. Loyal and healthy.
+- speaks in a... interesting manner. Takes offense easily.
 - ran away from Knalga when he was a child. Now the Dwarven Doors have fallen, Knalga is under siege, and he has no idea what happened to his family.
-- quest: bring him back to Knalga, and find his father's graves there. Breaks down in tears, and gains some kind of useful buff
+"C’mere and try it, ye yellow-bellied, cow-handed bluderbuss of a princess! Jus’ gimme the chance an’ I’ll rip that head right off yer ninnyhammerin’ neck, ye white-livered gasser!"
+"Come an’ git some, ye nigmenog bolting-hutch of beastliness! Ah dare ye to square up an’ fight me, dwarf-to-dwarf!"
+- quest: bring him back to Knalga, and find his father's graves there. Breaks down in tears, and gains a significant buff (drains on melee, perhaps?)
+
+----Harper
+- it's Harper
+- should we give her personality some kind of gimmick to help her stand out?  My memory on Liberty may no longer be accurate - I haven't played it since before the gender change
 
 ----Kalenz
-- 
+- it's Kalenz
 
 ----emo Chantal (at Yumi's suggestion)
 - she's determined to bring Deoran back from the dead
@@ -198,9 +203,18 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 - quest: she learns to accept his death and moves on
 	- maybe 2 versions of this? If you have Kalenz he helps her move on, if you don't things end badly
 
+----Two sisters, down in the Tath area?
+--Sister 1:
+tanky half-elven halberdier, trying to get past some guards and rescue her half-sister, who's been kidnapped by bandits
+serious. Raised among humans, doesn't like being half-elven. Some interesting dialogue with Konrad (a human raised among elves).
+--Sister 2:
+it turns out she's not in trouble at all. Magically charmed the bandit and is now their queen (except Loyalists are killing all of them so you still need to get in there and save her)
+insufferable girly personality, that sort of thing. As contrasted with the much more serious other sister.
+has an magical attack which, if it hits, temporarily takes control of the target enemy (leaders/loyals/mechanicals immune)
+some kind of quest where the 2 sisters heal old wounds and become close friends?
+
 ----Other companion ideas:
 - runesmith? Perhaps this portrait, with no ears: https://forums.wesnoth.org/viewtopic.php?t=49283&start=15
-- elvish halberdier? https://units.wesnoth.org/1.14/WarOfTheGods/en_US/WOTG_Elvish%20Halberdier.html
 
 //--------------------
 // "ADVISOR" DIALOGUE
