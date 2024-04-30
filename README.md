@@ -87,6 +87,9 @@ Konrad (phase 1)
 - calls people "Master", "Sir", "Uncle", "Ma'am", "Miss", "Aunt". Not every time, but occasionally.
 - humans are foreign and weird. He understands elves, not humans.
 - naive but good-hearted. Might get tricked or taken advantage of. Think samwise gamgee manners
+- through the course of the campaign, he starts to lean into being the heir a bit more: a symbol, a way to rally people for good
+	- then when he learn he's not the real heir, he has a momentary crisis of faith
+	- Li'sar and him talk it through, possibly referencing Asheviere
 - as he hits phase 2, phase 3, he starts to get more assertive and confident.
 
 Delfador
@@ -178,7 +181,7 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 ----Moremirmu
 - warrior monk. Someone who'll blast away zombies while quoting scripture (no specific religions plz; neither IRL ones nor Wesnoth ones)
 "For at the end of days, the texts prophesy a great destruction, yea, the sun itself shall rain down from the heavens as sulfur and fire!"
-"And lo! The unclean shall be smitten down, and lo! There shall be eternal peace for all men."
+"And lo! The unclean shall be smitten down, and lo! There shall be peace eternal for all men."
 "But until then, ’tis up to I to do the smiting! [attacks some undead]"
 - quest: bring him to Valley of Death and do something with him there.
 
@@ -203,18 +206,8 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 - quest: she learns to accept his death and moves on
 	- maybe 2 versions of this? If you have Kalenz he helps her move on, if you don't things end badly
 
-----Two sisters, down in the Tath area?
---Sister 1:
-tanky half-elven halberdier, trying to get past some guards and rescue her half-sister, who's been kidnapped by bandits
-serious. Raised among humans, doesn't like being half-elven. Some interesting dialogue with Konrad (a human raised among elves).
---Sister 2:
-it turns out she's not in trouble at all. Magically charmed the bandit and is now their queen (except Loyalists are killing all of them so you still need to get in there and save her)
-insufferable girly personality, that sort of thing. As contrasted with the much more serious other sister.
-has an magical attack which, if it hits, temporarily takes control of the target enemy (leaders/loyals/mechanicals immune)
-some kind of quest where the 2 sisters heal old wounds and become close friends?
-
 ----Other companion ideas:
-- runesmith? Perhaps this portrait, with no ears: https://forums.wesnoth.org/viewtopic.php?t=49283&start=15
+- somebody who can use this portrait, with or without ears? https://forums.wesnoth.org/viewtopic.php?t=49283&start=15
 
 //--------------------
 // "ADVISOR" DIALOGUE
@@ -332,16 +325,14 @@ S10 Elensefar (unassigned)
 //--------------------
 // PHASE 1 (CENTRAL WESNOTH)
 //--------------------
-S12a something in Tath
-- 1-to-2-skull difficulty. Rewards: maybe companion?
-
-S12b something else in Tath
-- 1-to-2-skull difficulty. Rewards: maybe companion?
+S12 Fort Tahn (unassigned)
+- 1-to-2-skull difficulty. Rewards: Shop (sell veterans, what else?)
+- some kind of smuggling. A stealth mission, perhaps? (the player can ofc bypass this by just not playing the scenario)
 
 [FINISHED] S15: Crossroads (Dalas)
 - 3-skull difficulty. Rewards: companion Ulf, Dwarvish Miner(L0 unit, advances to Fighter/Guardsman)
 
-S16: Gryphon Mountain
+S16: Gryphon Mountain (unassigned)
 - 1-skull difficulty. Rewards: Gryphon Rider, Dwarvish Scout
 - no rider-less gryphons please; I don't think the lore for that makes sense
 - not sure how to justify Dwarvish Scouts being here, but we'll need to somehow.
