@@ -185,6 +185,10 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 "But until then, ’tis up to I to do the smiting! [attacks some undead]"
 - quest: bring him to Valley of Death and do something with him there.
 
+----Harper
+- it's Harper
+- should we give her personality some kind of gimmick to help her stand out?  My memory on Liberty may no longer be accurate - I haven't played it since before the gender change
+
 ----Allaril:
 - high XP ulfserker. Loyal and healthy.
 - speaks in a... interesting manner. Takes offense easily.
@@ -192,10 +196,6 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 "C’mere and try it, ye yellow-bellied, cow-handed bluderbuss of a princess! Jus’ gimme the chance an’ I’ll rip that head right off yer ninnyhammerin’ neck, ye white-livered gasser!"
 "Come an’ git some, ye nigmenog bolting-hutch of beastliness! Ah dare ye to square up an’ fight me, dwarf-to-dwarf!"
 - quest: bring him back to Knalga, and find his father's graves there. Breaks down in tears, and gains a significant buff (drains on melee, perhaps?)
-
-----Harper
-- it's Harper
-- should we give her personality some kind of gimmick to help her stand out?  My memory on Liberty may no longer be accurate - I haven't played it since before the gender change
 
 ----Kalenz
 - it's Kalenz
@@ -226,7 +226,7 @@ Example:
 // BACKSTORY/QUEST DIALOGUE
 //--------------------
 - 0-2 times in each scenario, try to include an opportunity for backstory/quest interactions between Konrad and his companions
-- to play the dialogue, fire the "say_companion_interaction" event
+- to play the dialogue, fire the "say_smalltalk event
 	- this event will check your existing companions, and play some backstory- or quest-related dialogue for one of them, depending on what's previously been said
 	- Dalas is assigned to handle implementing this event
 
