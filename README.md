@@ -56,7 +56,7 @@ Phase 1
 - Konrad and Delfador complete 1 scenario together (limited choice here; only Exodus, Blackwater, or Pearls)
 - Delfador leaves to help in the defense of Elensefar
 - player plays 2-4 more phase 1 scenarios (varies by difficulty)
-- Elensefar falls. Delfador returns, and exhorts Konrad to flee north, either via the Ford of Abez or via Elensefar
+- Elensefar falls. Delfador returns. Phase 1 scenarios remain accessible throughout phase 2
 
 Phase 2
 - Li'sar follows Konrad north across the great river. Both race to get the sceptre
@@ -67,7 +67,7 @@ Phase 2
 ----ONCE WE FINISH PHASE 2, LET'S STOP, POLISH, AND RELEASE TO GET FEEDBACK BEFORE MOVING FURTHER ON----
 
 Phase 2.5
-- Konrad gets the sceptre first. Delfador collapses the cave behind them, (presumably) killing Li'sar
+- Konrad gets the sceptre first. Delfador collapses the cave behind them, (presumably) killing Li'sar. After this point, previous scenarios become unreachable.
 - surprise, Li'sar's back. Her army is much weaker
 - Konrad has a change of heart, and refuses to fight Li'sar. He joins her / is taken prisoner / something like that
 - Delfador worries Konrad will be executed once Li'sar reaches Weldyn. Delfador goes off to fight Asheviere by himself
