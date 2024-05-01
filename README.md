@@ -261,7 +261,7 @@ Example:
 ----Western Scenarios:
 [FINISHED] S01: The Elves Besieged (Dalas)
 
-S02: Exodus (unassigned)
+[IN PROGRESS] S02: Exodus (Dalas)
 - 1-to-2-skull difficulty. Rewards: Elvish Archer, Elvish Fighter, Elvish Scout
 - elves are fleeing from the top right while humans man the flanks. Similar to the first scenario of Dirty Blood
 	- Ethiliel/Ithelden may or may not still be alive ($ethiliel_alive/$ithelden_alive), depending on the player's performance in the intro scenario
@@ -290,7 +290,7 @@ S05: Bay of Pearls (Anekron)
 S06: Isle of Alduin (ForestDragon)
 - 1-skull difficulty. Rewards: Rogue Mage, Mage (Red advancement only)
 
-[IN PROGRESS] S07: Muff Malal's Peninsula (Dalas)
+[FINISHED] S07: Muff Malal's Peninsula (Dalas)
 - 1-skull difficulty. Rewards: companion Moremirmu
 
 S08a: Isle of the Damned, part 1 (unassigned)
