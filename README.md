@@ -269,7 +269,7 @@ Example:
 - the player might have Delfador in this scenario. Balance accordingly
 	- if $bm_turns==1, foreshadow Delfador's impending departure
 
-[IN PROGRESS] S03: Blackwater Port (ForestDragon)
+[FINISHED] S03: Blackwater Port (ForestDragon)
 - 1-to-2-skull difficulty. Rewards: Cavalryman, Horseman, Peasant, Woodsman
 - Asheviere's humans start in control of the port, but not the town. You need to defeat them to gain access to the port
 	- if Kaylan dies, you can still win, but you won't get to recruit Horsemen/Cavalrymen
@@ -279,7 +279,7 @@ Example:
 - the player might have Delfador in this scenario. Balance accordingly.
 	- if $bm_turns==1, foreshadow Delfador's impending departure
 
-S05: Bay of Pearls (Anekron)
+[IN PROGRESS] S05: Bay of Pearls (Anekron)
 - 1-to-2-skull difficulty. Rewards: Merfolk Brawler, Merfolk Fighter, Merfolk Hunter, Merfolk Initiate
 - fight orcs and free merfolk.
 - remember to include the sea orc event, and use the new image/portrait once that PR finishes
@@ -287,7 +287,7 @@ S05: Bay of Pearls (Anekron)
 - the player might have Delfador in this scenario. Balance accordingly.
 	- if $bm_turns==1, foreshadow Delfador's impending departure
 
-S06: Isle of Alduin (ForestDragon)
+[IN PROGRESS] S06: Isle of Alduin (ForestDragon)
 - 1-skull difficulty. Rewards: Rogue Mage, Mage (Red advancement only)
 
 [FINISHED] S07: Muff Malal's Peninsula (Dalas)
