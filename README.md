@@ -306,7 +306,7 @@ S08b: Isle of the Damned, part 2 (unassigned)
 - need an older portrait
 
 S10 Elensefar (unassigned)
-- 3-skull difficulty. Rewards: Thieves, Shop (sell veterans, invest (spend now/bonus next scenario), smuggle to Wesmere, smuggle to Gryphon Mountains, smuggle to Dwarven Doors)
+- 3-skull difficulty. Rewards: Thieves, Shop (sell veterans, invest (spend now/bonus next scenario), smuggle to Wesmere, smuggle to Valley of Death, smuggle to Dwarven Doors)
 	- disable smuggling if Li'sar's currently at the sceptre, as it's possible for Konrad to be trapped if he hasn't completed the right scenarios
 - even after Elensefar, there should still be royal ships blocking travel up the river
 - this is basically 3 different scenarios, depending on what phase we're in. "X" represents the bm_turn in which Li'sar attacks
@@ -330,7 +330,7 @@ S12 Fort Tahn (unassigned)
 - some kind of smuggling. A stealth mission, perhaps? (the player can ofc bypass this by just not playing the scenario)
 
 [FINISHED] S15: Crossroads (Dalas)
-- 3-skull difficulty. Rewards: companion Ulf, Dwarvish Miner(L0 unit, advances to Fighter/Guardsman)
+- 3-skull difficulty. Rewards: companion Ulf, Dwarvish Digger
 
 S16: Gryphon Mountain (unassigned)
 - 1-skull difficulty. Rewards: Gryphon Rider, Dwarvish Scout
@@ -400,7 +400,7 @@ S24b something wesmere, part 2 (unassigned)
 - TBD difficulty. Rewards: Elvish Shamans
 - overworld: ensure we can leave the area after completing part 2, even if we didn't do part 1 beforehand
 
-S26 The Dwarven Doors (unassigned)
+S26 Dwarven Doors (unassigned)
 - TBD difficulty, Rewards: feel good about yourself at night
 - free as many slaves as you can, and evacuate them into the underground
 	- make a point of saying that this may not be as useful militarily as other scenarios would be, but it's the morally right thing to do
