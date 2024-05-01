@@ -386,8 +386,8 @@ S22 Outskirts of Glamdrol (unassigned)
 	- if the player recruits/recalls dwarves but fights against dwarves, we need some special voicelines related to this. Maybe "Surghan mercenaries", calling back to Sceptre of Fire
 
 S23 Northern Winter (unassigned)
-- TBD difficulty, Rewards: maybe companion?
-- runesmith was frozen in the ice for ages; that's why he survived while all others perished
+- TBD difficulty, Rewards: companion Chantal
+- perhaps she's frozen in ice? And this yields some insight into her personality changes since Deoran's death? (really she didn't have much of a personality at all before)
 - need to rename this, since it may not actually be winter. But keep the "terrain turns to snow" mechanic, and add to it
 - fight against wild animals who've been driven to starvation/madness from the cold
 	- while also dealing with harmful environmental effects
