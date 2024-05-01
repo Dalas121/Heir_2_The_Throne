@@ -56,7 +56,7 @@ Phase 1
 - Konrad and Delfador complete 1 scenario together (limited choice here; only Exodus, Blackwater, or Pearls)
 - Delfador leaves to help in the defense of Elensefar
 - player plays 2-4 more phase 1 scenarios (varies by difficulty)
-- Elensefar falls. Delfador returns, and exhorts Konrad to flee north, either via the Ford of Abez or via Elensefar
+- Elensefar falls. Delfador returns. Phase 1 scenarios remain accessible throughout phase 2
 
 Phase 2
 - Li'sar follows Konrad north across the great river. Both race to get the sceptre
@@ -67,7 +67,7 @@ Phase 2
 ----ONCE WE FINISH PHASE 2, LET'S STOP, POLISH, AND RELEASE TO GET FEEDBACK BEFORE MOVING FURTHER ON----
 
 Phase 2.5
-- Konrad gets the sceptre first. Delfador collapses the cave behind them, (presumably) killing Li'sar
+- Konrad gets the sceptre first. Delfador collapses the cave behind them, (presumably) killing Li'sar. After this point, previous scenarios become unreachable.
 - surprise, Li'sar's back. Her army is much weaker
 - Konrad has a change of heart, and refuses to fight Li'sar. He joins her / is taken prisoner / something like that
 - Delfador worries Konrad will be executed once Li'sar reaches Weldyn. Delfador goes off to fight Asheviere by himself
@@ -87,6 +87,9 @@ Konrad (phase 1)
 - calls people "Master", "Sir", "Uncle", "Ma'am", "Miss", "Aunt". Not every time, but occasionally.
 - humans are foreign and weird. He understands elves, not humans.
 - naive but good-hearted. Might get tricked or taken advantage of. Think samwise gamgee manners
+- through the course of the campaign, he starts to lean into being the heir a bit more: a symbol, a way to rally people for good
+	- then when he learn he's not the real heir, he has a momentary crisis of faith
+	- Li'sar and him talk it through, possibly referencing Asheviere
 - as he hits phase 2, phase 3, he starts to get more assertive and confident.
 
 Delfador
@@ -176,21 +179,26 @@ Maybe the quest reward is automatic (just complete the scenario), or maybe there
 Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonus ability, or maybe you get the option to "trade in" your companion for some more significant bonus.
 
 ----Moremirmu
-- jolly, holy, clever warrior monk from the monestary featured in Valley of Death
-- someone who'll blast away zombies while quoting scripture (no specific religions plz; neither IRL ones nor Wesnoth ones)
+- warrior monk. Someone who'll blast away zombies while quoting scripture (no specific religions plz; neither IRL ones nor Wesnoth ones)
+"For at the end of days, the texts prophesy a great destruction, yea, the sun itself shall rain down from the heavens as sulfur and fire!"
+"And lo! The unclean shall be smitten down, and lo! There shall be peace eternal for all men."
+"But until then, ’tis up to I to do the smiting! [attacks some undead]"
 - quest: bring him to Valley of Death and do something with him there.
 
 ----Harper
-- 
+- it's Harper
+- should we give her personality some kind of gimmick to help her stand out?  My memory on Liberty may no longer be accurate - I haven't played it since before the gender change
 
-----Allaril (the ulf)
-- hurls long strings of creative insults at his enemies
-- takes offense very, very easily 
+----Allaril:
+- high XP ulfserker. Loyal and healthy.
+- speaks in a... interesting manner. Takes offense easily.
 - ran away from Knalga when he was a child. Now the Dwarven Doors have fallen, Knalga is under siege, and he has no idea what happened to his family.
-- quest: bring him back to Knalga, and find his father's graves there. Breaks down in tears, and gains some kind of useful buff
+"C’mere and try it, ye yellow-bellied, cow-handed bluderbuss of a princess! Jus’ gimme the chance an’ I’ll rip that head right off yer ninnyhammerin’ neck, ye white-livered gasser!"
+"Come an’ git some, ye nigmenog bolting-hutch of beastliness! Ah dare ye to square up an’ fight me, dwarf-to-dwarf!"
+- quest: bring him back to Knalga, and find his father's graves there. Breaks down in tears, and gains a significant buff (drains on melee, perhaps?)
 
 ----Kalenz
-- 
+- it's Kalenz
 
 ----emo Chantal (at Yumi's suggestion)
 - she's determined to bring Deoran back from the dead
@@ -199,8 +207,7 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 	- maybe 2 versions of this? If you have Kalenz he helps her move on, if you don't things end badly
 
 ----Other companion ideas:
-- runesmith? Perhaps this portrait, with no ears: https://forums.wesnoth.org/viewtopic.php?t=49283&start=15
-- elvish halberdier? https://units.wesnoth.org/1.14/WarOfTheGods/en_US/WOTG_Elvish%20Halberdier.html
+- somebody who can use this portrait, with or without ears? https://forums.wesnoth.org/viewtopic.php?t=49283&start=15
 
 //--------------------
 // "ADVISOR" DIALOGUE
@@ -219,7 +226,7 @@ Example:
 // BACKSTORY/QUEST DIALOGUE
 //--------------------
 - 0-2 times in each scenario, try to include an opportunity for backstory/quest interactions between Konrad and his companions
-- to play the dialogue, fire the "say_companion_interaction" event
+- to play the dialogue, fire the "say_smalltalk event
 	- this event will check your existing companions, and play some backstory- or quest-related dialogue for one of them, depending on what's previously been said
 	- Dalas is assigned to handle implementing this event
 
@@ -254,7 +261,7 @@ Example:
 ----Western Scenarios:
 [FINISHED] S01: The Elves Besieged (Dalas)
 
-S02: Exodus (unassigned)
+[IN PROGRESS] S02: Exodus (Dalas)
 - 1-to-2-skull difficulty. Rewards: Elvish Archer, Elvish Fighter, Elvish Scout
 - elves are fleeing from the top right while humans man the flanks. Similar to the first scenario of Dirty Blood
 	- Ethiliel/Ithelden may or may not still be alive ($ethiliel_alive/$ithelden_alive), depending on the player's performance in the intro scenario
@@ -283,7 +290,7 @@ S05: Bay of Pearls (Anekron)
 S06: Isle of Alduin (ForestDragon)
 - 1-skull difficulty. Rewards: Rogue Mage, Mage (Red advancement only)
 
-S07: Muff Malal's Peninsula (unassigned)
+[FINISHED] S07: Muff Malal's Peninsula (Dalas)
 - 1-skull difficulty. Rewards: companion Moremirmu
 
 S08a: Isle of the Damned, part 1 (unassigned)
@@ -299,7 +306,7 @@ S08b: Isle of the Damned, part 2 (unassigned)
 - need an older portrait
 
 S10 Elensefar (unassigned)
-- 3-skull difficulty. Rewards: Thieves, Shop (sell veterans, invest (spend now/bonus next scenario), smuggle to Wesmere, smuggle to Gryphon Mountains, smuggle to Dwarven Doors)
+- 3-skull difficulty. Rewards: Thieves, Shop (sell veterans, invest (spend now/bonus next scenario), smuggle to Wesmere, smuggle to Valley of Death, smuggle to Dwarven Doors)
 	- disable smuggling if Li'sar's currently at the sceptre, as it's possible for Konrad to be trapped if he hasn't completed the right scenarios
 - even after Elensefar, there should still be royal ships blocking travel up the river
 - this is basically 3 different scenarios, depending on what phase we're in. "X" represents the bm_turn in which Li'sar attacks
@@ -318,16 +325,14 @@ S10 Elensefar (unassigned)
 //--------------------
 // PHASE 1 (CENTRAL WESNOTH)
 //--------------------
-S12a something in Tath
-- 1-to-2-skull difficulty. Rewards: maybe companion?
-
-S12b something else in Tath
-- 1-to-2-skull difficulty. Rewards: maybe companion?
+S12 Fort Tahn (unassigned)
+- 1-to-2-skull difficulty. Rewards: Shop (sell veterans, what else?)
+- some kind of smuggling. A stealth mission, perhaps? (the player can ofc bypass this by just not playing the scenario)
 
 [FINISHED] S15: Crossroads (Dalas)
-- 3-skull difficulty. Rewards: companion Ulf, Dwarvish Miner(L0 unit, advances to Fighter/Guardsman)
+- 3-skull difficulty. Rewards: companion Ulf, Dwarvish Digger
 
-S16: Gryphon Mountain
+S16: Gryphon Mountain (unassigned)
 - 1-skull difficulty. Rewards: Gryphon Rider, Dwarvish Scout
 - no rider-less gryphons please; I don't think the lore for that makes sense
 - not sure how to justify Dwarvish Scouts being here, but we'll need to somehow.
@@ -381,8 +386,8 @@ S22 Outskirts of Glamdrol (unassigned)
 	- if the player recruits/recalls dwarves but fights against dwarves, we need some special voicelines related to this. Maybe "Surghan mercenaries", calling back to Sceptre of Fire
 
 S23 Northern Winter (unassigned)
-- TBD difficulty, Rewards: maybe companion?
-- runesmith was frozen in the ice for ages; that's why he survived while all others perished
+- TBD difficulty, Rewards: companion Chantal
+- perhaps she's frozen in ice? And this yields some insight into her personality changes since Deoran's death? (really she didn't have much of a personality at all before)
 - need to rename this, since it may not actually be winter. But keep the "terrain turns to snow" mechanic, and add to it
 - fight against wild animals who've been driven to starvation/madness from the cold
 	- while also dealing with harmful environmental effects
@@ -395,7 +400,7 @@ S24b something wesmere, part 2 (unassigned)
 - TBD difficulty. Rewards: Elvish Shamans
 - overworld: ensure we can leave the area after completing part 2, even if we didn't do part 1 beforehand
 
-S26 The Dwarven Doors (unassigned)
+S26 Dwarven Doors (unassigned)
 - TBD difficulty, Rewards: feel good about yourself at night
 - free as many slaves as you can, and evacuate them into the underground
 	- make a point of saying that this may not be as useful militarily as other scenarios would be, but it's the morally right thing to do
