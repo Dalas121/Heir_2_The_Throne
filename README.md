@@ -128,10 +128,10 @@ Li'sar
 Easy should be nigh-unloseable. Nightmare should be seriously difficult even for you or me (e.g. highest difficulty of EI/TDG)
 
 These are my recommended difficulty modifiers. You don't need to use this if you don't want to (or if it doesn't make sense for the scenario), but please ensure the difficulty scales similarly so all scenarios stay in balance.
-- Easy:      1.0x enemy/ally strength,  70% xp to level, 100% starting gold (ignoring carryover)
+- Easy:      1.0x enemy/ally strength, 100% xp to level, 100% starting gold (ignoring carryover)
 - Normal:    1.5x enemy/ally strength, 100% xp to level, 80% starting gold (ignoring carryover)
 - Hard:      2.0x enemy/ally strength, 100% xp to level, 65% starting gold (ignoring carryover)
-- Nightmare: 2.5x enemy/ally strength, 130% xp to level, 50% starting gold (ignoring carryover)
+- Nightmare: 2.5x enemy/ally strength, 100% xp to level, 50% starting gold (ignoring carryover)
 - Additionally, on higher difficulties the player gets less time in each phase before being pushed on to the next one, which reduces your rewards/XP.
 
 //--------------------
