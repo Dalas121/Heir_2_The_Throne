@@ -126,6 +126,7 @@ Li'sar
 // DIFFICULTY
 //--------------------
 Easy should be nigh-unloseable. Nightmare should be seriously difficult even for you or me (e.g. highest difficulty of EI/TDG)
+- assume the player is coming into the scenario with suitable units; i.e. don't balance Gryphon Mountain around massed Merfolk
 
 These are my recommended difficulty modifiers. You don't need to use this if you don't want to (or if it doesn't make sense for the scenario), but please ensure the difficulty scales similarly so all scenarios stay in balance.
 - Easy:      1.0x enemy/ally strength, 100% xp to level, 100% starting gold (ignoring carryover)
