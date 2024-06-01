@@ -290,6 +290,7 @@ Example:
 
 [IN PROGRESS] S06: Isle of Alduin (ForestDragon)
 - 1-skull difficulty. Rewards: Rogue Mage, Mage (Red advancement only)
+- the original gives you a loyal mage called Elrian. We don't want a loyal mage reward, but we should still have "Elrian" appear somewhere in some context
 
 [FINISHED] S07: Muff Malal's Peninsula (Dalas)
 - 1-skull difficulty. Rewards: companion Moremirmu
