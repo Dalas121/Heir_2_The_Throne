@@ -13,9 +13,8 @@ Status: Intro scenario mostly finished. Bigmap for next 3 scenarios mostly finis
 - Right now, let's focus on writing the scenarios for Phase 1.
 - Read through this document. Some scenarios have more info, some have less.
 	- These are just my thoughts, not necessarily a must-have.
-- Pick out a scenario you're interested in working on. Update this document to assign yourself.
-- Work on a script/outline for the scenario. Post that here or in the discord for review.
-- Once approved, write the WML itself. When finished, make a PR and we'll all give it a try.
+- Pick out a scenario you're interested in working on. Let us know, then update this document to assign yourself.
+- Write the scenario WML, following the guidelines in this document, then make a PR so we can all try it out.
 
 
 //########################################################
@@ -71,12 +70,13 @@ Phase 2.5
 - surprise, Li'sar's back. Her army is much weaker
 - Konrad has a change of heart, and refuses to fight Li'sar. He joins her / is taken prisoner / something like that
 - Delfador worries Konrad will be executed once Li'sar reaches Weldyn. Delfador goes off to fight Asheviere by himself
+	- or maybe he goes off for some other reason?
 - Li'sar and Konrad fight Asheviere's ally Iliah'al (details TBD after AoA releases). They bond.
-	- Li'sar is always a separate allied side, not directly under the player's control
+	- Li'sar is always a separate (genuinely helpful) allied side, not directly under the player's control
 
 Phase 3
-- we learn that Delfador has been captured by Asheviere, and will be executed in X months (not immediately, because Asheviere is trying to lure Konrad)
-- player plays 2-3 more phase 3 scenarios (varies by difficulty)
+- we learn that Delfador (or maybe instead Kaylan/Ethiliel/someone?) has been captured by Asheviere, and will be executed in X months (not immediately, because Asheviere is trying to lure Konrad)
+- player plays 1-2 more phase 3 scenarios (varies by difficulty)
 - Konrad and Li'sar confront Asheviere at Weldyn. Delfador is rescued; Asheviere dies/flees/etc. Hooray!
 
 //--------------------
@@ -125,21 +125,20 @@ Li'sar
 //--------------------
 // DIFFICULTY
 //--------------------
-Easy should be nigh-unloseable. Nightmare should be seriously difficult even for you or me (e.g. highest difficulty of EI/TDG)
+Easy should be nigh-unloseable. Nightmare should be seriously difficult even for a veteran player, requiring careful strategy and probably several restarts (e.g. highest difficulty of EI/TDG)
 - assume the player is coming into the scenario with suitable units; i.e. don't balance Gryphon Mountain around massed Merfolk
 
-These are my recommended difficulty modifiers. You don't need to use this if you don't want to (or if it doesn't make sense for the scenario), but please ensure the difficulty scales similarly so all scenarios stay in balance.
-- Easy:      1.0x enemy/ally strength, 100% xp to level, 100% starting gold (ignoring carryover)
-- Normal:    1.5x enemy/ally strength, 100% xp to level, 80% starting gold (ignoring carryover)
-- Hard:      2.0x enemy/ally strength, 100% xp to level, 65% starting gold (ignoring carryover)
-- Nightmare: 2.5x enemy/ally strength, 100% xp to level, 50% starting gold (ignoring carryover)
-- Additionally, on higher difficulties the player gets less time in each phase before being pushed on to the next one, which reduces your rewards/XP.
+Recommended difficulty modifiers:
+- Easy:      1x enemy strength,  70% xp to level, 12 scenarios
+- Normal:    2x enemy strength, 100% xp to level, 12 scenarios
+- Hard:      4x enemy strength, 100% xp to level, 11 scenarios
+- Nightmare: 4x enemy strength, 100% xp to level, 9 scenarios
 
 //--------------------
 // XP FEEDING
 //--------------------
 Leveling units is fun! I want players to be able to continue to level units throughout the campaign, instead of maxing-out their army halfway through. With this in mind, please try to restrict available XP.
-- small player armies; 50-75 initial gold (plus carryover) on Nightmare is a good guideline for the average scenario
+- small player armies; 50-75 initial gold (plus carryover) is a good guideline for the average scenario
 - use lower-level enemies where possible. 1 Warlord is easy to farm for XP; 3 Grunts are much harder; 6 Goblins even more so.
 - don't include a large amount of villages, unless carryover gold is the scenario's primary reward
 - enemies should retreat and regroup where appropriate, instead of trickling. See EI's Xenophobia for an example.
@@ -155,7 +154,7 @@ Leveling units is fun! I want players to be able to continue to level units thro
 - if you have AI allies, I suggest scaling their gold so they always feel useful. For example, if my ally is 1/2 as strong as the enemy on Easy, they could be 1/2 as strong on Nightmare too.
 - for consistency, I usually give AI sides a very very small general recruit list (e.g. just Spearman), and then allow for a few additional units with {LIMIT_CONTEMPORANEOUS_RECRUITS} (e.g. 0-2 Bowmen, 0-2 Cavalrymen)
 	- this is also a good way to let the AI recruit a couple higher-level units (e.g. Javelineer, Pikeman) without making the entire side easy to farm for XP
-- when creating AI guards, please use MAIs instead of status=guardian. For example, `{ZONE_GUARDIAN 14 14 x,y,radius=11,12,2}`. This also lets you sync up multiple guards so they fight together instead of being lured out 1-by-1.
+- when creating AI guards, I suggest using MAIs instead of status=guardian. For example, `{ZONE_GUARDIAN 14 14 x,y,radius=11,12,2}`. This also lets you sync up multiple guards so they fight together instead of being lured out 1-by-1.
 	- some campaigns use loyal icons for guards, some campaigns don't. For consistentcy, let's not use loyal icons for guards in HttT
 
 //--------------------
@@ -190,7 +189,7 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 - it's Harper
 - should we give her personality some kind of gimmick to help her stand out?  My memory on Liberty may no longer be accurate - I haven't played it since before the gender change
 
-----Allaril:
+----Ulfdain:
 - high XP ulfserker. Loyal and healthy.
 - speaks in a... interesting manner. Takes offense easily.
 - ran away from Knalga when he was a child. Now the Dwarven Doors have fallen, Knalga is under siege, and he has no idea what happened to his family.
@@ -219,7 +218,7 @@ Example:
 {FIND_COMPANION_AND_SAY
     PRIORITY=Moremirmu
     MESSAGE_MOREMIRMU=_"Dark magic, Konrad! But the Lords of Light have shown me the way to victory — with the blessing of this holy water, we shall douse the graves and break the curse!"
-    MESSAGE_ALLARIL=  _"What sort o’ greasy tallow-keech magic be this? Ah’ know jus’ the ticket — we’ll drown the graves in holy water; that’ll keep the rottin’ buggers down!"
+    MESSAGE_ULFDAIN=  _"What sort o’ greasy tallow-keech magic be this? Ah’ know jus’ the ticket — we’ll drown the graves in holy water; that’ll keep the rottin’ buggers down!"
     MESSAGE_GENERIC=  _"That graveyard is filled with some kind of dark magic. If we want to stop more undead from rising, we'll need to douse the graves with these vials of holy water."
 }
 
@@ -313,11 +312,9 @@ S10 Elensefar (unassigned)
 - even after Elensefar, there should still be royal ships blocking travel up the river
 - this is basically 3 different scenarios, depending on what phase we're in. "X" represents the bm_turn in which Li'sar attacks
 	- if turn is less than X:
-		- 4-skull difficulty
-		- combat involves Delfador/Maddock inside and Konrad outside, with a huge human army in between. Also some orcs in the north
-	- if turn is equal to X:
 		- 5-skull difficulty
-		- similar to 3-skull, but Li'sar is also attacking from the north
+		- combat involves Delfador/Maddock inside and Konrad outside, with a huge human army in between. Also some orcs in the north
+		- at the beginning the loyalists send a messenger to the queen. Li'sar arrives some turns later
 		- if you win here, you get the Elensefar achievement
 	- if turn is greater than X:
 		- 3-skull difficulty
