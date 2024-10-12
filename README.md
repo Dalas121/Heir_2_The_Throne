@@ -107,7 +107,6 @@ Li'sar
 	- Fencers get Backstab
 	- Bowmen get Marksman
 	- HI get March: "This unit ignores movement cost on most terrain."
-	- needs to be explained to the player the first time they encounter Li'sar
 
 
 //############################
@@ -261,7 +260,7 @@ Example:
 ----Western Scenarios:
 [FINISHED] S01: The Elves Besieged (Dalas)
 
-[IN PROGRESS] S02: Exodus (Dalas)
+[IN PROGRESS] S02: Flight (Dalas)
 - 1-to-2-skull difficulty. Rewards: Elvish Archer, Elvish Fighter, Elvish Scout
 - elves are fleeing from the top right while humans man the flanks. Similar to the first scenario of Dirty Blood
 	- Ethiliel/Ithelden may or may not still be alive ($ethiliel_alive/$ithelden_alive), depending on the player's performance in the intro scenario
@@ -328,32 +327,33 @@ S12 Fort Tahn (unassigned)
 - 1-to-2-skull difficulty. Rewards: Shop (sell veterans, what else?)
 - some kind of smuggling. A stealth mission, perhaps? (the player can ofc bypass this by just not playing the scenario)
 
-[FINISHED] S15: Crossroads (Dalas)
-- 3-skull difficulty. Rewards: companion Ulf, Dwarvish Digger
-
-S16: Gryphon Mountain (unassigned)
+S14: Gryphon Mountain (unassigned)
 - 1-skull difficulty. Rewards: Gryphon Rider, Dwarvish Scout
 - no rider-less gryphons please; I don't think the lore for that makes sense
 - not sure how to justify Dwarvish Scouts being here, but we'll need to somehow.
 
-S17a: Valley of Death, part 1 (unassigned)
+S15a: Valley of Death, part 1 (unassigned)
 - 2-skull difficulty. Rewards: Heavy Infantryman
 - needs to make sense even if we did part 2 first
 - we encounter some HI trying to fight through undead and get help. They say they're warrior monks, whose home is besieged by undead.
 	 - HI names (including future recruits) should all start with "Brother"
 
-S17b: Valley of Death, part 2 (unassigned)
+S15b: Valley of Death, part 2 (unassigned)
 - 3-skull difficulty. Rewards: Mage (White advancement only)
 - Konrad reaches the monastery in a dense fog. The monks (a White Mage and some normal Mages) are overjoyed. Everyone gets ready to leave.
 	- White Mage names (including future promotions) should start with "Brother"/"Sister"
 - Monks think the fog is suspicious. They cast a spell to illuminate the map, revealing the 3 liches from the original Valley of Death.
 - overworld: ensure we can leave the area after completing part 2, even if we didn't do part 1 beforehand
 
+[FINISHED] S17: Crossroads (Dalas)
+- 3-skull difficulty. Rewards: companion Ulf, Dwarvish Digger
+
 S18 Dan'tonk (unassigned)
 - 4-skull (3-skull to escape, 5-skull to conquer) difficulty. Rewards: Spearman, Bowman, Fencer
 - similar to "The Human Army" from SotBE
 - there's a stockpile of spears, bows, and swords in the city. To get the respective recruits, you need to send multiple units to grab equipment, and then escape with it all.
 - if you're really an overachiever (or more likely, cheating), you can beat this scenario and rush straight to Asheviere without Li'sar/Sceptre/etc.
+	- allow Li'sar to die here, as it's much much much simpler than trying to do things otherwise
 	- this is obviously non-canon, and we should include a message about that. We should also warn that this branch isn't well-tested, and plot elements may not make sense.
 
 S20 The Ford of Abez (unassigned)

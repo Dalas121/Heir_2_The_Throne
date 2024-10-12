@@ -72,6 +72,8 @@ ethiliel
 halberdier
 	from ChaosRider (War of the Gods) (GPL v2.0 or later)
 
+isolde
+	from Mechanical (Asheviere's Dogs) with modifications by Dalas (GPL v2.0 or later)
 
 
 
