@@ -89,7 +89,7 @@ function display_scenario_preview(cfg)
 	-- REWARD: GOLD
 	-------------------------
 	local gold = cfg.gold
-	if (gold==0) then gold="<span color='#ad6a61'>NO</span>" end
+	if (gold==0) then gold="<span color='#ad6a61'>NONE</span>" end
 	if (gold==1) then gold="<span color='#a9a150'>LOW</span>" end
 	if (gold==2) then gold="<span color='#6ca364'>HIGH</span>" end
 	
@@ -132,8 +132,8 @@ function display_scenario_preview(cfg)
 					T.row{ T.column{
 						horizontal_alignment="left",
 						T.grid{ T.row{
-							T.column{ T.label{  use_markup=true,  label=_"Initial Gold: ",  }},
-							T.column{ T.label{  use_markup=true,  	label=initial_gold,  }},
+							T.column{ T.label{  use_markup=true,  label=_"Starting Gold: ",  }},
+							T.column{ T.label{  use_markup=true,  label=initial_gold,  }},
 						}}
 					}},
 					T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}}, 

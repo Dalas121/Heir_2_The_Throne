@@ -305,25 +305,22 @@ S08b: Isle of the Damned, part 2 (unassigned)
 	- possibly motivated by Asheviere. Looking for a weapon, powerful magic, etc to use against her
 - need an older portrait
 
-S10 Elensefar (unassigned)
-- 3-skull difficulty. Rewards: Thieves, Shop (sell veterans, invest (spend now/bonus next scenario), smuggle to Wesmere, smuggle to Valley of Death, smuggle to Dwarven Doors)
-	- disable smuggling if Li'sar's currently at the sceptre, as it's possible for Konrad to be trapped if he hasn't completed the right scenarios
+S10 Elensefar - before Li'sar conquers it (unassigned)
+- 5-skill difficulty, high carryover. Rewards: Swordsman, Pikeman, Thief, smuggle to Wesmere, smuggle to Valley of Death, smuggle to Dwarven Doors
+	- combat involves Delfador/Maddock inside and Konrad outside, with a huge human army in between. Also some orcs in the north
+	- at the beginning the loyalists send a messenger to the queen. Li'sar arrives some turns later
+	- if you win here, you get the Elensefar achievement
+S11 Elensefar - after Li'sar conquers it (unassigned)
+- 3-skill difficulty, low carryover. Rewards: Thief, smuggle to Wesmere, smuggle to Valley of Death, smuggle to Dwarven Doors
+	- the original HttT Elensefar scenario
+	- Maddock has fled on ship. Most of Asheviere's army is pursuing him. This is an opportunity to retake the city, at least temporarily!
+- disable smuggling if Li'sar's currently at the sceptre, as it's possible for Konrad to be trapped if he hasn't completed the right scenarios
 - even after Elensefar, there should still be royal ships blocking travel up the river
-- this is basically 3 different scenarios, depending on what phase we're in. "X" represents the bm_turn in which Li'sar attacks
-	- if turn is less than X:
-		- 5-skull difficulty
-		- combat involves Delfador/Maddock inside and Konrad outside, with a huge human army in between. Also some orcs in the north
-		- at the beginning the loyalists send a messenger to the queen. Li'sar arrives some turns later
-		- if you win here, you get the Elensefar achievement
-	- if turn is greater than X:
-		- 3-skull difficulty
-		- Maddock has fled on ship. Most of Asheviere's army is pursuing him. This is an opportunity to retake the city, at least temporarily!
-		- Orcs still in the north, or on your flank, or something.
 
 //--------------------
 // PHASE 1 (CENTRAL WESNOTH)
 //--------------------
-S12 Fort Tahn (unassigned)
+S13 Fort Tahn (unassigned)
 - 1-to-2-skull difficulty. Rewards: Shop (sell veterans, what else?)
 - some kind of smuggling. A stealth mission, perhaps? (the player can ofc bypass this by just not playing the scenario)
 
@@ -346,15 +343,20 @@ S15b: Valley of Death, part 2 (unassigned)
 - overworld: ensure we can leave the area after completing part 2, even if we didn't do part 1 beforehand
 
 [FINISHED] S17: Crossroads (Dalas)
-- 3-skull difficulty. Rewards: companion Ulf, Dwarvish Digger
+- 3-skull difficulty. Rewards: companion Ulf, Dwarvish Miner
 
 S18 Dan'tonk (unassigned)
 - 4-skull (3-skull to escape, 5-skull to conquer) difficulty. Rewards: Spearman, Bowman, Fencer
 - similar to "The Human Army" from SotBE
 - there's a stockpile of spears, bows, and swords in the city. To get the respective recruits, you need to send multiple units to grab equipment, and then escape with it all.
+	- perhaps these are caravans, and we need to capture them and move them to an "escape point"?
+	- and the scenario ends when Konrad reaches the escape point?
+	- no turn limit! i.e. no early finish bonus
 - if you're really an overachiever (or more likely, cheating), you can beat this scenario and rush straight to Asheviere without Li'sar/Sceptre/etc.
 	- allow Li'sar to die here, as it's much much much simpler than trying to do things otherwise
 	- this is obviously non-canon, and we should include a message about that. We should also warn that this branch isn't well-tested, and plot elements may not make sense.
+- use $bm_lisar_at_dantonk
+- set $bm_dantonk_result
 
 S20 The Ford of Abez (unassigned)
 - 2-skull difficulty. Rewards: none
@@ -438,6 +440,11 @@ S30 The Sceptre of Fire (Dalas)
 //--------------------
 characters we meet should make a big deal out of the sceptre
 	to justify everyone taking time off of a civil war to go find it
+fighting whitefangs
+	make it clear that this isn't the end of the Whitefangs, just a change of power
+	Bazur should be the high chief? Maybe we're trying to help a rival ovethrow him?
+	once you help the new chief take over, Konrad asks if now they'll help fight Asheviere
+		the new chief laughs and threatens him instead
 
 
 //############################
