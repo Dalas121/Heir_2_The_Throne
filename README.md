@@ -128,9 +128,9 @@ Easy should be nigh-unloseable. Nightmare should be seriously difficult even for
 - assume the player is coming into the scenario with suitable units; i.e. don't balance Gryphon Mountain around massed Merfolk
 
 Recommended difficulty modifiers:
-- Easy:      1x enemy strength,  70% xp to level, 12 scenarios
-- Normal:    2x enemy strength, 100% xp to level, 12 scenarios
-- Hard:      4x enemy strength, 100% xp to level, 11 scenarios
+- Easy:      1x enemy strength,  70% xp to level, 13 scenarios
+- Normal:    2x enemy strength, 100% xp to level, 13 scenarios
+- Hard:      4x enemy strength, 100% xp to level, 12 scenarios
 - Nightmare: 4x enemy strength, 100% xp to level, 9 scenarios
 
 //--------------------

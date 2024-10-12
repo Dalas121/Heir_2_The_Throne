@@ -61,6 +61,7 @@ function display_scenario_preview(cfg)
 	local title = cfg.title
 	local scenario = cfg.scenario -- e.g. "s01"
 	local difficulty = "bigmap/difficulty"..cfg.difficulty..".png" -- e.g. "difficulty1.png"
+	local initial_gold = cfg.initial_gold or "???";
 	
 	-------------------------
 	-- REWARD: RECRUITS
@@ -95,87 +96,100 @@ function display_scenario_preview(cfg)
 	--###############################
 	-- DEFINE GRID
 	--###############################
-	local grid = T.grid{
-		T.row{ T.column{ T.grid{ T.row{
-			T.column{ T.image{
-				-------------------------
-				-- PREVIEW IMAGE
-				-------------------------
-				horizontal_alignment="left",
-				label="bigmap/preview-"..scenario..".png",
-			}},
-			T.column{ T.label{ label="   " }}, 
-			T.column{ T.grid{
-				-------------------------
-				-- TITLE AND DIFFICULTY
-				-------------------------
-				T.row{ T.column{ T.label{  use_markup=true,  label="<span size='5000'> </span>"  }}}, 
-				T.row{ T.column{ 
+	local grid = T.grid{ T.row{
+		T.column{ T.label{  use_markup=true,  label="<span size='40000'> </span>"  }}, 
+		T.column{ border="right,left,bottom", border_size=18, T.grid{ 
+			-------------------------
+			-- TITLE
+			-------------------------
+			T.row{ T.column{ T.image{  label="icons/banner3.png"  }}},
+			T.row{ T.column{ T.grid{ T.row{
+				T.column{ T.image{
+					-------------------------
+					-- PREVIEW IMAGE
+					-------------------------
 					horizontal_alignment="left",
-					T.label{  definition="title",label=title,  }
-				}}, 
-				T.row{ T.column{ T.label{  use_markup=true,  label="<span size='5000'> </span>"  }}}, 
-				T.row{ T.column{
-					horizontal_alignment="left",
-					T.grid{ T.row{
-						T.column{ T.label{  use_markup=true,  label=_"Difficulty: ",  }},
-						T.column{ T.image{  label=difficulty,  }},
-					}}
+					label="bigmap/preview-"..scenario..".png",
 				}},
-				T.row{ T.column{ T.label{  use_markup=true,  label="<span size='25000'> </span>"  }}}, 
-				
-				-------------------------
-				-- REWARDS
-				-------------------------
-				T.row{ T.column{ 
-					horizontal_alignment="left",
-					T.label{  definition="title",  label="Possible Rewards:",  },
-				}},
-				-- New Recruits
-				T.row{ T.column{ 
-					horizontal_alignment="left",
-					T.grid{ T.row{ 
-						T.column{ T.label{  id="recruit0",  use_markup=true,  label="New Recruits:",  }},
-						T.column{ T.image{  id="recruit1",  label=recruit1  }},
-						T.column{ T.image{  id="recruit2",  label=recruit2  }},
-						T.column{ T.image{  id="recruit3",  label=recruit3  }},
-						T.column{ T.image{  id="recruit4",  label=recruit4  }},
+				T.column{ T.label{ label="   " }}, 
+				T.column{ T.grid{
+					-------------------------
+					-- TITLE AND DIFFICULTY
+					-------------------------
+					T.row{ T.column{ T.label{  use_markup=true,  label="<span size='5000'> </span>"  }}}, 
+					T.row{ T.column{ 
+						horizontal_alignment="left",
+						T.label{  definition="title",label=title,  }
+					}}, 
+					T.row{ T.column{ T.label{  use_markup=true,  label="<span size='5000'> </span>"  }}}, 
+					T.row{ T.column{
+						horizontal_alignment="left",
+						T.grid{ T.row{
+							T.column{ T.label{  use_markup=true,  label=_"Difficulty: ",  }},
+							T.column{ T.image{  label=difficulty,  }},
+						}}
+					}},
+					T.row{ T.column{
+						horizontal_alignment="left",
+						T.grid{ T.row{
+							T.column{ T.label{  use_markup=true,  label=_"Initial Gold: ",  }},
+							T.column{ T.label{  use_markup=true,  	label=initial_gold,  }},
+						}}
+					}},
+					T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}}, 
+					T.row{ T.column{ horizontal_alignment="left", T.image{  label="icons/banner2-half.png"  }}},
+					T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}}, 
+					
+					-------------------------
+					-- REWARDS
+					-------------------------
+					T.row{ T.column{ 
+						horizontal_alignment="left", -- hopefully "reward" makes it clear that this is what you're expected to have after the scenario, not before
+						T.label{  use_markup=true,  label="Gold Carryover Reward: <b>"..gold.."</b>",  },
+					}},
+					T.row{ T.column{ 
+						vertical_alignment="top",
+						horizontal_alignment="left",
+						T.grid{ T.row{ 
+							T.column{ T.label{  id="recruit0",  use_markup=true,  label="New Recruits:",  }},
+							T.column{ T.image{  id="recruit1",  label=recruit1  }},
+							T.column{ T.image{  id="recruit2",  label=recruit2  }},
+							T.column{ T.image{  id="recruit3",  label=recruit3  }},
+							T.column{ T.image{  id="recruit4",  label=recruit4  }},
+						}},
+					}},
+					-- New Companion
+					T.row{ T.column{ 
+						vertical_alignment="top",
+						horizontal_alignment="left", 
+						T.grid{ T.row{ 
+							T.column{ T.label{  id="companion0",  use_markup=true,  label="New Companion:",  }},
+							T.column{ T.image{  id="companion1",  label=companion1  }},
+							T.column{ T.image{  id="companion2",  label=companion2  }},
+						}},
 					}},
 				}},
-				-- New Companion
-				T.row{ T.column{ 
-					horizontal_alignment="left", 
-					T.grid{ T.row{ 
-						T.column{ T.label{  id="companion0",  use_markup=true,  label="New Companion:",  }},
-						T.column{ T.image{  id="companion1",  label=companion1  }},
-						T.column{ T.image{  id="companion2",  label=companion2  }},
+			}}}},
+			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='5000'> </span>"  }}}, 
+			-------------------------
+			-- BUTTONS
+			-------------------------
+			T.row{ T.column{ T.grid{ T.row{
+				T.column{ T.grid{ T.row{
+					T.column{ T.button{
+						return_value=1, use_markup=true,
+						label=_"Play",
 					}},
-				}},
-				-- Gold Carryover
-				T.row{ T.column{ 
-					horizontal_alignment="left",
-					T.label{  use_markup=true,  label="<span color='#aaaaaa' size='small'>You will probably finish this scenario with...</span>\n<b>"..gold.."</b> gold carryover",  },
-				}},
-			}},
-		}}}},
-		T.row{ T.column{ T.label{  use_markup=true,  label="<span size='5000'> </span>"  }}}, 
-		-------------------------
-		-- BUTTONS
-		-------------------------
-		T.row{ T.column{ T.grid{ T.row{
-			T.column{ T.grid{ T.row{
-				T.column{ T.button{
-					return_value=1, use_markup=true,
-					label=_"Play",
-				}},
-				T.column{ T.label{ label="    " }},
-				T.column{ T.button{
-					return_value=2, use_markup=true,
-					label=_"Cancel",
-				}},
-			}}},
-		}}}},
-	}
+					T.column{ T.label{ label="    " }},
+					T.column{ T.button{
+						return_value=2, use_markup=true,
+						label=_"Cancel",
+					}},
+				}}},
+			}}}},
+		}},
+		T.column{ T.label{  use_markup=true,  label="<span size='40000'> </span>"  }},
+	}}
 	
 	
 	--###############################
@@ -184,6 +198,7 @@ function display_scenario_preview(cfg)
 	local result = wesnoth.sync.evaluate_single(function()
 		local button = gui.show_dialog(
 			{-- dialog definition
+				definition="menu",
 				T.helptip{ id="tooltip_large" }, -- mandatory field
 				T.tooltip{ id="tooltip_large" }, -- mandatory field
 				grid, 
@@ -236,18 +251,20 @@ function display_overworld_tutorial()
 	-- DEFINE GRID
 	--###############################
 	local grid = T.grid{ T.row{ 
-		T.column{ T.label{  use_markup=true,  label="<span size='40000'> </span>"  }}, 
-		T.column{ T.grid{ 
+		T.column{ border="right,left,bottom", border_size=18, T.grid{ 
 			-------------------------
 			-- INTRO
 			-------------------------
+			T.row{ T.column{ T.image{  label="icons/banner3-narrow.png"  }}},
+			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='5000'> </span>"  }}}, 
 			T.row{ T.column{ 
 				horizontal_alignment="center",
 				T.label{  definition="title",  label=_"Welcome to the Great Continent",  }
 			}},
 			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}}, 
-			T.row{ T.column{ 
+			T.row{ T.column{
 				horizontal_alignment="left",
+				border="right,left", border_size=18,
 				T.label{
 					use_markup=true,
 					label=_"The wide world of Wesnoth is full of all kinds of\ninteresting people! Unfortunately for Konrad, \nmost of them want to kill him.",
@@ -270,7 +287,9 @@ function display_overworld_tutorial()
 					}
 				}
 			}}}},
-			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}}, 
+			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='9000'> </span>"  }}}, 
+			T.row{ T.column {T.image{  label="icons/banner2-narrow.png"  }}},
+			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='9000'> </span>"  }}}, 
 			-------------------------
 			-- BUTTONS
 			-------------------------
@@ -279,7 +298,6 @@ function display_overworld_tutorial()
 				label=_"Understood",
 			}}},
 		}},
-		T.column{ T.label{  use_markup=true,  label="<span size='40000'> </span>"  }}, 
 	}}
 	
 	--###############################
@@ -287,6 +305,7 @@ function display_overworld_tutorial()
 	--###############################
 	local result = wesnoth.sync.evaluate_single(function()
 		local button = gui.show_dialog({
+			definition="menu",
 			T.helptip{ id="tooltip_large" }, -- mandatory field
 			T.tooltip{ id="tooltip_large" }, -- mandatory field
 			grid
