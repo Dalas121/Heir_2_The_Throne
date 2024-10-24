@@ -207,6 +207,8 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 
 ----Other companion ideas:
 - somebody who can use this portrait, with or without ears? https://forums.wesnoth.org/viewtopic.php?t=49283&start=15
+	elf raised among humans, not a half-elf
+	and specify that elves+humans don't produce offspring
 
 //--------------------
 // "ADVISOR" DIALOGUE
@@ -294,13 +296,13 @@ Example:
 - 1-skull difficulty. Rewards: companion Moremirmu
 
 S08a: Isle of the Damned, part 1 (unassigned)
-- 2-skull difficulty. Rewards: Thug, Footpad, Poacher
+- 2-skull difficulty. Rewards: Thug, Poacher, access to northlands (via Elensefar Reef)
 - we learn that Harper is trapped inside those catacombs where Moremirmu used to be, setting up S08b (if the player chooses to go there)
 - need a good lore reason for the undead. Presumably the bandits have been living there peacefully since liberty, so the undead must be new
 	- maybe Harper awakened them from down in the catacombs, or maybe something else
 
 S08b: Isle of the Damned, part 2 (unassigned)
-- 2-skull difficulty. Rewards: companion Harper
+- 2-skull difficulty. Rewards: Footpad, companion Harper
 - reference TRoW's vampire lady. Harper heard legends/rumors of someone like that, and came to see, inadvertantly awakening undead from the catacombs
 	- possibly motivated by Asheviere. Looking for a weapon, powerful magic, etc to use against her
 - need an older portrait
@@ -368,10 +370,8 @@ S20 The Ford of Abez (unassigned)
 	Clan Blackcrest is an ally of the crown. Let me by or face the consequences.
 	Tha's right, miss princess. And bein' our allies, I'm sure you wouldn't mind donatin' them 100 gold pieces, har har har.
 	I don't think so. Infantry, form up! Prepare for battle!
-- this scenario needs 3 versions:
-	- by default, Konrad fights the orcs
-	- if Li'sar's there too, she fights against both sides
-	- if the orcs were defeated beforehand, it's just Li'sar vs Konrad
+- map needs to work properly even if Konrad comes from the north!
+- need to handle when konrad's just finished this scenario and li'sar tries to pass through
 
 
 //--------------------
