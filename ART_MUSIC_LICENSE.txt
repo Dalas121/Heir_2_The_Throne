@@ -30,6 +30,9 @@ fire-aura-small
 shield
 	pre-existing wesnoth image from the "The Deceiver's Gambit" campaign (GPL v2.0 or later)
 
+moremirmu
+	made by Dalas by modifying pre-existing wesnoth images (GPL v2.0 or later)
+
 
 ICONS
 ---------------
@@ -88,6 +91,9 @@ water
 skill-polymorph
 	pre-existing wesnoth image from the "The Deceiver's Gambit" campaign (GPL v2.0 or later)
 
+golem-crush
+	by Artninja with modifications by Dalas (CC BY 4.0)
+	https://freesound.org/people/Artninja/sounds/750822/
 
 
 STORY
@@ -125,4 +131,8 @@ li'sar
 asheviere
 gryphon-sleeping
 	pre-existing wesnoth images from the "Heir to the Throne" campaign (GPL v2.0 or later)
+
+granite golem
+	base image by Eagle_11, from the Uber_Default era (GPL v2.0 or later)
+
 
