@@ -115,8 +115,10 @@ Li'sar
 //--------------------
 // GLOBAL INCLUDES
 //--------------------
-- to make it easy to tweak Konrad, please define side 1 with `{KONRAD_SIDE {ON_DIFFICULTY4 100 80 65 50}`. `FOG=yes` and `SHROUD=yes` optional
-- to ensure your scenario's ToD reflects the overworld, use `{SCHEDULE_DYNAMIC $current_time}`
+- to make it easy to tweak Konrad, please define side 1 with `{KONRAD_SIDE 75}`. `FOG=yes` and `SHROUD=yes` optional
+- to ensure your scenario's ToD reflects the overworld, use `{SCHEDULE_DYNAMIC_DAY}`, or `{SCHEDULE_DYNAMIC_NIGHT}`
+	- the first turn of each macro will always be respectively morning/midday or firstwatch/midnight (depending on the season)
+	- both macros take an optional `OFFSET` argument, to delay morning/midday or firstwatch/midnight
 - to ensure all companions get recalled properly, please use `{RECALL_KONRAD_AND_COMPANIONS $x $y}`
 	- companions need custom dialogue in many scenarios, to help them feel alive!
 - for recurring characters, use/add a `SINGLEUNITWML_` macro to unified_characters.cfg, so we stay consistent
@@ -184,10 +186,6 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 "But until then, ’tis up to I to do the smiting! [attacks some undead]"
 - quest: bring him to Valley of Death and do something with him there.
 
-----Harper
-- it's Harper
-- should we give her personality some kind of gimmick to help her stand out?  My memory on Liberty may no longer be accurate - I haven't played it since before the gender change
-
 ----Ulfdain:
 - high XP ulfserker. Loyal and healthy.
 - speaks in a... interesting manner. Takes offense easily.
@@ -196,19 +194,32 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 "Come an’ git some, ye nigmenog bolting-hutch of beastliness! Ah dare ye to square up an’ fight me, dwarf-to-dwarf!"
 - quest: bring him back to Knalga, and find his father's graves there. Breaks down in tears, and gains a significant buff (drains on melee, perhaps?)
 
-----Kalenz
-- it's Kalenz
+----Harper:
+- it's Harper
+- should we give her personality some kind of gimmick to help her stand out?  My memory on Liberty may no longer be accurate - I haven't played it since before the gender change
+- quest: Dwarven Doors. Harper gets Uncle Somf and Delurin as non-companion loyals
 
-----emo Chantal (at Yumi's suggestion)
-- she's determined to bring Deoran back from the dead
-	- not necromancy; no elf would ever practice necromancy. It's... aggressive healing. Aggressive after-death healing.
-- quest: she learns to accept his death and moves on
-	- maybe 2 versions of this? If you have Kalenz he helps her move on, if you don't things end badly
+----Chantal:
+//- she's determined to bring Deoran back from the dead
+//	- not necromancy; no elf would ever practice necromancy. It's... aggressive healing. Aggressive after-death healing.
+//- quest: she learns to accept his death and moves on
+//	- maybe 2 versions of this? If you have Kalenz he helps her move on, if you don't things end badly
 
-----Other companion ideas:
-- somebody who can use this portrait, with or without ears? https://forums.wesnoth.org/viewtopic.php?t=49283&start=15
-	elf raised among humans, not a half-elf
-	and specify that elves+humans don't produce offspring
+----Admiral Ghupu’e:
+- Orcish Warrior (maybe with a captain's hat), loyal and resilient. Pirate, but has nothing to do with water (and doesn't see why that's relevant)
+- big, boasting, generous personality. Similar personality as that one guy from DitS
+- refers to himself in the third person ("the wonderful Ghupu’e", "the indefatigable Ghupu’e", etc)
+- when he first steps in water, Konrad comments that he should really have better swimming abilities.
+- quest: get his hat back. One of the orcs sieging Elensefar has his hat, and he wants it back
+- quest: meet Bugg the sea orc. Ghupu’e will then recruit Bugg as a non-companion loyal
+- quest: fight Bazur at the Whitefang keep. Maybe Ghupu’e finally steals/gets a ship?
+
+----Elrian:
+- Custom unit, loyal and intelligent.
+- alchemist and researcher. Clinical and inquisitive personality, with occasional hints of "mad scientist".
+- starts L3 so I only need to make one sprite. +4 heals (no regen). Throws firebombs (high damage) and toxic sachels (poison), with a weak melee.
+- portrait: https://github.com/wtactics/art/blob/master/WT/Potion%20Making/Potion%20Making.png
+- quest: bring her to the woses at the underground channels/grey grove. She's fascinated by them and asks you to let her stay behind.
 
 //--------------------
 // "ADVISOR" DIALOGUE
@@ -257,42 +268,42 @@ Example:
 (Occasional gaps in scenario numbers are deliberate. That way if we need to add a new scenario sometime we don't have to renumber everything.)
 
 //--------------------
-// PHASE 1 (WESTERN WESNOTH)
+// AREA 1 (WESTERN WESNOTH)
 //--------------------
 ----Western Scenarios:
 [FINISHED] S01: The Elves Besieged (Dalas)
 
-[IN PROGRESS] S02: Flight (Dalas)
-- 1-to-2-skull difficulty. Rewards: Elvish Archer, Elvish Fighter, Elvish Scout
+[IN PROGRESS] S02: Flight of the Elves (Dalas)
+- 2-to-3-skull difficulty. Rewards: Elvish Archer, Elvish Fighter, Elvish Scout, No carryover.
 - elves are fleeing from the top right while humans man the flanks. Similar to the first scenario of Dirty Blood
 	- Ethiliel/Ithelden may or may not still be alive ($ethiliel_alive/$ithelden_alive), depending on the player's performance in the intro scenario
 - the more elves who die, the fewer recruits you get (e.g. if 10 elves die you only get archers)
-- the player might have Delfador in this scenario. Balance accordingly
+- expect the player to have Delfador in this scenario. Balance accordingly.
 	- if $bm_turns==1, foreshadow Delfador's impending departure
 
 [FINISHED] S03: Blackwater Port (ForestDragon)
-- 1-to-2-skull difficulty. Rewards: Cavalryman, Horseman, Peasant, Woodsman
+- 2-to-3-skull difficulty. Rewards: Cavalryman, Horseman, (TO CHANGE: Low carryover) (TO CHANGE: Peasant, Woodsman moved to Dwarven Doors)
 - Asheviere's humans start in control of the port, but not the town. You need to defeat them to gain access to the port
 	- if Kaylan dies, you can still win, but you won't get to recruit Horsemen/Cavalrymen
 	- if Kaylan dies, set bm_kaylan_dead=yes, so I can modify the bigmap to reflect that
 - lore: Sir Kaylan wanted Delfador to raise Konrad at the port among his own kind, but Delfador thought the Aethenwood was better: both more powerful and safer.
 	- And on top of that, the port was too heavily militarized - no place to raise a child.
-- the player might have Delfador in this scenario. Balance accordingly.
+- expect the player to have Delfador in this scenario. Balance accordingly.
 	- if $bm_turns==1, foreshadow Delfador's impending departure
 
 [IN PROGRESS] S05: Bay of Pearls (Anekron)
-- 1-to-2-skull difficulty. Rewards: Merfolk Brawler, Merfolk Fighter, Merfolk Hunter, Merfolk Initiate
+- 2-to-3-skull difficulty. Rewards: Merfolk Brawler, Merfolk Fighter, Merfolk Hunter, Merfolk Initiate, (TO CHANGE: No carryover)
 - fight orcs and free merfolk.
 - remember to include the sea orc event, and use the new image/portrait once that PR finishes
 - no storm trident please. It's a really cool item, but this campaign is already complicated enough.
-- the player might have Delfador in this scenario. Balance accordingly.
+- expect the player to have Delfador in this scenario. Balance accordingly.
 	- if $bm_turns==1, foreshadow Delfador's impending departure
 
 [IN PROGRESS] S06: Isle of Alduin (ForestDragon)
 - 1-skull difficulty. Rewards: Rogue Mage, Mage (Red advancement only)
 - the original gives you a loyal mage called Elrian. We don't want a loyal mage reward, but we should still have "Elrian" appear somewhere in some context
 
-[FINISHED] S07: Muff Malal's Peninsula (Dalas)
+[NEED IMPROVEMENT] S07: Muff Malal's Peninsula (Dalas)
 - 1-skull difficulty. Rewards: companion Moremirmu
 
 S08a: Isle of the Damned, part 1 (unassigned)
@@ -307,24 +318,26 @@ S08b: Isle of the Damned, part 2 (unassigned)
 	- possibly motivated by Asheviere. Looking for a weapon, powerful magic, etc to use against her
 - need an older portrait
 
-S10 Elensefar - before Li'sar conquers it (unassigned)
-- 5-skill difficulty, high carryover. Rewards: Swordsman, Pikeman, Thief, smuggle to Wesmere, smuggle to Valley of Death, smuggle to Dwarven Doors
+[IN PROGRESS] S10 Elensefar - before Li'sar conquers it (Dalas)
+- 5-skill difficulty, high carryover. Rewards: Swordsman, Pikeman, Thief, smuggle to Valley of Death, smuggle to Dwarven Doors
 	- combat involves Delfador/Maddock inside and Konrad outside, with a huge human army in between. Also some orcs in the north
 	- at the beginning the loyalists send a messenger to the queen. Li'sar arrives some turns later
 	- if you win here, you get the Elensefar achievement
 S11 Elensefar - after Li'sar conquers it (unassigned)
-- 3-skill difficulty, low carryover. Rewards: Thief, smuggle to Wesmere, smuggle to Valley of Death, smuggle to Dwarven Doors
+- 3-skill difficulty, low carryover. Rewards: Thief, smuggle to Valley of Death, smuggle to Dwarven Doors
 	- the original HttT Elensefar scenario
 	- Maddock has fled on ship. Most of Asheviere's army is pursuing him. This is an opportunity to retake the city, at least temporarily!
-- disable smuggling if Li'sar's currently at the sceptre, as it's possible for Konrad to be trapped if he hasn't completed the right scenarios
+- disable smuggling if Li'sar's currently at the sceptre, as it's possible for Konrad to be trapped if he hasn't completed the right scenarios?
 - even after Elensefar, there should still be royal ships blocking travel up the river
 
 //--------------------
-// PHASE 1 (CENTRAL WESNOTH)
+// AREA 2 (CENTRAL WESNOTH)
 //--------------------
 S13 Fort Tahn (unassigned)
-- 1-to-2-skull difficulty. Rewards: Shop (sell veterans, what else?)
+- 1-to-2-skull difficulty. Rewards: High gold carryover
 - some kind of smuggling. A stealth mission, perhaps? (the player can ofc bypass this by just not playing the scenario)
+- we meet the elven pike lady, but she doesn't follow us. https://forums.wesnoth.org/viewtopic.php?t=49283&start=15
+	- maybe she makes a cameo later, as a medium-rank enemy leader somewhere?
 
 S14: Gryphon Mountain (unassigned)
 - 1-skull difficulty. Rewards: Gryphon Rider, Dwarvish Scout
@@ -344,8 +357,8 @@ S15b: Valley of Death, part 2 (unassigned)
 - Monks think the fog is suspicious. They cast a spell to illuminate the map, revealing the 3 liches from the original Valley of Death.
 - overworld: ensure we can leave the area after completing part 2, even if we didn't do part 1 beforehand
 
-[FINISHED] S17: Crossroads (Dalas)
-- 3-skull difficulty. Rewards: companion Ulf, Dwarvish Miner
+[NEED IMPROVEMENT] S17: Crossroads (Dalas)
+- 3-skull difficulty. Rewards: companion Ulfdain, Dwarvish Miner
 
 S18 Dan'tonk (unassigned)
 - 4-skull (3-skull to escape, 5-skull to conquer) difficulty. Rewards: Spearman, Bowman, Fencer
@@ -373,36 +386,26 @@ S20 The Ford of Abez (unassigned)
 - map needs to work properly even if Konrad comes from the north!
 - need to handle when konrad's just finished this scenario and li'sar tries to pass through
 
-
 //--------------------
-// PHASE 2 (SEEKING THE SCEPTRE)
+// AREA 3 (NORTHLANDS)
 //--------------------
 S22 Outskirts of Glamdrol (unassigned)
-- TBD difficulty, Rewards: varies
-	- if you side with dwarves: Dwarvish Ulfserker, Dwarvish Thunderer
-	- if you side with orcs:    Shop (sell veterans, hire single-scenario orcish mercenaries, purchase orcish catapults) (ensure you can't sell catapults)
-- battle involves fighting against orcish catapults (units with a true ranged attack)
-- orcs vs dwarves. You choose which side to ally with. Include some ambiguity; Dwarves shouldn't be the obviously "correct" side.
-	- perhaps orcs paid dwarves to build catapults. Dwarves claim they didn't get paid; orcs claim they did
-	- if the player recruits/recalls dwarves but fights against dwarves, we need some special voicelines related to this. Maybe "Surghan mercenaries", calling back to Sceptre of Fire
+- TBD difficulty, Rewards: companion Ghupu’e, Low carryover
+- possibly, battle involves fighting against orcish catapults (units with a true ranged attack)
+- Maybe multiple orcish clans are fighting for control of Glamdrol?
+- Ghupu’e is prisoner, and you need to free him?
 
 S23 Northern Winter (unassigned)
-- TBD difficulty, Rewards: companion Chantal
-- perhaps she's frozen in ice? And this yields some insight into her personality changes since Deoran's death? (really she didn't have much of a personality at all before)
-- need to rename this, since it may not actually be winter. But keep the "terrain turns to snow" mechanic, and add to it
-- fight against wild animals who've been driven to starvation/madness from the cold
-	- while also dealing with harmful environmental effects
+- TBD difficulty, Rewards: companion Elrian, No carryover
+- keep the name, but include an explanation if it's not actually winter. And keep the "terrain turns to snow" mechanic, and add to it
+- fight against wild animals; Elrian needs various ingredients to prepare her concoctions. Each objective gives Elrian a new ability/attack (until she has all of her normal stuff)
+- harmful environmental effects that need to be dealt with. Probably either global or something like "get slowed if you stand on a snow hex"
 
-S24a something wesmere, part 1 (unassigned)
-- TBD difficulty. Rewards: companion Kalenz
-- needs to make sense even if we did part 2 first
-
-S24b something wesmere, part 2 (unassigned)
-- TBD difficulty. Rewards: Elvish Shamans
-- overworld: ensure we can leave the area after completing part 2, even if we didn't do part 1 beforehand
+S24 something wesmere (unassigned)
+- TBD difficulty. Rewards: Elvish Shamans -OR- Chantal
 
 S26 Dwarven Doors (unassigned)
-- TBD difficulty, Rewards: feel good about yourself at night
+- TBD difficulty, Rewards: Peasant, Woodsman, High carryover
 - free as many slaves as you can, and evacuate them into the underground
 	- make a point of saying that this may not be as useful militarily as other scenarios would be, but it's the morally right thing to do
 	- include some kind of bonus and/or callback to this near the end of the game. Maybe you get a "good ending", or someting like that
@@ -412,8 +415,8 @@ S26 Dwarven Doors (unassigned)
 	- if the orcs were defeated beforehand, it's just Li'sar vs Konrad
 
 S28 The Lost General (unassigned)
-- TBD difficulty, Rewards: companion Chantal. Emo and stuff
-- troll shamans create fire. Undead lionel is seeking the sceptre of fire.
+- TBD difficulty, Rewards: TBD
+- troll whelp recruit reward? Troll shamans create fire; undead lionel is seeking the sceptre of fire?
 
 S29 Knalga (unassigned)
 - TBD difficulty. Rewards: Dwarvish Fighter, Dwarvish Guardsman, Shop (sell veterans, upgrade weapons, upgrade armor) (upgrades make all your recruits/recalls better, but also more expensive)
@@ -427,16 +430,16 @@ S30 The Sceptre of Fire (Dalas)
 - Delfador should get progressively more exhausted/exasperated, leading into the joining Li'sar cutscene
 
 
-----ONCE WE FINISH PHASE 2, LET'S STOP, POLISH, AND RELEASE TO GET FEEDBACK BEFORE MOVING FURTHER ON----
+----ONCE WE FINISH THE PRE-SCEPTRE SCENAIOS, LET'S STOP, POLISH, AND RELEASE TO GET FEEDBACK BEFORE MOVING FURTHER ON----
 
 
 //--------------------
-// PHASE 2.5 (JOINING LI'SAR)
+// AREA 4 (JOINING LI'SAR)
 //--------------------
 
 
 //--------------------
-// PHASE 3 (OVERTHROWING ASHEVIERE)
+// AREA 5 (OVERTHROWING ASHEVIERE)
 //--------------------
 characters we meet should make a big deal out of the sceptre
 	to justify everyone taking time off of a civil war to go find it
