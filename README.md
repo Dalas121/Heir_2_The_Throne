@@ -338,6 +338,7 @@ S13 Fort Tahn (unassigned)
 - some kind of smuggling. A stealth mission, perhaps? (the player can ofc bypass this by just not playing the scenario)
 - we meet the elven pike lady, but she doesn't follow us. https://forums.wesnoth.org/viewtopic.php?t=49283&start=15
 	- maybe she makes a cameo later, as a medium-rank enemy leader somewhere?
+	- she's seen plenty of kings/queens come and go (long life), and thus she doesn't really care?
 
 S14: Gryphon Mountain (unassigned)
 - 1-skull difficulty. Rewards: Gryphon Rider, Dwarvish Scout
