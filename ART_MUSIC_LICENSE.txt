@@ -57,6 +57,7 @@ flower-red
 bookshelves
 mine-entrance
 dwarven-keep-tile
+fountain
 	pre-existing wesnoth image from the "The Deceiver's Gambit" campaign (GPL v2.0 or later)
 
 
@@ -123,6 +124,10 @@ konrad-fighter-unarmed
 
 konrad-captain
 	by OrcSteve (CC BY-SA 4.0)
+
+elvish-ship
+	from the Rashy era by Vyncyn (GPL v2.0 or later)
+	modifications by dalas (GPL v2.0 or later)
 
 konrad
 li'sar

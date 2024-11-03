@@ -197,6 +197,7 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 ----Harper:
 - it's Harper
 - should we give her personality some kind of gimmick to help her stand out?  My memory on Liberty may no longer be accurate - I haven't played it since before the gender change
+- quest: Dalben. Harper scrounges up a small amount of gold
 - quest: Dwarven Doors. Harper gets Uncle Somf and Delurin as non-companion loyals
 
 ----Chantal:
@@ -377,15 +378,16 @@ S18 Dan'tonk (unassigned)
 S20 The Ford of Abez (unassigned)
 - 2-skull difficulty. Rewards: none
 - on the bigmap, orcs give you an opportunity to pay and get let through without combat (and without taking any time). If you refuse, you have to fight the orcs.
+	name the units "Ford Trolls", to call back to the 
 	- they charge this fee EVERY TIME you want to cross the ford
-	Crossin' into Blackcrest land? That'll be 100 gold for passage, whelp.
+	Crossin' into Blackcrest land? That'll be 50 gold for passage, whelp.
 - if Li'sar tries to cross here:
-	Crossin' into Blackcrest land? That'll be 100 gold for passage, whelp.
+	Crossin' into Blackcrest land? That'll be 50 gold for passage, whelp.
 	Clan Blackcrest is an ally of the crown. Let me by or face the consequences.
-	Tha's right, miss princess. And bein' our allies, I'm sure you wouldn't mind donatin' them 100 gold pieces, har har har.
+	Tha's right, miss princess. And bein' our allies, I'm sure you wouldn't mind donatin' them 50 gold pieces, har har har.
 	I don't think so. Infantry, form up! Prepare for battle!
 - map needs to work properly even if Konrad comes from the north!
-- need to handle when konrad's just finished this scenario and li'sar tries to pass through
+	or maybe the trolls are fine with people entering Wesnoth, just not leaving?
 
 //--------------------
 // AREA 3 (NORTHLANDS)
