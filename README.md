@@ -292,7 +292,7 @@ Example:
 - expect the player to have Delfador in this scenario. Balance accordingly.
 	- if $bm_turns==1, foreshadow Delfador's impending departure
 
-[IN PROGRESS] S05: Bay of Pearls (Anekron)
+[IN PROGRESS] S05: Bay of Pearls (Anekron) - scenario number is used by Carcyn
 - 2-to-3-skull difficulty. Rewards: Merfolk Brawler, Merfolk Fighter, Merfolk Hunter, Merfolk Initiate, (TO CHANGE: No carryover)
 - fight orcs and free merfolk.
 - remember to include the sea orc event, and use the new image/portrait once that PR finishes
@@ -341,10 +341,9 @@ S13 Fort Tahn (unassigned)
 	- maybe she makes a cameo later, as a medium-rank enemy leader somewhere?
 	- she's seen plenty of kings/queens come and go (long life), and thus she doesn't really care?
 
-S14: Gryphon Mountain (unassigned)
-- 1-skull difficulty. Rewards: Gryphon Rider, Dwarvish Scout
-- no rider-less gryphons please; I don't think the lore for that makes sense
-- not sure how to justify Dwarvish Scouts being here, but we'll need to somehow.
+S14: Gryphon Mountain (unassigned) - scenario number is used by Carcyn
+- if its possible to win without gryphon riders, make sure carcyn event still works
+- 1-skull difficulty. Rewards: Gryphon Rider (maybe dwarves too, to ride the gryphons?)
 
 S15a: Valley of Death, part 1 (unassigned)
 - 2-skull difficulty. Rewards: Heavy Infantryman
