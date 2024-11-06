@@ -206,14 +206,14 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 //- quest: she learns to accept his death and moves on
 //	- maybe 2 versions of this? If you have Kalenz he helps her move on, if you don't things end badly
 
-----Admiral Ghupu’e:
+----Admiral Azhab:
 - Orcish Warrior (maybe with a captain's hat), loyal and resilient. Pirate, but has nothing to do with water (and doesn't see why that's relevant)
 - big, boasting, generous personality. Similar personality as that one guy from DitS
-- refers to himself in the third person ("the wonderful Ghupu’e", "the indefatigable Ghupu’e", etc)
+- refers to himself in the third person ("the wonderful Azhab", "the indefatigable Azhab", etc)
 - when he first steps in water, Konrad comments that he should really have better swimming abilities.
 - quest: get his hat back. One of the orcs sieging Elensefar has his hat, and he wants it back
-- quest: meet Bugg the sea orc. Ghupu’e will then recruit Bugg as a non-companion loyal
-- quest: fight Bazur at the Whitefang keep. Maybe Ghupu’e finally steals/gets a ship?
+- quest: meet Bugg the sea orc. Azhab will then recruit Bugg as a non-companion loyal
+- quest: fight Bazur at the Whitefang keep. Maybe Azhab finally steals/gets a ship?
 
 ----Elrian:
 - Custom unit, loyal and intelligent.
@@ -221,6 +221,12 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 - starts L3 so I only need to make one sprite. +4 heals (no regen). Throws firebombs (high damage) and toxic sachels (poison), with a weak melee.
 - portrait: https://github.com/wtactics/art/blob/master/WT/Potion%20Making/Potion%20Making.png
 - quest: bring her to the woses at the underground channels/grey grove. She's fascinated by them and asks you to let her stay behind.
+
+----Dosh:
+- Troll. "Secret" companion: he normally guards the Ford of Abez and charges Konrad gold every time you want to cross
+- if you pay him enough gold, he'll give up his toll job and join you
+- Doesn't talk much; most players won't realize they can recruit him.
+- "You ok in da head, softskin? Das one-hunnerd fifty gold you done paid me. How much you really got left?"
 
 //--------------------
 // "ADVISOR" DIALOGUE
@@ -377,25 +383,20 @@ S18 Dan'tonk (unassigned)
 S20 The Ford of Abez (unassigned)
 - 2-skull difficulty. Rewards: none
 - on the bigmap, orcs give you an opportunity to pay and get let through without combat (and without taking any time). If you refuse, you have to fight the orcs.
-	name the units "Ford Trolls", to call back to the 
-	- they charge this fee EVERY TIME you want to cross the ford
-	Crossin' into Blackcrest land? That'll be 50 gold for passage, whelp.
-- if Li'sar tries to cross here:
-	Crossin' into Blackcrest land? That'll be 50 gold for passage, whelp.
-	Clan Blackcrest is an ally of the crown. Let me by or face the consequences.
-	Tha's right, miss princess. And bein' our allies, I'm sure you wouldn't mind donatin' them 50 gold pieces, har har har.
-	I don't think so. Infantry, form up! Prepare for battle!
+	- if you fight and win, you get back any gold you've previously paid: $bm_ford_amount_paid
 - map needs to work properly even if Konrad comes from the north!
 	or maybe the trolls are fine with people entering Wesnoth, just not leaving?
+- do NOT work on this scenario until TDG/AD Ford of Abez is finalized, since terrain will be dependent
 
 //--------------------
 // AREA 3 (NORTHLANDS)
 //--------------------
 S22 Outskirts of Glamdrol (unassigned)
-- TBD difficulty, Rewards: companion Ghupu’e, Low carryover
+- TBD difficulty, Rewards: companion Azhab, Low carryover
 - possibly, battle involves fighting against orcish catapults (units with a true ranged attack)
 - Maybe multiple orcish clans are fighting for control of Glamdrol?
-- Ghupu’e is prisoner, and you need to free him?
+	- if so, make sure to introduce at least 1 new clan. Not just Foxtails and Stoneskins
+- Azhab is prisoner, and you need to free him?
 
 S23 Northern Winter (unassigned)
 - TBD difficulty, Rewards: companion Elrian, No carryover
@@ -409,28 +410,26 @@ S24 something wesmere (unassigned)
 S26 Dwarven Doors (unassigned)
 - TBD difficulty, Rewards: Peasant, Woodsman, High carryover
 - free as many slaves as you can, and evacuate them into the underground
-	- make a point of saying that this may not be as useful militarily as other scenarios would be, but it's the morally right thing to do
-	- include some kind of bonus and/or callback to this near the end of the game. Maybe you get a "good ending", or someting like that
-- this scenario needs 3 versions:
-	- by default, Konrad fights the orcs
-	- if Li'sar's there too, she fights against both sides
-	- if the orcs were defeated beforehand, it's just Li'sar vs Konrad
 
 S28 The Lost General (unassigned)
 - TBD difficulty, Rewards: TBD
 - troll whelp recruit reward? Troll shamans create fire; undead lionel is seeking the sceptre of fire?
 
 S29 Knalga (unassigned)
-- TBD difficulty. Rewards: Dwarvish Fighter, Dwarvish Guardsman, Shop (sell veterans, upgrade weapons, upgrade armor) (upgrades make all your recruits/recalls better, but also more expensive)
+- TBD difficulty. Rewards: Dwarvish Fighter, Dwarvish Guardsman, Dwarvish Thunderer
 - involves using miners to mine through walls. Find a way to stop this from being a huge XP farm
 - try to keep lore consistent with NR please
 
 S30 The Sceptre of Fire (Dalas)
 - 4-skull difficulty. Rewards: the sceptre of fire
-- if player arrives early, tell them that this gives them a head start over Li'sar, but she'll still get here while we're searching for the sceptre
-	- also make it clear that you can't go back after this
-- Delfador should get progressively more exhausted/exasperated, leading into the joining Li'sar cutscene
-
+- at the beginning, Delfador gives Konrad some special chainmail he's been working on and was able to finish using the dragon-forge from SoF
+	- +1 moves, +20% to blade/pierce/impact resistances
+	- and this is our justification to switch Konrad's portrait from elven clothes to chainmail
+	Armor fit for a king, your majesty.
+- first we search for the sceptre in a RNG map, like the current one
+- once we find it, Li'sar is revealed to be chasing us from our original entrance
+- should the ending explicitly reference SoF, with lava/quakes flooding the caverns?
+	- if so, make sure SoF doesn't look stupid: why could Konrad escape but not Thursagan?
 
 ----ONCE WE FINISH THE PRE-SCEPTRE SCENAIOS, LET'S STOP, POLISH, AND RELEASE TO GET FEEDBACK BEFORE MOVING FURTHER ON----
 
