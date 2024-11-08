@@ -67,6 +67,12 @@ httt.webp
 	pre-existing wesnoth image from the "Heir to the Throne" campaign (GPL v2.0 or later)
 
 
+MUSIC
+---------------
+decoherence.ogg
+	pre-existing track from the "The Deceiver's Gambit" campaign (GPL v2.0 or later)
+
+
 PORTRAITS
 ---------------
 mostly pre-existing wesnoth images from the "Heir to the Throne" campaign (GPL v2.0 or later)
