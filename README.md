@@ -288,7 +288,7 @@ Example:
 - expect the player to have Delfador in this scenario. Balance accordingly.
 	- if $bm_turns==1, foreshadow Delfador's impending departure
 
-[FINISHED] S03: Blackwater Port (ForestDragon)
+[COMPLETE] S03: Blackwater Port (ForestDragon)
 - 2-to-3-skull difficulty. Rewards: Cavalryman, Horseman, (TO CHANGE: Low carryover) (TO CHANGE: Peasant, Woodsman moved to Dwarven Doors)
 - Asheviere's humans start in control of the port, but not the town. You need to defeat them to gain access to the port
 	- if Kaylan dies, you can still win, but you won't get to recruit Horsemen/Cavalrymen
@@ -325,12 +325,12 @@ S08b: Isle of the Damned, part 2 (unassigned)
 	- possibly motivated by Asheviere. Looking for a weapon, powerful magic, etc to use against her
 - need an older portrait
 
-[IN PROGRESS] S10 Elensefar - before Li'sar conquers it (Dalas)
-- 5-skill difficulty, high carryover. Rewards: Swordsman, Pikeman, Thief, smuggle to Valley of Death, smuggle to Dwarven Doors
+[COMPLETE] S10 Elensefar - before it's conquered (Dalas)
+- 4-skill difficulty, high carryover. Rewards: Swordsman, Pikeman, Thief, smuggle to Valley of Death, smuggle to Dwarven Doors
 	- combat involves Delfador/Maddock inside and Konrad outside, with a huge human army in between. Also some orcs in the north
 	- at the beginning the loyalists send a messenger to the queen. Li'sar arrives some turns later
 	- if you win here, you get the Elensefar achievement
-S11 Elensefar - after Li'sar conquers it (unassigned)
+S11 Elensefar - after it's conquered (unassigned)
 - 3-skill difficulty, low carryover. Rewards: Thief, smuggle to Valley of Death, smuggle to Dwarven Doors
 	- the original HttT Elensefar scenario
 	- Maddock has fled on ship. Most of Asheviere's army is pursuing him. This is an opportunity to retake the city, at least temporarily!
@@ -364,8 +364,9 @@ S15b: Valley of Death, part 2 (unassigned)
 - Monks think the fog is suspicious. They cast a spell to illuminate the map, revealing the 3 liches from the original Valley of Death.
 - overworld: ensure we can leave the area after completing part 2, even if we didn't do part 1 beforehand
 
-[NEED IMPROVEMENT] S17: Crossroads (Dalas)
+[COMPLETE] S17: Crossroads (Dalas)
 - 3-skull difficulty. Rewards: companion Ulfdain, Dwarvish Miner
+- we could have Li'sar leave mid-scenario to go to Elensefar, but for now I'm leaving this as-is; Elensefar gets conquered even though Lisar stays at Crossroads
 
 S18 Dan'tonk (unassigned)
 - 4-skull (3-skull to escape, 5-skull to conquer) difficulty. Rewards: Spearman, Bowman, Fencer
@@ -450,76 +451,6 @@ fighting whitefangs
 	once you help the new chief take over, Konrad asks if now they'll help fight Asheviere
 		the new chief laughs and threatens him instead
 
-
-//############################
-// LI'SAR'S MOVEMENT
-//############################
-//--------------------
-// BEFORE ELENSEFAR
-//--------------------
-before turn X...
-	check these things every prestart and every `name=enter hex` event
-- if Konrad is near Dan'Tonk, Li'sar is at Dan'Tonk.
-	- the first time this happens, she explains her ambush
-- else if Crossroads is incomplete, Li'sar is at Crossroads
-- else if Dan'Tonk is not fully conquered, Li'sar is at Dan'Tonk
-- else Li'sar is at Weldyn
-
-//--------------------
-// ELENSEFAR
-//--------------------
-----If Konrad Ignores Elensefar:
-- on turn X, Li'sar receives permission from Asheviere to attack Elensefar, and heads there with a fleet of ships
-	- make sure this plays nice with other prestart Li'sar cutscenes. E.g. she's just been defeated at Crossroads
-	- crossroads becomes failed; Konrad can move freely though it
-	- Li'sar no longer moves to Dan'Tonk; instead it's a generic general
-- on turn X+1, Delfador reunites with Konrad
-	- Li'sar is now at Elensefar
-	- storytext explain that Elensefar fell and Maddock fled. Burning, boats, etc.
-	- "what do we do now?" "With Maddock fled we cannot win through force of arms, but we can go for the sceptre"
-	- Li'sar's lieutenant is listening. Li'sar finds out, and resolves to beat Konrad to the sceptre. She vanishes into the fog
-	- show objectives
-
-----If Konrad Rescues Elensefar:
-TODO - also explain what happens if Konrad attacks ON turn X
-- before turn X, Konrad attacks and completes Elensefar
-storytext
-
-//--------------------
-// AFTER ELENSEFAR
-//--------------------
-- on turn X+2, Li'sar goes to the Ford
-	- dialogue should be a reminder that Li'sar is searching for the sceptre
-	- Konrad is allowed to fight her here, as 5-skull difficulty. If we actually defeat her, she retreats to regroup and vanishes from the bigmap for 1 turn
-		- Konrad may come from the north or south shore here
-		- no turn limit; no early finish; 40% gold carryover. Have Li'sar retreat when she's clearly lost, so she can't be farmed
-		- Li'sar has naval support here. Whatever that means
-	- reminder that Elensefar may or may not be retaken by Konrad at this point
-	- INCOMPLETE: she tries to cross, but the orcs demand payment. She's not impressed, and they fight
-	- COMPLETE: she comments that Konrad has already come this way
-	- IN PROGRESS: Li'sar attacks Konrad. We get an choice on the bigmap to either fight or flee.
-- on turn X+3, Li'sar goes to Dwarven Doors
-	- dialogue should be a reminder that Li'sar is searching for the sceptre
-	- Konrad is allowed to fight her here, as 5-skull difficulty. If we actually defeat her, she retreats to regroup and vanishes from the bigmap for 1 turn
-		- Konrad may come from the north or south entrance here
-		- no turn limit; no early finish; 40% gold carryover. Have Li'sar retreat when she's clearly lost, so she can't be farmed
-		- maybe do something interesting with the slaves here?
-	- INCOMPLETE: Li'sar and the orcs interact. The orcs would let her through, but she demands they free their slaves and they end up fighting.
-	- COMPLETE: The orcs are already beaten. Li'sar frees a few of their slaves, and passes through
-	- IN PROGRESS: Li'sar attacks Konrad. We get an choice on the bigmap to either fight or flee.
-- on turn X+4, Li'sar arrives at the sceptre
-	- overwrite the scenario preview for everything except Sceptre of Fire, to prevent Konrad from playing any other scenario
-	- ensure Konrad doesn't get softlocked. How do we achieve this?
-
-----TODO:
-- make sure positive elements of Li'sar's personality come through beforehand
-	- perhaps we somehow force the player to fight Li'sar at least once? Maybe she's at both Crossroads (guarding) and Elensefar (taking command of the victorious city)
-- ensure the bigmap adjusts in such a way that it's impossible to get stuck/softlocked when Li'sar reaches the sceptre
-	- Li'sar is guaranteed to conquer Ford of Abez,  at which point the scenario counts as failed (and Konrad can move through) 
-	- Li'sar is guaranteed to conquer Dwarven Doors, at which point the scenario counts as failed (and Konrad can move through)
-	- including if the player uses Elensefar's smuggling
-		- disable smuggling while Li'sar is at the sceptre, but Konrad can still smuggle just fine 1 turn before
-		- make sure that if we complete the two smuggling part 2s, that there's an exit (both valley of death and wesmere)
 
 
 ```
