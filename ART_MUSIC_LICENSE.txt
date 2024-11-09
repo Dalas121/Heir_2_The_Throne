@@ -4,8 +4,13 @@ AUDIO
 
 MUSIC
 ---------------
-hunted
+decoherence
+legionnaire
+primal-carnage
+three-sheets
+juggernaut
 	by Scott Buckley www.scottbuckley.com.au (CC BY-SA 4.0)
+
 
 
 SOUNDS

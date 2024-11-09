@@ -121,7 +121,7 @@ Li'sar
 	- both macros take an optional `OFFSET` argument, to delay morning/midday or firstwatch/midnight
 - to ensure all companions get recalled properly, please use `{RECALL_KONRAD_AND_COMPANIONS $x $y}`
 	- companions need custom dialogue in many scenarios, to help them feel alive!
-- for recurring characters, use/add a `SINGLEUNITWML_` macro to unified_characters.cfg, so we stay consistent
+- for recurring characters or NPCs, define them in unified_characters.cfg, add them to GLOBAL__AUTOSTORE_NPCs, and use UNSTORE_NPC to recall them
 
 //--------------------
 // DIFFICULTY
@@ -187,7 +187,7 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 - quest: bring him to Valley of Death and do something with him there.
 
 ----Ulfdain:
-- high XP ulfserker. Loyal and healthy.
+- ulfserker. Loyal and healthy.
 - speaks in a... interesting manner. Takes offense easily.
 - ran away from Knalga when he was a child. Now the Dwarven Doors have fallen, Knalga is under siege, and he has no idea what happened to his family.
 "C’mere and try it, ye yellow-bellied, cow-handed bluderbuss of a princess! Jus’ gimme the chance an’ I’ll rip that head right off yer ninnyhammerin’ neck, ye white-livered gasser!"
@@ -206,14 +206,14 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 //- quest: she learns to accept his death and moves on
 //	- maybe 2 versions of this? If you have Kalenz he helps her move on, if you don't things end badly
 
-----Admiral Azhab:
+----Admiral Azash:
 - Orcish Warrior (maybe with a captain's hat), loyal and resilient. Pirate, but has nothing to do with water (and doesn't see why that's relevant)
 - big, boasting, generous personality. Similar personality as that one guy from DitS
-- refers to himself in the third person ("the wonderful Azhab", "the indefatigable Azhab", etc)
+- refers to himself in the third person ("the wonderful Azash", "the indefatigable Azash", etc)
 - when he first steps in water, Konrad comments that he should really have better swimming abilities.
 - quest: get his hat back. One of the orcs sieging Elensefar has his hat, and he wants it back
-- quest: meet Bugg the sea orc. Azhab will then recruit Bugg as a non-companion loyal
-- quest: fight Bazur at the Whitefang keep. Maybe Azhab finally steals/gets a ship?
+- quest: meet Bugg the sea orc. Azash will then recruit Bugg as a non-companion loyal
+- quest: fight Bazur at the Whitefang keep. Maybe Azash finally steals/gets a ship?
 
 ----Elrian:
 - Custom unit, loyal and intelligent.

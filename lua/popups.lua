@@ -163,7 +163,7 @@ function display_scenario_preview(cfg)
 						vertical_alignment="top",
 						horizontal_alignment="left", 
 						T.grid{ T.row{ 
-							T.column{ T.label{  id="companion0",  use_markup=true,  label="New Companion:",  }},
+							T.column{ T.label{  id="companion0",  use_markup=true,  label="New Companions:",  }},
 							T.column{ T.image{  id="companion1",  label=companion1  }},
 							T.column{ T.image{  id="companion2",  label=companion2  }},
 						}},
