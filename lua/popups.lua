@@ -129,13 +129,13 @@ function display_scenario_preview(cfg)
 							T.column{ T.image{  label=difficulty,  }},
 						}}
 					}},
-					T.row{ T.column{
-						horizontal_alignment="left",
-						T.grid{ T.row{
-							T.column{ T.label{  use_markup=true,  label=_"Starting Gold: ",  }},
-							T.column{ T.label{  use_markup=true,  label=initial_gold,  }},
-						}}
-					}},
+--					T.row{ T.column{
+--						horizontal_alignment="left",
+--						T.grid{ T.row{
+--							T.column{ T.label{  use_markup=true,  label=_"Starting Gold: ",  }},
+--							T.column{ T.label{  use_markup=true,  label=initial_gold,  }},
+--						}}
+--					}},
 					T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}}, 
 					T.row{ T.column{ horizontal_alignment="left", T.image{  label="icons/banner2-half.png"  }}},
 					T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}}, 
