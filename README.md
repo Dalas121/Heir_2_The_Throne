@@ -128,6 +128,7 @@ Li'sar
 //--------------------
 Easy should be nigh-unloseable. Nightmare should be seriously difficult even for a veteran player, requiring careful strategy and probably several restarts (e.g. highest difficulty of EI/TDG)
 - assume the player is coming into the scenario with suitable units; i.e. don't balance Gryphon Mountain around massed Merfolk
+- guidelines for 1-star, 2-star, 3-star, etc difficulties can be found in _main.cfg. Use the diff1, diff2, diff3, etc events (or equivalent armies) to playtest
 
 Recommended difficulty modifiers:
 - Easy:      1x enemy strength,  70% xp to level, 13 scenarios
@@ -281,7 +282,7 @@ Example:
 [FINISHED] S01: The Elves Besieged (Dalas)
 
 [IN PROGRESS] S02: Flight of the Elves (Dalas)
-- 2-to-3-skull difficulty. Rewards: Elvish Archer, Elvish Fighter, Elvish Scout, No carryover.
+- 1-to-2-skull difficulty. Rewards: Elvish Archer, Elvish Fighter, Elvish Scout, No carryover.
 - elves are fleeing from the top right while humans man the flanks. Similar to the first scenario of Dirty Blood
 	- Ethiliel/Ithelden may or may not still be alive ($ethiliel_alive/$ithelden_alive), depending on the player's performance in the intro scenario
 - the more elves who die, the fewer recruits you get (e.g. if 10 elves die you only get archers)
@@ -289,7 +290,7 @@ Example:
 	- if $bm_turns==1, foreshadow Delfador's impending departure
 
 [COMPLETE] S03: Blackwater Port (ForestDragon)
-- 2-to-3-skull difficulty. Rewards: Cavalryman, Horseman, (TO CHANGE: Low carryover) (TO CHANGE: Peasant, Woodsman moved to Dwarven Doors)
+- 1-to-2-skull difficulty. Rewards: Cavalryman, Horseman, (TO CHANGE: Low carryover) (TO CHANGE: Peasant, Woodsman moved to Dwarven Doors)
 - Asheviere's humans start in control of the port, but not the town. You need to defeat them to gain access to the port
 	- if Kaylan dies, you can still win, but you won't get to recruit Horsemen/Cavalrymen
 	- if Kaylan dies, set bm_kaylan_dead=yes, so I can modify the bigmap to reflect that
@@ -299,7 +300,7 @@ Example:
 	- if $bm_turns==1, foreshadow Delfador's impending departure
 
 [IN PROGRESS] S05: Bay of Pearls (Anekron) - scenario number is used by Carcyn
-- 2-to-3-skull difficulty. Rewards: Merfolk Brawler, Merfolk Fighter, Merfolk Hunter, Merfolk Initiate, (TO CHANGE: No carryover)
+- 1-to-2-skull difficulty. Rewards: Merfolk Brawler, Merfolk Fighter, Merfolk Hunter, Merfolk Initiate, (TO CHANGE: No carryover)
 - fight orcs and free merfolk.
 - remember to include the sea orc event, and use the new image/portrait once that PR finishes
 - no storm trident please. It's a really cool item, but this campaign is already complicated enough.
@@ -326,12 +327,12 @@ S08b: Isle of the Damned, part 2 (unassigned)
 - need an older portrait
 
 [COMPLETE] S10 Elensefar - before it's conquered (Dalas)
-- 4-skill difficulty, high carryover. Rewards: Swordsman, Pikeman, Thief, smuggle to Valley of Death, smuggle to Dwarven Doors
+- 3-skill difficulty, high carryover. Rewards: Swordsman, Pikeman, Thief, smuggle to Valley of Death, smuggle to Dwarven Doors
 	- combat involves Delfador/Maddock inside and Konrad outside, with a huge human army in between. Also some orcs in the north
 	- at the beginning the loyalists send a messenger to the queen. Li'sar arrives some turns later
 	- if you win here, you get the Elensefar achievement
 S11 Elensefar - after it's conquered (unassigned)
-- 3-skill difficulty, low carryover. Rewards: Thief, smuggle to Valley of Death, smuggle to Dwarven Doors
+- 2-skill difficulty, low carryover. Rewards: Thief, smuggle to Valley of Death, smuggle to Dwarven Doors
 	- the original HttT Elensefar scenario
 	- Maddock has fled on ship. Most of Asheviere's army is pursuing him. This is an opportunity to retake the city, at least temporarily!
 - disable smuggling if Li'sar's currently at the sceptre, as it's possible for Konrad to be trapped if he hasn't completed the right scenarios?
@@ -349,27 +350,27 @@ S13 Fort Tahn (unassigned)
 
 S14: Gryphon Mountain (unassigned) - scenario number is used by Carcyn
 - if its possible to win without gryphon riders, make sure carcyn event still works
-- 1-skull difficulty. Rewards: Gryphon Rider (maybe dwarves too, to ride the gryphons?)
+- 1-to-2-skull difficulty. Rewards: Gryphon Rider (maybe dwarves too, to ride the gryphons?)
 
 S15a: Valley of Death, part 1 (unassigned)
-- 2-skull difficulty. Rewards: Heavy Infantryman
+- 1-skull difficulty. Rewards: Heavy Infantryman
 - needs to make sense even if we did part 2 first
 - we encounter some HI trying to fight through undead and get help. They say they're warrior monks, whose home is besieged by undead.
 	 - HI names (including future recruits) should all start with "Brother"
 
 S15b: Valley of Death, part 2 (unassigned)
-- 3-skull difficulty. Rewards: Mage (White advancement only)
+- 2-skull difficulty. Rewards: Mage (White advancement only)
 - Konrad reaches the monastery in a dense fog. The monks (a White Mage and some normal Mages) are overjoyed. Everyone gets ready to leave.
 	- White Mage names (including future promotions) should start with "Brother"/"Sister"
 - Monks think the fog is suspicious. They cast a spell to illuminate the map, revealing the 3 liches from the original Valley of Death.
 - overworld: ensure we can leave the area after completing part 2, even if we didn't do part 1 beforehand
 
 [COMPLETE] S17: Crossroads (Dalas)
-- 3-skull difficulty. Rewards: companion Ulfdain, Dwarvish Miner
+- 2-skull difficulty. Rewards: companion Ulfdain, Dwarvish Miner
 - we could have Li'sar leave mid-scenario to go to Elensefar, but for now I'm leaving this as-is; Elensefar gets conquered even though Lisar stays at Crossroads
 
 S18 Dan'tonk (unassigned)
-- 4-skull (3-skull to escape, 5-skull to conquer) difficulty. Rewards: Spearman, Bowman, Fencer
+- 3-skull (2-skull to escape, 4-skull to conquer) difficulty. Rewards: Spearman, Bowman, Fencer
 - similar to "The Human Army" from SotBE
 - there's a stockpile of spears, bows, and swords in the city. To get the respective recruits, you need to send multiple units to grab equipment, and then escape with it all.
 	- perhaps these are caravans, and we need to capture them and move them to an "escape point"?
@@ -382,7 +383,7 @@ S18 Dan'tonk (unassigned)
 - set $bm_dantonk_result
 
 S20 The Ford of Abez (unassigned)
-- 2-skull difficulty. Rewards: none
+- 1-skull difficulty. Rewards: none
 - on the bigmap, orcs give you an opportunity to pay and get let through without combat (and without taking any time). If you refuse, you have to fight the orcs.
 	- if you fight and win, you get back any gold you've previously paid: $bm_ford_amount_paid
 - map needs to work properly even if Konrad comes from the north!
@@ -413,8 +414,8 @@ S26 Dwarven Doors (unassigned)
 - free as many slaves as you can, and evacuate them into the underground
 
 S28 The Lost General (unassigned)
-- TBD difficulty, Rewards: TBD
-- troll whelp recruit reward? Troll shamans create fire; undead lionel is seeking the sceptre of fire?
+- TBD difficulty, Rewards: Bloodaxe (item)
+- use smoke as an environmental effect? "fallout" from dwarven fighting?
 
 S29 Knalga (unassigned)
 - TBD difficulty. Rewards: Dwarvish Fighter, Dwarvish Guardsman, Dwarvish Thunderer
@@ -443,6 +444,7 @@ S30 The Sceptre of Fire (Dalas)
 //--------------------
 // AREA 5 (OVERTHROWING ASHEVIERE)
 //--------------------
+Kal Kartha: don't meet Karrag, but perhaps he's ill right now? Verify timeline with THoT
 characters we meet should make a big deal out of the sceptre
 	to justify everyone taking time off of a civil war to go find it
 fighting whitefangs
