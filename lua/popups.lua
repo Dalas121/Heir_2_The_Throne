@@ -145,7 +145,7 @@ function display_scenario_preview(cfg)
 					-------------------------
 					T.row{ T.column{ 
 						horizontal_alignment="left", -- hopefully "reward" makes it clear that this is what you're expected to have after the scenario, not before
-						T.label{  use_markup=true,  label="Gold Carryover Reward: <b>"..gold.."</b>",  },
+						T.label{  use_markup=true,  label="Expected Gold Carryover Reward: <b>"..gold.."</b>",  },
 					}},
 					T.row{ T.column{ 
 						vertical_alignment="top",
