@@ -246,7 +246,7 @@ Example:
 // BACKSTORY/QUEST DIALOGUE
 //--------------------
 - 0-2 times in each scenario, try to include an opportunity for backstory/quest interactions between Konrad and his companions
-- to play the dialogue, fire the "say_smalltalk event
+- to play the dialogue, fire the "say_smalltalk" event
 	- this event will check your existing companions, and play some backstory- or quest-related dialogue for one of them, depending on what's previously been said
 	- Dalas is assigned to handle implementing this event
 
@@ -331,11 +331,9 @@ S08b: Isle of the Damned, part 2 (unassigned)
 	- combat involves Delfador/Maddock inside and Konrad outside, with a huge human army in between. Also some orcs in the north
 	- at the beginning the loyalists send a messenger to the queen. Li'sar arrives some turns later
 	- if you win here, you get the Elensefar achievement
-S11 Elensefar - after it's conquered (unassigned)
-- 2-skill difficulty, low carryover. Rewards: Thief, smuggle to Valley of Death, smuggle to Dwarven Doors
+[COMPLETE] S11 Elensefar - after it's conquered (Dalas)
+- 2-skill difficulty, high carryover. Rewards: Thief
 	- the original HttT Elensefar scenario
-	- Maddock has fled on ship. Most of Asheviere's army is pursuing him. This is an opportunity to retake the city, at least temporarily!
-- disable smuggling if Li'sar's currently at the sceptre, as it's possible for Konrad to be trapped if he hasn't completed the right scenarios?
 - even after Elensefar, there should still be royal ships blocking travel up the river
 
 //--------------------
@@ -352,13 +350,13 @@ S14: Gryphon Mountain (unassigned) - scenario number is used by Carcyn
 - if its possible to win without gryphon riders, make sure carcyn event still works
 - 1-to-2-skull difficulty. Rewards: Gryphon Rider (maybe dwarves too, to ride the gryphons?)
 
-S15a: Valley of Death, part 1 (unassigned)
+[COMPLETE] S15a: Valley of Death, part 1 (Dalas)
 - 1-skull difficulty. Rewards: Heavy Infantryman
 - needs to make sense even if we did part 2 first
 - we encounter some HI trying to fight through undead and get help. They say they're warrior monks, whose home is besieged by undead.
 	 - HI names (including future recruits) should all start with "Brother"
 
-S15b: Valley of Death, part 2 (unassigned)
+[COMPLETE] S15b: Valley of Death, part 2 (Dalas)
 - 2-skull difficulty. Rewards: Mage (White advancement only)
 - Konrad reaches the monastery in a dense fog. The monks (a White Mage and some normal Mages) are overjoyed. Everyone gets ready to leave.
 	- White Mage names (including future promotions) should start with "Brother"/"Sister"

@@ -38,6 +38,9 @@ shield
 moremirmu
 	made by Dalas by modifying pre-existing wesnoth images (GPL v2.0 or later)
 
+cataclysm
+	from the Era of Magic addon by inferno8 (GPL v2.0 or later)
+
 
 ICONS
 ---------------
