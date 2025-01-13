@@ -94,6 +94,9 @@ halberdier
 isolde
 	from Mechanical (Asheviere's Dogs) with modifications by Dalas (GPL v2.0 or later)
 
+harper-old
+	made by Dalas by modifying pre-exiting Wesnoth images
+
 
 SCENERY
 ---------------

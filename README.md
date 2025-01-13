@@ -289,8 +289,8 @@ Example:
 - expect the player to have Delfador in this scenario. Balance accordingly.
 	- if $bm_turns==1, foreshadow Delfador's impending departure
 
-[COMPLETE] S03: Blackwater Port (ForestDragon)
-- 1-to-2-skull difficulty. Rewards: Cavalryman, Horseman, (TO CHANGE: Low carryover) (TO CHANGE: Peasant, Woodsman moved to Dwarven Doors)
+[NEEDS REVISION] S03: Blackwater Port (ForestDragon)
+- 1-to-2-skull difficulty. Rewards: Cavalryman, Horseman, (TO CHANGE: Low carryover) (TO CHANGE: Peasant, Woodsman moved to Dwarven Doors) (TO CHANGE: balance; expect Delfador)
 - Asheviere's humans start in control of the port, but not the town. You need to defeat them to gain access to the port
 	- if Kaylan dies, you can still win, but you won't get to recruit Horsemen/Cavalrymen
 	- if Kaylan dies, set bm_kaylan_dead=yes, so I can modify the bigmap to reflect that
@@ -300,7 +300,7 @@ Example:
 	- if $bm_turns==1, foreshadow Delfador's impending departure
 
 [IN PROGRESS] S05: Bay of Pearls (Anekron) - scenario number is used by Carcyn
-- 1-to-2-skull difficulty. Rewards: Merfolk Brawler, Merfolk Fighter, Merfolk Hunter, Merfolk Initiate, (TO CHANGE: No carryover)
+- 1-to-2-skull difficulty. Rewards: Merfolk Brawler, Merfolk Fighter, Merfolk Hunter, Merfolk Initiate, (TO CHANGE: No carryover) (TO CHANGE: balance; expect Delfador)
 - fight orcs and free merfolk.
 - remember to include the sea orc event, and use the new image/portrait once that PR finishes
 - no storm trident please. It's a really cool item, but this campaign is already complicated enough.
@@ -311,16 +311,16 @@ Example:
 - 1-skull difficulty. Rewards: Rogue Mage, Mage (Red advancement only)
 - the original gives you a loyal mage called Elrian. We don't want a loyal mage reward, but we should still have "Elrian" appear somewhere in some context
 
-[NEED REVISION] S07: Muff Malal's Peninsula (Dalas)
+[NEEDS REVISION] S07: Muff Malal's Peninsula (Dalas)
 - 1-skull difficulty. Rewards: companion Moremirmu
 
-S08a: Isle of the Damned, part 1 (unassigned)
+[IN PROGRESS] S08a: Isle of the Damned, part 1 (Dalas)
 - 2-skull difficulty. Rewards: Thug, Poacher, access to northlands (via Elensefar Reef)
 - we learn that Harper is trapped inside those catacombs where Moremirmu used to be, setting up S08b (if the player chooses to go there)
 - need a good lore reason for the undead. Presumably the bandits have been living there peacefully since liberty, so the undead must be new
 	- maybe Harper awakened them from down in the catacombs, or maybe something else
 
-S08b: Isle of the Damned, part 2 (unassigned)
+[IN PROGRESS] S08b: Isle of the Damned, part 2 (Dalas)
 - 2-skull difficulty. Rewards: Footpad, companion Harper
 - reference TRoW's vampire lady. Harper heard legends/rumors of someone like that, and came to see, inadvertantly awakening undead from the catacombs
 	- possibly motivated by Asheviere. Looking for a weapon, powerful magic, etc to use against her
