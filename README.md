@@ -202,10 +202,7 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 - quest: Dwarven Doors. Harper gets Uncle Somf and Delurin as non-companion loyals
 
 ----Chantal:
-//- she's determined to bring Deoran back from the dead
-//	- not necromancy; no elf would ever practice necromancy. It's... aggressive healing. Aggressive after-death healing.
-//- quest: she learns to accept his death and moves on
-//	- maybe 2 versions of this? If you have Kalenz he helps her move on, if you don't things end badly
+- Anekron's story
 
 ----Admiral Azash:
 - Orcish Warrior (maybe with a captain's hat), loyal and resilient. Pirate, but has nothing to do with water (and doesn't see why that's relevant)

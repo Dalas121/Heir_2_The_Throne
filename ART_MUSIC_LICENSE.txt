@@ -97,6 +97,9 @@ isolde
 harper-old
 	made by Dalas by modifying pre-exiting Wesnoth images
 
+vampire lady
+	doofus-01, from the "The Rise of Wesnoth" campaign (GPL v2.0 or later)
+
 
 SCENERY
 ---------------
@@ -106,7 +109,8 @@ SOUNDS
 ---------------
 water
 skill-polymorph
-	pre-existing wesnoth image from the "The Deceiver's Gambit" campaign (GPL v2.0 or later)
+skill-illusion-quiet
+	pre-existing wesnoth sounds from the "The Deceiver's Gambit" campaign (GPL v2.0 or later)
 
 golem-crush
 	by Artninja with modifications by Dalas (CC BY 4.0)
@@ -158,4 +162,7 @@ granite golem
 caravel
 outrigger
 	pre-existing wesnoth images from the "Winds of Fate" campaign (GPL v2.0 or later)
+
+vampire-lady
+	pre-existing wesnoth images from the "The Rise of Wesnoth" campaign (GPL v2.0 or later)
 
