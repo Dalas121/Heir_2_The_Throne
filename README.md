@@ -27,7 +27,7 @@ Status: Intro scenario mostly finished. Bigmap for next 3 scenarios mostly finis
 - the player chooses their next scenario via the overworld. Only some scenarios are available at a time, depending on the current "phase"
 - after playing a certain number of scenarios (varies by difficulty), the player is forcibly advanced to the next phase
 - each scenario has a preview, including:
-	- difficulty (1 skull, 2 skulls, etc)
+	- difficulty (1-3 skulls, or 4 skulls for the final scenario, etc)
 	- reward: gold carryover (no/low/high)
 	- reward: new recruits
 	- reward: loyal companions
@@ -128,13 +128,13 @@ Li'sar
 //--------------------
 Easy should be nigh-unloseable. Nightmare should be seriously difficult even for a veteran player, requiring careful strategy and probably several restarts (e.g. highest difficulty of EI/TDG)
 - assume the player is coming into the scenario with suitable units; i.e. don't balance Gryphon Mountain around massed Merfolk
-- guidelines for 1-star, 2-star, 3-star, etc difficulties can be found in _main.cfg. Use the diff1, diff2, diff3, etc events (or equivalent armies) to playtest
+- guidelines for 1-skull, 2-skull, and 3-skull difficulties can be found in _main.cfg. Use the diff1, diff2, diff3, etc events (or equivalent armies) to playtest
 
 Recommended difficulty modifiers:
-- Easy:      1x enemy strength,  70% xp to level, 13 scenarios
-- Normal:    2x enemy strength, 100% xp to level, 13 scenarios
-- Hard:      4x enemy strength, 100% xp to level, 12 scenarios
-- Nightmare: 4x enemy strength, 100% xp to level, 9 scenarios
+- Easy:      1x enemy strength,  70% xp to level, 12 scenarios
+- Normal:    2x enemy strength, 100% xp to level, 12 scenarios
+- Hard:      4x enemy strength, 100% xp to level, 11 scenarios
+- Nightmare: 4x enemy strength, 100% xp to level, 8 scenarios
 
 //--------------------
 // XP FEEDING
