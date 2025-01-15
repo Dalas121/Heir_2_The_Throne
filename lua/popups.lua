@@ -74,12 +74,8 @@ function display_scenario_preview(cfg)
 	-------------------------
 	-- REWARD: COMPANION
 	-------------------------
-	local companion1 = cfg.companion1 and cfg.companion1.."~RC(magenta>red)~BLIT(misc/loyal-icon.png,5,15)" or "misc/blank-hex.png"
-	local companion2 = cfg.companion2 and cfg.companion2.."~RC(magenta>red)~BLIT(misc/loyal-icon.png,5,15)" or "misc/blank-hex.png"
-	
-	-------------------------
-	-- REWARD: SHOP
-	-------------------------
+	local companion1 = cfg.companion1 and cfg.companion1.."~RC(magenta>red)~BLIT(misc/loyal-icon.png,5,10)" or "misc/blank-hex.png"
+	local companion2 = cfg.companion2 and cfg.companion2.."~RC(magenta>red)~BLIT(misc/loyal-icon.png,5,10)" or "misc/blank-hex.png"
 	
 	-------------------------
 	-- REWARD: OTHER
