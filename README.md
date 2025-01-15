@@ -311,13 +311,13 @@ Example:
 [NEEDS REVISION] S07: Muff Malal's Peninsula (Dalas)
 - 1-skull difficulty. Rewards: companion Moremirmu
 
-[IN PROGRESS] S08a: Isle of the Damned, part 1 (Dalas)
+[DONE] S08a: Isle of the Damned, part 1 (Dalas)
 - 2-skull difficulty. Rewards: Thug, Poacher, access to northlands (via Elensefar Reef)
 - we learn that Harper is trapped inside those catacombs where Moremirmu used to be, setting up S08b (if the player chooses to go there)
 - need a good lore reason for the undead. Presumably the bandits have been living there peacefully since liberty, so the undead must be new
 	- maybe Harper awakened them from down in the catacombs, or maybe something else
 
-[IN PROGRESS] S08b: Isle of the Damned, part 2 (Dalas)
+[DONE] S08b: Isle of the Damned, part 2 (Dalas)
 - 2-skull difficulty. Rewards: Footpad, companion Harper
 - reference TRoW's vampire lady. Harper heard legends/rumors of someone like that, and came to see, inadvertantly awakening undead from the catacombs
 	- possibly motivated by Asheviere. Looking for a weapon, powerful magic, etc to use against her
