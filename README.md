@@ -343,7 +343,7 @@ S13 Fort Tahn (unassigned)
 	- maybe she makes a cameo later, as a medium-rank enemy leader somewhere?
 	- she's seen plenty of kings/queens come and go (long life), and thus she doesn't really care?
 
-S14: Gryphon Mountain (unassigned) - scenario number is used by Carcyn
+[IN PROGRESS] S14: Gryphon Mountain (Dalas) - scenario number is used by Carcyn
 - if its possible to win without gryphon riders, make sure carcyn event still works
 - 1-to-2-skull difficulty. Rewards: Gryphon Rider (maybe dwarves too, to ride the gryphons?)
 

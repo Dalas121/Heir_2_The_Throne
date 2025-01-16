@@ -159,6 +159,9 @@ gryphon-sleeping
 granite golem
 	base image by Eagle_11, from the Uber_Default era (GPL v2.0 or later)
 
+gryphlet
+	Elvish_Hunter (GPL v2.0 or later)
+
 caravel
 outrigger
 	pre-existing wesnoth images from the "Winds of Fate" campaign (GPL v2.0 or later)
