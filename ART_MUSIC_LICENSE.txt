@@ -38,7 +38,11 @@ shield
 moremirmu
 	made by Dalas by modifying pre-existing wesnoth images (GPL v2.0 or later)
 
+explosion
+	from the God Game Magic Mod add-on (Durzi), with modifications by dalas (GPL v2.0 or later)
+
 cataclysm
+shockwave
 	from the Era of Magic addon by inferno8 (GPL v2.0 or later)
 
 

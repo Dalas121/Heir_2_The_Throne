@@ -311,13 +311,13 @@ Example:
 [NEEDS REVISION] S07: Muff Malal's Peninsula (Dalas)
 - 1-skull difficulty. Rewards: companion Moremirmu
 
-[DONE] S08a: Isle of the Damned, part 1 (Dalas)
+[COMPLETE] S08a: Isle of the Damned, part 1 (Dalas)
 - 2-skull difficulty. Rewards: Thug, Poacher, access to northlands (via Elensefar Reef)
 - we learn that Harper is trapped inside those catacombs where Moremirmu used to be, setting up S08b (if the player chooses to go there)
 - need a good lore reason for the undead. Presumably the bandits have been living there peacefully since liberty, so the undead must be new
 	- maybe Harper awakened them from down in the catacombs, or maybe something else
 
-[DONE] S08b: Isle of the Damned, part 2 (Dalas)
+[COMPLETE] S08b: Isle of the Damned, part 2 (Dalas)
 - 2-skull difficulty. Rewards: Footpad, companion Harper
 - reference TRoW's vampire lady. Harper heard legends/rumors of someone like that, and came to see, inadvertantly awakening undead from the catacombs
 	- possibly motivated by Asheviere. Looking for a weapon, powerful magic, etc to use against her
@@ -343,8 +343,7 @@ S13 Fort Tahn (unassigned)
 	- maybe she makes a cameo later, as a medium-rank enemy leader somewhere?
 	- she's seen plenty of kings/queens come and go (long life), and thus she doesn't really care?
 
-[IN PROGRESS] S14: Gryphon Mountain (Dalas) - scenario number is used by Carcyn
-- if its possible to win without gryphon riders, make sure carcyn event still works
+[COMPLETE] S14: Gryphon Mountain (Dalas)
 - 1-to-2-skull difficulty. Rewards: Gryphon Rider (maybe dwarves too, to ride the gryphons?)
 
 [COMPLETE] S15a: Valley of Death, part 1 (Dalas)
