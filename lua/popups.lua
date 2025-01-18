@@ -80,6 +80,9 @@ function display_scenario_preview(cfg)
 	-------------------------
 	-- REWARD: OTHER
 	-------------------------
+	local otherlabel = cfg.otherlabel or ""
+	local other1     = cfg.other1 and cfg.other1.."~RC(magenta>red)" or "misc/blank-hex.png"
+	local other2     = cfg.other2 and cfg.other2.."~RC(magenta>red)" or "misc/blank-hex.png"
 	
 	-------------------------
 	-- REWARD: GOLD
@@ -162,6 +165,16 @@ function display_scenario_preview(cfg)
 							T.column{ T.label{  id="companion0",  use_markup=true,  label="New Companions:",  }},
 							T.column{ T.image{  id="companion1",  label=companion1  }},
 							T.column{ T.image{  id="companion2",  label=companion2  }},
+						}},
+					}},
+					-- Other
+					T.row{ T.column{ 
+						vertical_alignment="top",
+						horizontal_alignment="left", 
+						T.grid{ T.row{ 
+							T.column{ T.label{  id="other0",  use_markup=true,  label=otherlabel,  }},
+							T.column{ T.image{  id="other1",  label=other1  }},
+							T.column{ T.image{  id="other2",  label=other2  }},
 						}},
 					}},
 				}},

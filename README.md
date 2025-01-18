@@ -276,7 +276,7 @@ Example:
 // AREA 1 (WESTERN WESNOTH)
 //--------------------
 ----Western Scenarios:
-[FINISHED] S01: The Elves Besieged (Dalas)
+[COMPLETE] S01: The Elves Besieged (Dalas)
 
 [IN PROGRESS] S02: Flight of the Elves (Dalas)
 - 1-to-2-skull difficulty. Rewards: Elvish Archer, Elvish Fighter, Elvish Scout, No carryover.
@@ -296,7 +296,8 @@ Example:
 - expect the player to have Delfador in this scenario. Balance accordingly.
 	- if $bm_turns==1, foreshadow Delfador's impending departure
 
-[IN PROGRESS] S05: Bay of Pearls (Anekron) - scenario number is used by Carcyn
+[IN PROGRESS] S05: Bay of Pearls (Anekron)
+- scenario number is used by Carcyn; if s05 is completed, Carcyn expects the player to have merfolk recruits
 - 1-to-2-skull difficulty. Rewards: Merfolk Brawler, Merfolk Fighter, Merfolk Hunter, Merfolk Initiate, (TO CHANGE: No carryover) (TO CHANGE: balance; expect Delfador)
 - fight orcs and free merfolk.
 - remember to include the sea orc event, and use the new image/portrait once that PR finishes
@@ -324,7 +325,7 @@ Example:
 - need an older portrait
 
 [COMPLETE] S10 Elensefar - before it's conquered (Dalas)
-- 3-skill difficulty, high carryover. Rewards: Swordsman, Pikeman, Thief, smuggle to Valley of Death, smuggle to Dwarven Doors
+- 3-skill difficulty, high carryover. Rewards: Swordsman, Pikeman, Thief
 	- combat involves Delfador/Maddock inside and Konrad outside, with a huge human army in between. Also some orcs in the north
 	- at the beginning the loyalists send a messenger to the queen. Li'sar arrives some turns later
 	- if you win here, you get the Elensefar achievement
@@ -344,6 +345,8 @@ S13 Fort Tahn (unassigned)
 	- she's seen plenty of kings/queens come and go (long life), and thus she doesn't really care?
 
 [COMPLETE] S14: Gryphon Mountain (Dalas)
+- scenario number is used by Carcyn; if s14 is completed and bm_s14_fought_burlin not_equals yes, Carcyn expects the player to have merfolk recruits
+- if I ever let the player get Gryphons (not Gryphon Riders), make sure to change the "race=dwarf,gryhon" filter for the "fall of Knalga" dialogue
 - 1-to-2-skull difficulty. Rewards: Gryphon Rider (maybe dwarves too, to ride the gryphons?)
 
 [COMPLETE] S15a: Valley of Death, part 1 (Dalas)
@@ -407,9 +410,8 @@ S26 Dwarven Doors (unassigned)
 - TBD difficulty, Rewards: Peasant, Woodsman, High carryover
 - free as many slaves as you can, and evacuate them into the underground
 
-S28 The Lost General (unassigned)
-- TBD difficulty, Rewards: Bloodaxe (item)
-- use smoke as an environmental effect? "fallout" from dwarven fighting?
+[IN PROGRESS] S28 The Lost General (Dalas)
+- TBD difficulty, Rewards: Bloodaxe (item for Konrad)
 
 S29 Knalga (unassigned)
 - TBD difficulty. Rewards: Dwarvish Fighter, Dwarvish Guardsman, Dwarvish Thunderer
