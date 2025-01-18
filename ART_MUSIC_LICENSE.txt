@@ -114,11 +114,14 @@ SOUNDS
 water
 skill-polymorph
 skill-illusion-quiet
-	pre-existing wesnoth sounds from the "The Deceiver's Gambit" campaign (GPL v2.0 or later)
+	pre-existing wesnoth sounds from the "The Deceiver's Gambit" campaign
 
 golem-crush
 	by Artninja with modifications by Dalas (CC BY 4.0)
 	https://freesound.org/people/Artninja/sounds/750822/
+
+gate-fall
+	pre-existing sound from the "The Eastern Invasion" campaign
 
 
 STORY

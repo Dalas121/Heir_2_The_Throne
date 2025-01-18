@@ -60,6 +60,7 @@ function display_scenario_preview(cfg)
 	--###############################
 	local title = cfg.title
 	local scenario = cfg.scenario -- e.g. "s01"
+	local preview_image = cfg.preview or "bigmap/preview-"..scenario..".png"
 	local difficulty = "bigmap/difficulty"..cfg.difficulty..".png" -- e.g. "difficulty1.png"
 	local initial_gold = cfg.initial_gold or "???";
 	
@@ -108,7 +109,7 @@ function display_scenario_preview(cfg)
 					-- PREVIEW IMAGE
 					-------------------------
 					horizontal_alignment="left",
-					label="bigmap/preview-"..scenario..".png",
+					label=preview_image,
 				}},
 				T.column{ T.label{ label="   " }}, 
 				T.column{ T.grid{

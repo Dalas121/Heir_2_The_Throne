@@ -346,7 +346,7 @@ S13 Fort Tahn (unassigned)
 
 [COMPLETE] S14: Gryphon Mountain (Dalas)
 - scenario number is used by Carcyn; if s14 is completed and bm_s14_fought_burlin not_equals yes, Carcyn expects the player to have merfolk recruits
-- if I ever let the player get Gryphons (not Gryphon Riders), make sure to change the "race=dwarf,gryhon" filter for the "fall of Knalga" dialogue
+- if I ever let the player get Gryphons (not Gryphon Riders), make sure to change the "race=dwarf,gryhon" filter for the "fall of Knalga" dialogue, and the dialogue in 28_The_Lost_General
 - 1-to-2-skull difficulty. Rewards: Gryphon Rider (maybe dwarves too, to ride the gryphons?)
 
 [COMPLETE] S15a: Valley of Death, part 1 (Dalas)
@@ -410,7 +410,7 @@ S26 Dwarven Doors (unassigned)
 - TBD difficulty, Rewards: Peasant, Woodsman, High carryover
 - free as many slaves as you can, and evacuate them into the underground
 
-[IN PROGRESS] S28 The Lost General (Dalas)
+[COMPLETE] S28 The Lost General (Dalas)
 - TBD difficulty, Rewards: Bloodaxe (item for Konrad)
 
 S29 Knalga (unassigned)
