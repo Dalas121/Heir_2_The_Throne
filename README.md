@@ -269,17 +269,17 @@ Example:
 ----Western Scenarios:
 [COMPLETE] S01: The Elves Besieged (Dalas)
 
-[IN PROGRESS] S02: Flight of the Elves (Dalas)
+[COMPLETE] S02: Flight of the Elves (Dalas)
 - 1-to-2-skull difficulty. Rewards: Elvish Archer, Elvish Fighter, Elvish Scout, No carryover.
 - elves are fleeing from the top right while humans man the flanks. Similar to the first scenario of Dirty Blood
-	- Ethiliel/Ithelden may or may not still be alive ($ethiliel_alive/$ithelden_alive), depending on the player's performance in the intro scenario
-- the more elves who die, the fewer recruits you get (e.g. if 10 elves die you only get archers)
+	- Ethiliel/Galdrad may or may not still be alive, depending on the player's performance in the intro scenario
+- the more elves who die, the fewer recruits you get
 - expect the player to have Delfador in this scenario. Balance accordingly.
 	- if $bm_turns==1, foreshadow Delfador's impending departure
 
 [NEEDS REVISION] S03: Blackwater Port (ForestDragon)
 - 1-to-2-skull difficulty. Rewards: Cavalryman, Horseman
-	(TO CHANGE: no carryover, 1-skull difficulty, if the player kills enemeies and wins early they can still get carryover)
+	(TO CHANGE: no carryover, 2-skull difficulty, if the player kills enemeies and wins early they can still get carryover)
 	(TO CHANGE: Peasant, Woodsman moved to Dwarven Doors)
 	(TO CHANGE: balance; expect Delfador)
 - Asheviere's humans start in control of the port, but not the town. You need to defeat them to gain access to the port
@@ -292,7 +292,7 @@ Example:
 
 [IN PROGRESS] S05: Bay of Pearls (Anekron)
 - scenario number is used by Carcyn; if s05 is completed, Carcyn expects the player to have merfolk recruits
-- 1-to-2-skull difficulty. Rewards: Merfolk Brawler, Merfolk Fighter, Merfolk Hunter, Merfolk Initiate
+- 2-skull difficulty. Rewards: Merfolk Brawler, Merfolk Fighter, Merfolk Hunter, Merfolk Initiate
 	(TO CHANGE: balance; expect Delfador)
 - fight orcs and free merfolk.
 - remember to include the sea orc event, and use the new image/portrait once that PR finishes
