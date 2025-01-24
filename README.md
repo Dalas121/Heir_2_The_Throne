@@ -333,9 +333,9 @@ Example:
 // AREA 2 (CENTRAL WESNOTH)
 //--------------------
 S13 Fort Tahn (unassigned)
-- 1 skull difficulty. Rewards: Moonbow, Low carryover
+- 1 skull difficulty. Rewards: Moonbow, Low (or no?) carryover
 - some kind of smuggling. A stealth mission, perhaps? (the player can ofc bypass this by just not playing the scenario)
-- we meet the elven pike lady, but she doesn't follow us. https://forums.wesnoth.org/viewtopic.php?t=49283&start=15
+- perhaps we meet the elven pike lady, but she doesn't follow us. https://forums.wesnoth.org/viewtopic.php?t=49283&start=15
 	- maybe she makes a cameo later, as a medium-rank enemy leader somewhere?
 	- she's seen plenty of kings/queens come and go (long life), and thus she doesn't really care?
 
@@ -374,7 +374,7 @@ S18 Dan'tonk (unassigned)
 - use $bm_lisar_at_dantonk
 - set $bm_dantonk_result
 
-S20 The Ford of Abez (unassigned)
+[IN PROGRESS] S20 The Ford of Abez (Dalas)
 - 1-skull difficulty. Rewards: none
 - on the bigmap, orcs give you an opportunity to pay and get let through without combat (and without taking any time). If you refuse, you have to fight the orcs.
 	- if you fight and win, you get back any gold you've previously paid: $bm_ford_amount_paid
@@ -409,8 +409,8 @@ S26 Dwarven Doors (unassigned)
 - 1-skull difficulty, Rewards: Bloodaxe (item for Konrad)
 
 S29 Knalga (unassigned)
-- TBD difficulty. Rewards: Dwarvish Fighter, Dwarvish Guardsman, Dwarvish Thunderer
-- involves using miners to mine through walls. Find a way to stop this from being a huge XP farm
+- TBD difficulty. Rewards: ONE OF Dwarvish Fighter, Dwarvish Guardsman, Dwarvish Thunderer, Dwarvish Ulfserker
+- involves using miners to mine through walls? Find a way to stop this from being a huge XP farm
 - try to keep lore consistent with NR please
 
 S30 The Sceptre of Fire (Dalas)
