@@ -104,6 +104,9 @@ harper-old
 vampire lady
 	doofus-01, from the "The Rise of Wesnoth" campaign (GPL v2.0 or later)
 
+angarthing
+	from the THoT campaign (GPL v2.0 or later)
+
 
 SCENERY
 ---------------
@@ -134,6 +137,9 @@ TERRAIN
 
 UNITS
 ---------------
+witness
+	base image from the THoT campaign, with modifications by dalas (GPL v2.0 or later)
+
 civilian elves
 	base images from Shield/Tzalmavet, with modifications by dalas (GPL v2.0 or later)
 

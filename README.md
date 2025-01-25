@@ -185,7 +185,7 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 "For at the end of days, the texts prophesy a great destruction, yea, the sun itself shall rain down from the heavens as sulfur and fire!"
 "And lo! The unclean shall be smitten down, and lo! There shall be peace eternal for all men."
 "But until then, ’tis up to I to do the smiting! [attacks some undead]"
-- quest: bring him to Valley of Death and do something with him there.
+- quest: bring him to Valley of Death and rescue his home.
 
 ----Ulfdain:
 - ulfserker. Loyal and healthy.
@@ -193,13 +193,14 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 - ran away from Knalga when he was a child. Now the Dwarven Doors have fallen, Knalga is under siege, and he has no idea what happened to his family.
 "C’mere and try it, ye yellow-bellied, cow-handed bluderbuss of a princess! Jus’ gimme the chance an’ I’ll rip that head right off yer ninnyhammerin’ neck, ye white-livered gasser!"
 "Come an’ git some, ye nigmenog bolting-hutch of beastliness! Ah dare ye to square up an’ fight me, dwarf-to-dwarf!"
-- quest: bring him back to Knalga, and find his father's graves there. Breaks down in tears, and gains a significant buff (drains on melee, perhaps?)
+- quest: bring him back to West Knalga, and reclaim his father's bloodaxe.
 
 ----Harper:
 - it's Harper
 - should we give her personality some kind of gimmick to help her stand out?  My memory on Liberty may no longer be accurate - I haven't played it since before the gender change
+- quest: Halstead. No reward, but Harper comments on the battle
 - quest: Dalben. Harper scrounges up a small amount of gold
-- quest: Dwarven Doors. Harper gets Uncle Somf and Delurin as non-companion loyals
+- quest: Dwarven Doors. Harper gets Uncle Somf as another comapnion?
 
 ----Chantal:
 - Anekron's story
@@ -404,11 +405,12 @@ S24 something wesmere (unassigned)
 S26 Dwarven Doors (unassigned)
 - TBD difficulty, Rewards: Peasant, Woodsman, High carryover
 - free as many slaves as you can, and evacuate them into the underground
+- scenario number is used by the East Knalga introductions check; Dwarven Doors peasants will vouch for Konrad there
 
 [COMPLETE] S28 The Lost General (Dalas)
 - 1-skull difficulty, Rewards: Bloodaxe (item for Konrad)
 
-S29 Knalga (unassigned)
+S29 East Knalga (unassigned)
 - TBD difficulty. Rewards: ONE OF Dwarvish Fighter, Dwarvish Guardsman, Dwarvish Thunderer, Dwarvish Ulfserker
 - involves using miners to mine through walls? Find a way to stop this from being a huge XP farm
 - try to keep lore consistent with NR please
