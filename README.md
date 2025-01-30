@@ -200,7 +200,7 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 - should we give her personality some kind of gimmick to help her stand out?  My memory on Liberty may no longer be accurate - I haven't played it since before the gender change
 - quest: Halstead. No reward, but Harper comments on the battle
 - quest: Dalben. Harper scrounges up a small amount of gold
-- quest: Dwarven Doors. Harper gets Uncle Somf as another comapnion?
+- quest: Dwarven Doors. Harper gets Uncle Somf as another companion.
 
 ----Chantal:
 - Anekron's story
