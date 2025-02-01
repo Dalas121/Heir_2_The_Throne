@@ -402,15 +402,15 @@ S23 Northern Winter (unassigned)
 S24 something wesmere (unassigned)
 - 2-skull difficulty. Rewards: Elvish Shamans -OR- Chantal, No carryover
 
-S26 Dwarven Doors (unassigned)
+[COMPLETE] S26 Dwarven Doors (Dalas)
 - TBD difficulty, Rewards: Peasant, Woodsman, High carryover
 - free as many slaves as you can, and evacuate them into the underground
-- scenario number is used by the East Knalga introductions check; Dwarven Doors peasants will vouch for Konrad there
+- scenario number is used by the Digging for Dwarves introductions check; Dwarven Doors peasants will vouch for Konrad there
 
 [COMPLETE] S28 The Lost General (Dalas)
 - 1-skull difficulty, Rewards: Bloodaxe (item for Konrad)
 
-S29 East Knalga (unassigned)
+[COMPLETE] S29 Digging for Dwarves (Dalas)
 - TBD difficulty. Rewards: ONE OF Dwarvish Fighter, Dwarvish Guardsman, Dwarvish Thunderer, Dwarvish Ulfserker
 - involves using miners to mine through walls? Find a way to stop this from being a huge XP farm
 - try to keep lore consistent with NR please
