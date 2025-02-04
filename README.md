@@ -339,6 +339,7 @@ S13 Fort Tahn (unassigned)
 - perhaps we meet the elven pike lady, but she doesn't follow us. https://forums.wesnoth.org/viewtopic.php?t=49283&start=15
 	- maybe she makes a cameo later, as a medium-rank enemy leader somewhere?
 	- she's seen plenty of kings/queens come and go (long life), and thus she doesn't really care?
+- New thoughts; either Fort Tahn OR Aehtenwood (maybe "and"?) are a requirement for Kalenz to let you into Wesmere to get Shamans
 
 [COMPLETE] S14: Gryphon Mountain (Dalas)
 - scenario number is used by Carcyn; if s14 is completed and bm_s14_fought_burlin not_equals yes, Carcyn expects the player to have merfolk recruits
@@ -401,6 +402,7 @@ S23 Northern Winter (unassigned)
 
 S24 something wesmere (unassigned)
 - 2-skull difficulty. Rewards: Elvish Shamans -OR- Chantal, No carryover
+- once I figure out hwo this works, reference this in Lisar's S30 speech?
 
 [COMPLETE] S26 Dwarven Doors (Dalas)
 - TBD difficulty, Rewards: Peasant, Woodsman, High carryover
