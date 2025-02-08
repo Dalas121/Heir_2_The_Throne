@@ -67,10 +67,11 @@ function display_scenario_preview(cfg)
 	-------------------------
 	-- REWARD: RECRUITS
 	-------------------------
-	local recruit1 = cfg.recruit1 and cfg.recruit1.."~RC(magenta>red)" or "misc/blank-hex.png"
-	local recruit2 = cfg.recruit2 and cfg.recruit2.."~RC(magenta>red)" or "misc/blank-hex.png"
-	local recruit3 = cfg.recruit3 and cfg.recruit3.."~RC(magenta>red)" or "misc/blank-hex.png"
-	local recruit4 = cfg.recruit4 and cfg.recruit4.."~RC(magenta>red)" or "misc/blank-hex.png"
+	local recruitlabel = cfg.recruitlabel and cfg.recruitlabel or _"New Recruits:"
+	local recruit1     = cfg.recruit1     and cfg.recruit1.."~RC(magenta>red)" or "misc/blank-hex.png"
+	local recruit2     = cfg.recruit2     and cfg.recruit2.."~RC(magenta>red)" or "misc/blank-hex.png"
+	local recruit3     = cfg.recruit3     and cfg.recruit3.."~RC(magenta>red)" or "misc/blank-hex.png"
+	local recruit4     = cfg.recruit4     and cfg.recruit4.."~RC(magenta>red)" or "misc/blank-hex.png"
 	
 	-------------------------
 	-- REWARD: COMPANION
@@ -151,7 +152,7 @@ function display_scenario_preview(cfg)
 						vertical_alignment="top",
 						horizontal_alignment="left",
 						T.grid{ T.row{ 
-							T.column{ T.label{  id="recruit0",  use_markup=true,  label="New Recruits:",  }},
+							T.column{ T.label{  id="recruit0",  use_markup=true,  label=recruitlabel,  }},
 							T.column{ T.image{  id="recruit1",  label=recruit1  }},
 							T.column{ T.image{  id="recruit2",  label=recruit2  }},
 							T.column{ T.image{  id="recruit3",  label=recruit3  }},
