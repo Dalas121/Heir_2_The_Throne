@@ -278,8 +278,8 @@ Example:
 - expect the player to have Delfador in this scenario. Balance accordingly.
 	- if $bm_turns==1, foreshadow Delfador's impending departure
 
-[NEEDS REVISION] S03: Blackwater Port (ForestDragon)
-- 1-to-2-skull difficulty. Rewards: Cavalryman, Horseman
+[COMPLETE] S03: Blackwater Port (ForestDragon)
+- 1-to-2-skull difficulty. Rewards: Cavalryman, Horseman; possibly a couple high XP horsemen
 	(TO CHANGE: no carryover, 2-skull difficulty, if the player kills enemeies and wins early they can still get carryover)
 	(TO CHANGE: Peasant, Woodsman moved to Dwarven Doors)
 	(TO CHANGE: balance; expect Delfador)
@@ -326,7 +326,7 @@ Example:
 	- at the beginning the loyalists send a messenger to the queen. Li'sar arrives some turns later
 	- if you win here, you get the Elensefar achievement
 [COMPLETE] S11 Elensefar - after it's conquered (Dalas)
-- 2-skill difficulty, high carryover. Rewards: Thief
+- 2-skill difficulty, high carryover. Rewards: Thief, Seafarer's Sandals
 	- the original HttT Elensefar scenario
 - even after Elensefar, there should still be royal ships blocking travel up the river
 

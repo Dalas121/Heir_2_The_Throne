@@ -148,6 +148,7 @@ function display_scenario_preview(cfg)
 						horizontal_alignment="left", -- hopefully "reward" makes it clear that this is what you're expected to have after the scenario, not before
 						T.label{  use_markup=true,  label="Expected Gold Carryover Reward: <b>"..gold.."</b>",  },
 					}},
+					-- New Recruit
 					T.row{ T.column{ 
 						vertical_alignment="top",
 						horizontal_alignment="left",
@@ -159,6 +160,16 @@ function display_scenario_preview(cfg)
 							T.column{ T.image{  id="recruit4",  label=recruit4  }},
 						}},
 					}},
+					-- Other (place this in the middle so that there's less margin between Recruit/Other; useful for Elensefar where you get both a recruit and an item)
+					T.row{ T.column{ 
+						vertical_alignment="top",
+						horizontal_alignment="left", 
+						T.grid{ T.row{ 
+							T.column{ T.label{  id="other0",  use_markup=true,  label=otherlabel,  }},
+							T.column{ T.image{  id="other1",  label=other1  }},
+							T.column{ T.image{  id="other2",  label=other2  }},
+						}},
+					}},
 					-- New Companion
 					T.row{ T.column{ 
 						vertical_alignment="top",
@@ -167,16 +178,6 @@ function display_scenario_preview(cfg)
 							T.column{ T.label{  id="companion0",  use_markup=true,  label="New Companions:",  }},
 							T.column{ T.image{  id="companion1",  label=companion1  }},
 							T.column{ T.image{  id="companion2",  label=companion2  }},
-						}},
-					}},
-					-- Other
-					T.row{ T.column{ 
-						vertical_alignment="top",
-						horizontal_alignment="left", 
-						T.grid{ T.row{ 
-							T.column{ T.label{  id="other0",  use_markup=true,  label=otherlabel,  }},
-							T.column{ T.image{  id="other1",  label=other1  }},
-							T.column{ T.image{  id="other2",  label=other2  }},
 						}},
 					}},
 				}},
