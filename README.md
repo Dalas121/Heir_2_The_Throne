@@ -204,11 +204,12 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 
 ----Chantal:
 - Anekron's story
+- quest: what? Lintanir maybe? Maybe no quest at all?
 
-----Elrian:
+----Elrian (TODO: rename her):
 - Custom unit, loyal and intelligent.
 - alchemist and researcher. Clinical and inquisitive personality, with occasional hints of "mad scientist".
-- starts L3 so I only need to make one sprite. +4 heals (no regen). Throws firebombs (high damage) and toxic sachels (poison), with a weak melee.
+- starts L3 so I only need to make one sprite. Throws firebombs (high damage), toxic sachels (poison), and smoke bombs (smoke). No melee.
 - portrait: https://github.com/wtactics/art/blob/master/WT/Potion%20Making/Potion%20Making.png
 - quest: bring her to the woses at the underground channels/grey grove. She's fascinated by them and asks you to let her stay behind.
 
@@ -417,7 +418,7 @@ S24 something wesmere (unassigned)
 - involves using miners to mine through walls? Find a way to stop this from being a huge XP farm
 - try to keep lore consistent with NR please
 
-S30 The Sceptre of Fire (Dalas)
+[IN PROGRESS] S30 The Sceptre of Fire (Dalas)
 - 3-skull difficulty. Rewards: the sceptre of fire
 - first we search for the sceptre in a small, fairly easy map
 - once we find it, Li'sar is revealed to be chasing us
