@@ -418,32 +418,54 @@ S24 something wesmere (unassigned)
 - involves using miners to mine through walls? Find a way to stop this from being a huge XP farm
 - try to keep lore consistent with NR please
 
-[IN PROGRESS] S30 The Sceptre of Fire (Dalas)
+//--------------------
+// AREA 4 (JOINING LI'SAR)
+//--------------------
+[COMPLETE] S30 The Sceptre of Fire (Dalas)
 - 3-skull difficulty. Rewards: the sceptre of fire
 - first we search for the sceptre in a small, fairly easy map
 - once we find it, Li'sar is revealed to be chasing us
 - the player gets a choice. 1) flee (leaving the scepter), 2) defend until the scepter can be broken free from the rock, 3) capture Li-sar (and get her special chainmail)
 - regardless, once the player wins, Li'sar's silver mage will cause the volcano to erupt, ending the scenario
 
+[COMPLETE] S31 The Swamp of Dread (Dalas)
+
 ----ONCE WE FINISH THROUGH HERE, LET'S STOP, POLISH, AND RELEASE TO GET FEEDBACK BEFORE MOVING FURTHER ON----
 
-
 //--------------------
-// AREA 4 (JOINING LI'SAR)
+// AREA 5 (EASTERN WESNOTH)
 //--------------------
-
-
-//--------------------
-// AREA 5 (OVERTHROWING ASHEVIERE)
-//--------------------
-Kal Kartha: don't meet Karrag, but perhaps he's ill right now? Verify timeline with THoT
-characters we meet should make a big deal out of the sceptre
+event: Kal Kartha; don't meet Karrag, but perhaps he's ill right now? Verify timeline with THoT
+	perhaps you can pay the dwarves to buff Konrad or something
+event: characters we meet should make a big deal out of the sceptre
 	to justify everyone taking time off of a civil war to go find it
-fighting whitefangs
-	make it clear that this isn't the end of the Whitefangs, just a change of power
-	Bazur should be the high chief? Maybe we're trying to help a rival ovethrow him?
-	once you help the new chief take over, Konrad asks if now they'll help fight Asheviere
-		the new chief laughs and threatens him instead
+
+S41: Cliffs of Thoria
+
+S42: Snow Plains
+	(or maybe not; snow plains doesn't really fit with the theme of this section - weakening Asheviere)
+
+S43: Whitefangs
+- make it clear that this isn't the end of the Whitefangs, just a change of power
+- Bazur should be the high chief? Maybe we're trying to help a rival ovethrow him?
+- once you help the new chief take over, Konrad asks if now they'll help fight Asheviere
+- the new chief laughs and threatens him instead
+
+S44: Home of the North Elves
+
+S45: Underground Channels
+
+S47: Test of the Clans
+
+S48: Dan'Tonk
+- we actually sack the city this time?
+
+
+
+
+S50: Battle for Wesnoth
+
+
 
 
 
