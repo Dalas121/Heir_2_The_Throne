@@ -90,7 +90,7 @@ function display_scenario_preview(cfg)
 	-- REWARD: GOLD
 	-------------------------
 	local gold = cfg.gold
-	if (gold==0) then gold="<span color='#ad6a61'>NONE</span>" end
+	if (gold==0) then gold="<span color='#ad6a61'>NONE</span>" end -- color is used for S31 POI sacrifice preview text
 	if (gold==1) then gold="<span color='#a9a150'>LOW</span>" end
 	if (gold==2) then gold="<span color='#6ca364'>HIGH</span>" end
 	

@@ -119,6 +119,10 @@ skill-polymorph
 skill-illusion-quiet
 	pre-existing wesnoth sounds from the "The Deceiver's Gambit" campaign
 
+skill-time-dilation
+skill-time-dilation-end
+	by PatrickLieberkind https://freesound.org/people/PatrickLieberkind/sounds/392408/ (CC BY 4.0)
+
 golem-crush
 	by Artninja with modifications by Dalas (CC BY 4.0)
 	https://freesound.org/people/Artninja/sounds/750822/
