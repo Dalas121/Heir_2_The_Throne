@@ -364,7 +364,7 @@ S13 Fort Tahn (unassigned)
 - 2-skull difficulty. Rewards: companion Ulfdain, Dwarvish Miner
 - we could have Li'sar leave mid-scenario to go to Elensefar, but for now I'm leaving this as-is; Elensefar gets conquered even though Lisar stays at Crossroads
 
-S18 Dan'tonk (unassigned)
+[IN PROGRESS] S18 Dan'tonk (Dalas)
 - 3-skull (2-skull to escape, 4-skull to conquer) difficulty. Rewards: Spearman, Bowman, Fencer
 - similar to "The Human Army" from SotBE
 - there's a stockpile of spears, bows, and swords in the city. To get the respective recruits, you need to send multiple units to grab equipment, and then escape with it all.
@@ -377,7 +377,7 @@ S18 Dan'tonk (unassigned)
 - use $bm_lisar_at_dantonk
 - set $bm_dantonk_result
 
-[IN PROGRESS] S20 The Ford of Abez (Dalas)
+[COMPLETE] S20 The Ford of Abez (Dalas)
 - 1-skull difficulty. Rewards: none
 - on the bigmap, orcs give you an opportunity to pay and get let through without combat (and without taking any time). If you refuse, you have to fight the orcs.
 	- if you fight and win, you get back any gold you've previously paid: $bm_ford_amount_paid
@@ -441,6 +441,7 @@ event: characters we meet should make a big deal out of the sceptre
 	to justify everyone taking time off of a civil war to go find it
 
 S41: Cliffs of Thoria
+	give Warven lots of XP, so we don't have to worry about remembering his XP from S30
 
 S42: Snow Plains
 	(or maybe not; snow plains doesn't really fit with the theme of this section - weakening Asheviere)
@@ -454,6 +455,11 @@ S43: Whitefangs
 S44: Home of the North Elves
 
 S45: Underground Channels
+
+Soradoc event:
+	if Li'sar has the sceptre, Konrad must ask her for it.
+		this is an important interaction, so we have to do this on the bigmap where it's guaranteed, not with smalltalk where it might get missed
+		and vice versa
 
 S47: Test of the Clans
 
