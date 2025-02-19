@@ -364,18 +364,8 @@ S13 Fort Tahn (unassigned)
 - 2-skull difficulty. Rewards: companion Ulfdain, Dwarvish Miner
 - we could have Li'sar leave mid-scenario to go to Elensefar, but for now I'm leaving this as-is; Elensefar gets conquered even though Lisar stays at Crossroads
 
-[IN PROGRESS] S18 Dan'tonk (Dalas)
-- 3-skull (2-skull to escape, 4-skull to conquer) difficulty. Rewards: Spearman, Bowman, Fencer
-- similar to "The Human Army" from SotBE
-- there's a stockpile of spears, bows, and swords in the city. To get the respective recruits, you need to send multiple units to grab equipment, and then escape with it all.
-	- perhaps these are caravans, and we need to capture them and move them to an "escape point"?
-	- and the scenario ends when Konrad reaches the escape point?
-	- no turn limit! i.e. no early finish bonus
-- if you're really an overachiever (or more likely, cheating), you can beat this scenario and rush straight to Asheviere without Li'sar/Sceptre/etc.
-	- allow Li'sar to die here, as it's much much much simpler than trying to do things otherwise
-	- this is obviously non-canon, and we should include a message about that. We should also warn that this branch isn't well-tested, and plot elements may not make sense.
-- use $bm_lisar_at_dantonk
-- set $bm_dantonk_result
+[COMPLETE] S18 Dan'tonk (Dalas)
+- 2-skull difficulty. Rewards: Spearman, Bowman, Fencer
 
 [COMPLETE] S20 The Ford of Abez (Dalas)
 - 1-skull difficulty. Rewards: none
@@ -388,7 +378,7 @@ S13 Fort Tahn (unassigned)
 //--------------------
 // AREA 3 (NORTHLANDS)
 //--------------------
-S22 Glamdrol (unassigned)
+S22 Glamdrol (Gothyoba)
 - 2-skull difficulty, Rewards: Horn of Glamdrol (must be powerful, to compensate for difficulty and carryover when compared to Bloodaxe), Low carryover
 - possibly, battle involves fighting against orcish catapults (units with a true ranged attack)
 - Maybe multiple orcish clans are fighting for control of Glamdrol?
@@ -404,6 +394,7 @@ S23 Northern Winter (unassigned)
 S24 something wesmere (unassigned)
 - 2-skull difficulty. Rewards: Elvish Shamans -OR- Chantal, No carryover
 - once I figure out hwo this works, reference this in Lisar's S30 speech?
+- make sure you can't get in without Kalenz, even if you "unlocked" wesmere with him previously before he died
 
 [COMPLETE] S26 Dwarven Doors (Dalas)
 - TBD difficulty, Rewards: Peasant, Woodsman, High carryover
@@ -453,6 +444,7 @@ S43: Whitefangs
 - the new chief laughs and threatens him instead
 
 S44: Home of the North Elves
+- if stored_kalenz.length greater_than 0, that means Kalenz has previously "died" and retreated to the Lintanir
 
 S45: Underground Channels
 
