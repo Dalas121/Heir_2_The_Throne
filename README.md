@@ -206,10 +206,10 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 - Anekron's story
 - quest: what? Lintanir maybe? Maybe no quest at all?
 
-----Elrian (TODO: rename her):
+----Raewan:
 - Custom unit, loyal and intelligent.
-- alchemist and researcher. Clinical and inquisitive personality, with occasional hints of "mad scientist".
-- starts L3 so I only need to make one sprite. Throws firebombs (high damage), toxic sachels (poison), and smoke bombs (smoke). No melee.
+- alchemist and researcher. Inquisitive and curious, but also a little naive and ditzy.
+- starts L3 so I only need to make one sprite. Throws smoke bombs (smoke) and uses a blowgun (poison). No melee. "Transmutation" ability, increasing your gold income.
 - portrait: https://github.com/wtactics/art/blob/master/WT/Potion%20Making/Potion%20Making.png
 - quest: bring her to the woses at the underground channels/grey grove. She's fascinated by them and asks you to let her stay behind.
 
@@ -272,25 +272,22 @@ Example:
 [COMPLETE] S01: The Elves Besieged (Dalas)
 
 [COMPLETE] S02: Flight of the Elves (Dalas)
-- 1-to-2-skull difficulty. Rewards: Elvish Archer, Elvish Fighter, Elvish Scout, No carryover.
+- 2-skull difficulty. Rewards: Elvish Archer, Elvish Fighter, Elvish Scout, No carryover.
 - elves are fleeing from the top right while humans man the flanks. Similar to the first scenario of Dirty Blood
 	- Ethiliel/Galdrad may or may not still be alive, depending on the player's performance in the intro scenario
 - the more elves who die, the fewer recruits you get
 - expect the player to have Delfador in this scenario. Balance accordingly.
-	- if $bm_turns==1, foreshadow Delfador's impending departure
+	- if we have Delfador, foreshadow his impending departure
 
 [COMPLETE] S03: Blackwater Port (ForestDragon)
-- 1-to-2-skull difficulty. Rewards: Cavalryman, Horseman; possibly a couple high XP horsemen
-	(TO CHANGE: no carryover, 2-skull difficulty, if the player kills enemeies and wins early they can still get carryover)
-	(TO CHANGE: Peasant, Woodsman moved to Dwarven Doors)
-	(TO CHANGE: balance; expect Delfador)
-- Asheviere's humans start in control of the port, but not the town. You need to defeat them to gain access to the port
+- 2-skull difficulty. Rewards: Cavalryman, Horseman; possibly a couple high XP horsemen. No carryover/
+- Asheviere's humans start in control of the port, but not the whole town. You need to defeat them to gain access to the port
 	- if Kaylan dies, you can still win, but you won't get to recruit Horsemen/Cavalrymen
 	- if Kaylan dies, set bm_kaylan_dead=yes, so I can modify the bigmap to reflect that
 - lore: Sir Kaylan wanted Delfador to raise Konrad at the port among his own kind, but Delfador thought the Aethenwood was better: both more powerful and safer.
 	- And on top of that, the port was too heavily militarized - no place to raise a child.
 - expect the player to have Delfador in this scenario. Balance accordingly.
-	- if $bm_turns==1, foreshadow Delfador's impending departure
+	- if we have Delfador, foreshadow his impending departure
 
 [IN PROGRESS] S05: Bay of Pearls (Anekron)
 - scenario number is used by Carcyn; if s05 is completed, Carcyn expects the player to have merfolk recruits
@@ -300,7 +297,7 @@ Example:
 - remember to include the sea orc event, and use the new image/portrait once that PR finishes
 - no storm trident please. It's a really cool item, but this campaign is already complicated enough.
 - expect the player to have Delfador in this scenario. Balance accordingly.
-	- if $bm_turns==1, foreshadow Delfador's impending departure
+	- if we have Delfador, foreshadow his impending departure
 
 [IN PROGRESS] S06: Isle of Alduin (ForestDragon)
 - 1-skull difficulty. Rewards: Rogue Mage, Mage (Red advancement only)
@@ -385,10 +382,10 @@ S22 Glamdrol (Gothyoba)
 	- if so, make sure to introduce at least 1 new clan. Not just Foxtails and Stoneskins
 	- can I tie in the "Bloody Sword Clan" from Northern Rebirth?
 
-S23 Northern Winter (unassigned)
-- 1-skull difficulty, Rewards: companion Elrian, No carryover
+[IN PROGRESS] S23 Northern Winter (Dalas)
+- 1-skull difficulty, Rewards: companion Raewan, No carryover
 - keep the name, but include an explanation if it's not actually winter. And keep the "terrain turns to snow" mechanic, and add to it
-- fight against wild animals; Elrian needs various ingredients to prepare her concoctions. Each objective gives Elrian a new ability/attack (until she has all of her normal stuff)
+- fight against wild animals; Raewan needs various ingredients to prepare her concoctions. Each objective gives Raewan a new ability/attack (until she has all of her normal stuff)
 - harmful environmental effects that need to be dealt with. Probably either global or something like "get slowed if you stand on a snow hex"
 
 S24 something wesmere (unassigned)
@@ -435,6 +432,11 @@ S41: Cliffs of Thoria
 	give Warven lots of XP, so we don't have to worry about remembering his XP from S30
 
 S42: Snow Plains
+	gain a flaming sword for Delfador?
+		Konrad already gets the Bloodaxe; don't give him a second melee option here
+		maybe the sword requires magic to work
+		think Gandalf: staff and sword
+	OOORRR, maybe the flaming sword can weaken Asheviewe in the Weldyn fight somehow?
 	(or maybe not; snow plains doesn't really fit with the theme of this section - weakening Asheviere)
 
 S43: Whitefangs
