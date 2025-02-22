@@ -331,7 +331,7 @@ Example:
 //--------------------
 // AREA 2 (CENTRAL WESNOTH)
 //--------------------
-S13 Fort Tahn (unassigned)
+[COMPLETE] S13 Fort Tahn (Dalas)
 - 1 skull difficulty. Rewards: Moonbow, Low (or no?) carryover
 - some kind of smuggling. A stealth mission, perhaps? (the player can ofc bypass this by just not playing the scenario)
 - perhaps we meet the elven pike lady, but she doesn't follow us. https://forums.wesnoth.org/viewtopic.php?t=49283&start=15
@@ -375,20 +375,20 @@ S13 Fort Tahn (unassigned)
 //--------------------
 // AREA 3 (NORTHLANDS)
 //--------------------
-S22 Glamdrol (Gothyoba)
+[IN PROGRESS] S22 Glamdrol (Gothyoba)
 - 2-skull difficulty, Rewards: Horn of Glamdrol (must be powerful, to compensate for difficulty and carryover when compared to Bloodaxe), Low carryover
 - possibly, battle involves fighting against orcish catapults (units with a true ranged attack)
 - Maybe multiple orcish clans are fighting for control of Glamdrol?
 	- if so, make sure to introduce at least 1 new clan. Not just Foxtails and Stoneskins
 	- can I tie in the "Bloody Sword Clan" from Northern Rebirth?
 
-[IN PROGRESS] S23 Northern Winter (Dalas)
+[COMPLETE] S23 Northern Winter (Dalas)
 - 1-skull difficulty, Rewards: companion Raewan, No carryover
 - keep the name, but include an explanation if it's not actually winter. And keep the "terrain turns to snow" mechanic, and add to it
 - fight against wild animals; Raewan needs various ingredients to prepare her concoctions. Each objective gives Raewan a new ability/attack (until she has all of her normal stuff)
 - harmful environmental effects that need to be dealt with. Probably either global or something like "get slowed if you stand on a snow hex"
 
-S24 something wesmere (unassigned)
+[NOT YET STARTED] S24 something wesmere (Dalas)
 - 2-skull difficulty. Rewards: Elvish Shamans -OR- Chantal, No carryover
 - once I figure out hwo this works, reference this in Lisar's S30 speech?
 - make sure you can't get in without Kalenz, even if you "unlocked" wesmere with him previously before he died
