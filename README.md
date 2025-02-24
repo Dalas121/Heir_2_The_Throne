@@ -377,7 +377,6 @@ Example:
 //--------------------
 [IN PROGRESS] S22 Glamdrol (Gothyoba)
 - 2-skull difficulty, Rewards: Horn of Glamdrol (must be powerful, to compensate for difficulty and carryover when compared to Bloodaxe), Low carryover
-- possibly, battle involves fighting against orcish catapults (units with a true ranged attack)
 - Maybe multiple orcish clans are fighting for control of Glamdrol?
 	- if so, make sure to introduce at least 1 new clan. Not just Foxtails and Stoneskins
 	- can I tie in the "Bloody Sword Clan" from Northern Rebirth?
@@ -388,9 +387,8 @@ Example:
 - fight against wild animals; Raewan needs various ingredients to prepare her concoctions. Each objective gives Raewan a new ability/attack (until she has all of her normal stuff)
 - harmful environmental effects that need to be dealt with. Probably either global or something like "get slowed if you stand on a snow hex"
 
-[NOT YET STARTED] S24 something wesmere (Dalas)
-- 2-skull difficulty. Rewards: Elvish Shamans -OR- Chantal, No carryover
-- once I figure out hwo this works, reference this in Lisar's S30 speech?
+[COMPLETE] S24 An Old Friend (Dalas)
+- 1-skull difficulty. Rewards: Elvish Shamans -OR- Chantal, Low carryover
 - make sure you can't get in without Kalenz, even if you "unlocked" wesmere with him previously before he died
 
 [COMPLETE] S26 Dwarven Doors (Dalas)
@@ -425,6 +423,8 @@ Example:
 //--------------------
 event: Kal Kartha; don't meet Karrag, but perhaps he's ill right now? Verify timeline with THoT
 	perhaps you can pay the dwarves to buff Konrad or something
+	something special if you have Ulfdain?
+
 event: characters we meet should make a big deal out of the sceptre
 	to justify everyone taking time off of a civil war to go find it
 
