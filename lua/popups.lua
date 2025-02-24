@@ -67,10 +67,11 @@ function display_scenario_preview(cfg)
 	-------------------------
 	-- REWARD: RECRUITS
 	-------------------------
-	local recruit1 = cfg.recruit1 and cfg.recruit1.."~RC(magenta>red)" or "misc/blank-hex.png"
-	local recruit2 = cfg.recruit2 and cfg.recruit2.."~RC(magenta>red)" or "misc/blank-hex.png"
-	local recruit3 = cfg.recruit3 and cfg.recruit3.."~RC(magenta>red)" or "misc/blank-hex.png"
-	local recruit4 = cfg.recruit4 and cfg.recruit4.."~RC(magenta>red)" or "misc/blank-hex.png"
+	local recruitlabel = cfg.recruitlabel and cfg.recruitlabel or _"New Recruits:"
+	local recruit1     = cfg.recruit1     and cfg.recruit1.."~RC(magenta>red)" or "misc/blank-hex.png"
+	local recruit2     = cfg.recruit2     and cfg.recruit2.."~RC(magenta>red)" or "misc/blank-hex.png"
+	local recruit3     = cfg.recruit3     and cfg.recruit3.."~RC(magenta>red)" or "misc/blank-hex.png"
+	local recruit4     = cfg.recruit4     and cfg.recruit4.."~RC(magenta>red)" or "misc/blank-hex.png"
 	
 	-------------------------
 	-- REWARD: COMPANION
@@ -89,7 +90,7 @@ function display_scenario_preview(cfg)
 	-- REWARD: GOLD
 	-------------------------
 	local gold = cfg.gold
-	if (gold==0) then gold="<span color='#ad6a61'>NONE</span>" end
+	if (gold==0) then gold="<span color='#ad6a61'>NONE</span>" end -- color is used for S31 POI sacrifice preview text
 	if (gold==1) then gold="<span color='#a9a150'>LOW</span>" end
 	if (gold==2) then gold="<span color='#6ca364'>HIGH</span>" end
 	
@@ -147,15 +148,26 @@ function display_scenario_preview(cfg)
 						horizontal_alignment="left", -- hopefully "reward" makes it clear that this is what you're expected to have after the scenario, not before
 						T.label{  use_markup=true,  label="Expected Gold Carryover Reward: <b>"..gold.."</b>",  },
 					}},
+					-- New Recruit
 					T.row{ T.column{ 
 						vertical_alignment="top",
 						horizontal_alignment="left",
 						T.grid{ T.row{ 
-							T.column{ T.label{  id="recruit0",  use_markup=true,  label="New Recruits:",  }},
+							T.column{ T.label{  id="recruit0",  use_markup=true,  label=recruitlabel,  }},
 							T.column{ T.image{  id="recruit1",  label=recruit1  }},
 							T.column{ T.image{  id="recruit2",  label=recruit2  }},
 							T.column{ T.image{  id="recruit3",  label=recruit3  }},
 							T.column{ T.image{  id="recruit4",  label=recruit4  }},
+						}},
+					}},
+					-- Other (place this in the middle so that there's less margin between Recruit/Other; useful for Elensefar where you get both a recruit and an item)
+					T.row{ T.column{ 
+						vertical_alignment="top",
+						horizontal_alignment="left", 
+						T.grid{ T.row{ 
+							T.column{ T.label{  id="other0",  use_markup=true,  label=otherlabel,  }},
+							T.column{ T.image{  id="other1",  label=other1  }},
+							T.column{ T.image{  id="other2",  label=other2  }},
 						}},
 					}},
 					-- New Companion
@@ -166,16 +178,6 @@ function display_scenario_preview(cfg)
 							T.column{ T.label{  id="companion0",  use_markup=true,  label="New Companions:",  }},
 							T.column{ T.image{  id="companion1",  label=companion1  }},
 							T.column{ T.image{  id="companion2",  label=companion2  }},
-						}},
-					}},
-					-- Other
-					T.row{ T.column{ 
-						vertical_alignment="top",
-						horizontal_alignment="left", 
-						T.grid{ T.row{ 
-							T.column{ T.label{  id="other0",  use_markup=true,  label=otherlabel,  }},
-							T.column{ T.image{  id="other1",  label=other1  }},
-							T.column{ T.image{  id="other2",  label=other2  }},
 						}},
 					}},
 				}},

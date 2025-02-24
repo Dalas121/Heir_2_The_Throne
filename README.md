@@ -200,15 +200,16 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 - should we give her personality some kind of gimmick to help her stand out?  My memory on Liberty may no longer be accurate - I haven't played it since before the gender change
 - quest: Halstead. No reward, but Harper comments on the battle
 - quest: Dalben. Harper scrounges up a small amount of gold
-- quest: Dwarven Doors. Harper gets Uncle Somf as another comapnion?
+- quest: Dwarven Doors. Harper gets Uncle Somf as another companion.
 
 ----Chantal:
 - Anekron's story
+- quest: what? Lintanir maybe? Maybe no quest at all?
 
-----Elrian:
+----Raewan:
 - Custom unit, loyal and intelligent.
-- alchemist and researcher. Clinical and inquisitive personality, with occasional hints of "mad scientist".
-- starts L3 so I only need to make one sprite. +4 heals (no regen). Throws firebombs (high damage) and toxic sachels (poison), with a weak melee.
+- alchemist and researcher. Inquisitive and curious, but also a little naive and ditzy.
+- starts L3 so I only need to make one sprite. Throws smoke bombs (smoke) and uses a blowgun (poison). No melee. "Transmutation" ability, increasing your gold income.
 - portrait: https://github.com/wtactics/art/blob/master/WT/Potion%20Making/Potion%20Making.png
 - quest: bring her to the woses at the underground channels/grey grove. She's fascinated by them and asks you to let her stay behind.
 
@@ -271,25 +272,22 @@ Example:
 [COMPLETE] S01: The Elves Besieged (Dalas)
 
 [COMPLETE] S02: Flight of the Elves (Dalas)
-- 1-to-2-skull difficulty. Rewards: Elvish Archer, Elvish Fighter, Elvish Scout, No carryover.
+- 2-skull difficulty. Rewards: Elvish Archer, Elvish Fighter, Elvish Scout, No carryover.
 - elves are fleeing from the top right while humans man the flanks. Similar to the first scenario of Dirty Blood
 	- Ethiliel/Galdrad may or may not still be alive, depending on the player's performance in the intro scenario
 - the more elves who die, the fewer recruits you get
 - expect the player to have Delfador in this scenario. Balance accordingly.
-	- if $bm_turns==1, foreshadow Delfador's impending departure
+	- if we have Delfador, foreshadow his impending departure
 
-[NEEDS REVISION] S03: Blackwater Port (ForestDragon)
-- 1-to-2-skull difficulty. Rewards: Cavalryman, Horseman
-	(TO CHANGE: no carryover, 2-skull difficulty, if the player kills enemeies and wins early they can still get carryover)
-	(TO CHANGE: Peasant, Woodsman moved to Dwarven Doors)
-	(TO CHANGE: balance; expect Delfador)
-- Asheviere's humans start in control of the port, but not the town. You need to defeat them to gain access to the port
+[COMPLETE] S03: Blackwater Port (ForestDragon)
+- 2-skull difficulty. Rewards: Cavalryman, Horseman; possibly a couple high XP horsemen. No carryover/
+- Asheviere's humans start in control of the port, but not the whole town. You need to defeat them to gain access to the port
 	- if Kaylan dies, you can still win, but you won't get to recruit Horsemen/Cavalrymen
 	- if Kaylan dies, set bm_kaylan_dead=yes, so I can modify the bigmap to reflect that
 - lore: Sir Kaylan wanted Delfador to raise Konrad at the port among his own kind, but Delfador thought the Aethenwood was better: both more powerful and safer.
 	- And on top of that, the port was too heavily militarized - no place to raise a child.
 - expect the player to have Delfador in this scenario. Balance accordingly.
-	- if $bm_turns==1, foreshadow Delfador's impending departure
+	- if we have Delfador, foreshadow his impending departure
 
 [IN PROGRESS] S05: Bay of Pearls (Anekron)
 - scenario number is used by Carcyn; if s05 is completed, Carcyn expects the player to have merfolk recruits
@@ -299,7 +297,7 @@ Example:
 - remember to include the sea orc event, and use the new image/portrait once that PR finishes
 - no storm trident please. It's a really cool item, but this campaign is already complicated enough.
 - expect the player to have Delfador in this scenario. Balance accordingly.
-	- if $bm_turns==1, foreshadow Delfador's impending departure
+	- if we have Delfador, foreshadow his impending departure
 
 [IN PROGRESS] S06: Isle of Alduin (ForestDragon)
 - 1-skull difficulty. Rewards: Rogue Mage, Mage (Red advancement only)
@@ -326,19 +324,20 @@ Example:
 	- at the beginning the loyalists send a messenger to the queen. Li'sar arrives some turns later
 	- if you win here, you get the Elensefar achievement
 [COMPLETE] S11 Elensefar - after it's conquered (Dalas)
-- 2-skill difficulty, high carryover. Rewards: Thief
+- 2-skill difficulty, high carryover. Rewards: Thief, Seafarer's Sandals
 	- the original HttT Elensefar scenario
 - even after Elensefar, there should still be royal ships blocking travel up the river
 
 //--------------------
 // AREA 2 (CENTRAL WESNOTH)
 //--------------------
-S13 Fort Tahn (unassigned)
+[COMPLETE] S13 Fort Tahn (Dalas)
 - 1 skull difficulty. Rewards: Moonbow, Low (or no?) carryover
 - some kind of smuggling. A stealth mission, perhaps? (the player can ofc bypass this by just not playing the scenario)
 - perhaps we meet the elven pike lady, but she doesn't follow us. https://forums.wesnoth.org/viewtopic.php?t=49283&start=15
 	- maybe she makes a cameo later, as a medium-rank enemy leader somewhere?
 	- she's seen plenty of kings/queens come and go (long life), and thus she doesn't really care?
+- New thoughts; either Fort Tahn OR Aehtenwood (maybe "and"?) are a requirement for Kalenz to let you into Wesmere to get Shamans
 
 [COMPLETE] S14: Gryphon Mountain (Dalas)
 - scenario number is used by Carcyn; if s14 is completed and bm_s14_fought_burlin not_equals yes, Carcyn expects the player to have merfolk recruits
@@ -362,20 +361,10 @@ S13 Fort Tahn (unassigned)
 - 2-skull difficulty. Rewards: companion Ulfdain, Dwarvish Miner
 - we could have Li'sar leave mid-scenario to go to Elensefar, but for now I'm leaving this as-is; Elensefar gets conquered even though Lisar stays at Crossroads
 
-S18 Dan'tonk (unassigned)
-- 3-skull (2-skull to escape, 4-skull to conquer) difficulty. Rewards: Spearman, Bowman, Fencer
-- similar to "The Human Army" from SotBE
-- there's a stockpile of spears, bows, and swords in the city. To get the respective recruits, you need to send multiple units to grab equipment, and then escape with it all.
-	- perhaps these are caravans, and we need to capture them and move them to an "escape point"?
-	- and the scenario ends when Konrad reaches the escape point?
-	- no turn limit! i.e. no early finish bonus
-- if you're really an overachiever (or more likely, cheating), you can beat this scenario and rush straight to Asheviere without Li'sar/Sceptre/etc.
-	- allow Li'sar to die here, as it's much much much simpler than trying to do things otherwise
-	- this is obviously non-canon, and we should include a message about that. We should also warn that this branch isn't well-tested, and plot elements may not make sense.
-- use $bm_lisar_at_dantonk
-- set $bm_dantonk_result
+[COMPLETE] S18 Dan'tonk (Dalas)
+- 2-skull difficulty. Rewards: Spearman, Bowman, Fencer
 
-[IN PROGRESS] S20 The Ford of Abez (Dalas)
+[COMPLETE] S20 The Ford of Abez (Dalas)
 - 1-skull difficulty. Rewards: none
 - on the bigmap, orcs give you an opportunity to pay and get let through without combat (and without taking any time). If you refuse, you have to fight the orcs.
 	- if you fight and win, you get back any gold you've previously paid: $bm_ford_amount_paid
@@ -386,61 +375,97 @@ S18 Dan'tonk (unassigned)
 //--------------------
 // AREA 3 (NORTHLANDS)
 //--------------------
-S22 Glamdrol (unassigned)
+[IN PROGRESS] S22 Glamdrol (Gothyoba)
 - 2-skull difficulty, Rewards: Horn of Glamdrol (must be powerful, to compensate for difficulty and carryover when compared to Bloodaxe), Low carryover
-- possibly, battle involves fighting against orcish catapults (units with a true ranged attack)
 - Maybe multiple orcish clans are fighting for control of Glamdrol?
 	- if so, make sure to introduce at least 1 new clan. Not just Foxtails and Stoneskins
 	- can I tie in the "Bloody Sword Clan" from Northern Rebirth?
 
-S23 Northern Winter (unassigned)
-- 1-skull difficulty, Rewards: companion Elrian, No carryover
+[COMPLETE] S23 Northern Winter (Dalas)
+- 1-skull difficulty, Rewards: companion Raewan, No carryover
 - keep the name, but include an explanation if it's not actually winter. And keep the "terrain turns to snow" mechanic, and add to it
-- fight against wild animals; Elrian needs various ingredients to prepare her concoctions. Each objective gives Elrian a new ability/attack (until she has all of her normal stuff)
+- fight against wild animals; Raewan needs various ingredients to prepare her concoctions. Each objective gives Raewan a new ability/attack (until she has all of her normal stuff)
 - harmful environmental effects that need to be dealt with. Probably either global or something like "get slowed if you stand on a snow hex"
 
-S24 something wesmere (unassigned)
-- 2-skull difficulty. Rewards: Elvish Shamans -OR- Chantal, No carryover
+[COMPLETE] S24 An Old Friend (Dalas)
+- 1-skull difficulty. Rewards: Elvish Shamans -OR- Chantal, Low carryover
+- make sure you can't get in without Kalenz, even if you "unlocked" wesmere with him previously before he died
 
-S26 Dwarven Doors (unassigned)
+[COMPLETE] S26 Dwarven Doors (Dalas)
 - TBD difficulty, Rewards: Peasant, Woodsman, High carryover
 - free as many slaves as you can, and evacuate them into the underground
-- scenario number is used by the East Knalga introductions check; Dwarven Doors peasants will vouch for Konrad there
+- scenario number is used by the Digging for Dwarves introductions check; Dwarven Doors peasants will vouch for Konrad there
 
 [COMPLETE] S28 The Lost General (Dalas)
 - 1-skull difficulty, Rewards: Bloodaxe (item for Konrad)
 
-S29 East Knalga (unassigned)
+[COMPLETE] S29 Digging for Dwarves (Dalas)
 - TBD difficulty. Rewards: ONE OF Dwarvish Fighter, Dwarvish Guardsman, Dwarvish Thunderer, Dwarvish Ulfserker
 - involves using miners to mine through walls? Find a way to stop this from being a huge XP farm
 - try to keep lore consistent with NR please
 
-S30 The Sceptre of Fire (Dalas)
+//--------------------
+// AREA 4 (JOINING LI'SAR)
+//--------------------
+[COMPLETE] S30 The Sceptre of Fire (Dalas)
 - 3-skull difficulty. Rewards: the sceptre of fire
 - first we search for the sceptre in a small, fairly easy map
 - once we find it, Li'sar is revealed to be chasing us
 - the player gets a choice. 1) flee (leaving the scepter), 2) defend until the scepter can be broken free from the rock, 3) capture Li-sar (and get her special chainmail)
 - regardless, once the player wins, Li'sar's silver mage will cause the volcano to erupt, ending the scenario
 
+[COMPLETE] S31 The Swamp of Dread (Dalas)
+
 ----ONCE WE FINISH THROUGH HERE, LET'S STOP, POLISH, AND RELEASE TO GET FEEDBACK BEFORE MOVING FURTHER ON----
 
+//--------------------
+// AREA 5 (EASTERN WESNOTH)
+//--------------------
+event: Kal Kartha; don't meet Karrag, but perhaps he's ill right now? Verify timeline with THoT
+	perhaps you can pay the dwarves to buff Konrad or something
+	something special if you have Ulfdain?
 
-//--------------------
-// AREA 4 (JOINING LI'SAR)
-//--------------------
-
-
-//--------------------
-// AREA 5 (OVERTHROWING ASHEVIERE)
-//--------------------
-Kal Kartha: don't meet Karrag, but perhaps he's ill right now? Verify timeline with THoT
-characters we meet should make a big deal out of the sceptre
+event: characters we meet should make a big deal out of the sceptre
 	to justify everyone taking time off of a civil war to go find it
-fighting whitefangs
-	make it clear that this isn't the end of the Whitefangs, just a change of power
-	Bazur should be the high chief? Maybe we're trying to help a rival ovethrow him?
-	once you help the new chief take over, Konrad asks if now they'll help fight Asheviere
-		the new chief laughs and threatens him instead
+
+S41: Cliffs of Thoria
+	give Warven lots of XP, so we don't have to worry about remembering his XP from S30
+
+S42: Snow Plains
+	gain a flaming sword for Delfador?
+		Konrad already gets the Bloodaxe; don't give him a second melee option here
+		maybe the sword requires magic to work
+		think Gandalf: staff and sword
+	OOORRR, maybe the flaming sword can weaken Asheviewe in the Weldyn fight somehow?
+	(or maybe not; snow plains doesn't really fit with the theme of this section - weakening Asheviere)
+
+S43: Whitefangs
+- make it clear that this isn't the end of the Whitefangs, just a change of power
+- Bazur should be the high chief? Maybe we're trying to help a rival ovethrow him?
+- once you help the new chief take over, Konrad asks if now they'll help fight Asheviere
+- the new chief laughs and threatens him instead
+
+S44: Home of the North Elves
+- if stored_kalenz.length greater_than 0, that means Kalenz has previously "died" and retreated to the Lintanir
+
+S45: Underground Channels
+
+Soradoc event:
+	if Li'sar has the sceptre, Konrad must ask her for it.
+		this is an important interaction, so we have to do this on the bigmap where it's guaranteed, not with smalltalk where it might get missed
+		and vice versa
+
+S47: Test of the Clans
+
+S48: Dan'Tonk
+- we actually sack the city this time?
+
+
+
+
+S50: Battle for Wesnoth
+
+
 
 
 

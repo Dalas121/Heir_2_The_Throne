@@ -22,11 +22,18 @@ SOUNDS
 
 ASSORTED IMAGES
 ===============
+ATTACKS
+---------------
+flashpowder
+	by Santiago Iborra (wTactics) https://github.com/wtactics/art (CC BY-SA 4.0) 
+	with modifications by Dalas (CC BY-SA 4.0)
+
+
 BIGMAP
 ---------------
 difficulty images
 	by Buch https://opengameart.org/content/medals-3 (CC0)
-	with modifications by Dalas (CC BY-SA 4.0)
+	with modifications by Dalas (CC0)
 
 
 HALO
@@ -44,6 +51,9 @@ explosion
 cataclysm
 shockwave
 	from the Era of Magic addon by inferno8 (GPL v2.0 or later)
+
+smoke
+	by Durzi (GNU GPL v2+)
 
 
 ICONS
@@ -107,6 +117,10 @@ vampire lady
 angarthing
 	from the THoT campaign (GPL v2.0 or later)
 
+raewan
+	by Santiago Iborra (wTactics)  (CC BY-SA 4.0) https://github.com/wtactics/art
+
+
 
 SCENERY
 ---------------
@@ -119,11 +133,16 @@ skill-polymorph
 skill-illusion-quiet
 	pre-existing wesnoth sounds from the "The Deceiver's Gambit" campaign
 
+skill-time-dilation
+skill-time-dilation-end
+	by PatrickLieberkind https://freesound.org/people/PatrickLieberkind/sounds/392408/ (CC BY 4.0)
+
 golem-crush
 	by Artninja with modifications by Dalas (CC BY 4.0)
 	https://freesound.org/people/Artninja/sounds/750822/
 
 gate-fall
+wind
 	pre-existing sound from the "The Eastern Invasion" campaign
 
 
@@ -181,4 +200,7 @@ outrigger
 
 vampire-lady
 	pre-existing wesnoth images from the "The Rise of Wesnoth" campaign (GPL v2.0 or later)
+
+alchemist
+	GreenScarab (GPL v2.0 or later)
 
