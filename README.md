@@ -229,7 +229,7 @@ Example:
     PRIORITY=Moremirmu
     MESSAGE_MOREMIRMU=_"Dark magic, Konrad! But the Lords of Light have shown me the way to victory — with the blessing of this holy water, we shall douse the graves and break the curse!"
     MESSAGE_ULFDAIN=  _"What sort o’ greasy tallow-keech magic be this? Ah’ know jus’ the ticket — we’ll drown the graves in holy water; that’ll keep the rottin’ buggers down!"
-    MESSAGE_GENERIC=  _"That graveyard is filled with some kind of dark magic. If we want to stop more undead from rising, we'll need to douse the graves with these vials of holy water."
+    FALLBACK_KONRAD=  _"That graveyard is filled with some kind of dark magic. If we want to stop more undead from rising, we'll need to douse the graves with these vials of holy water."
 }
 
 //--------------------
