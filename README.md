@@ -422,8 +422,9 @@ Example:
 // AREA 5 (EASTERN WESNOTH)
 //--------------------
 event: Kal Kartha; don't meet Karrag, but perhaps he's ill right now? Verify timeline with THoT
-	perhaps you can pay the dwarves to buff Konrad or something
 	something special if you have Ulfdain?
+	maybe you can buy ingredients to let Delfador summon more Granite Golems?
+		price would need to be reduced
 
 event: characters we meet should make a big deal out of the sceptre
 	to justify everyone taking time off of a civil war to go find it
