@@ -82,7 +82,7 @@ function display_scenario_preview(cfg)
 	-------------------------
 	-- REWARD: OTHER
 	-------------------------
-	local otherlabel = cfg.otherlabel or ""
+	local otherlabel = cfg.otherlabel and "\n"..cfg.otherlabel.."\n" or ""
 	
 	-------------------------
 	-- REWARD: GOLD
