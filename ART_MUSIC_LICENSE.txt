@@ -58,6 +58,8 @@ smoke
 
 ICONS
 ---------------
+hourglass
+	made by Dalas by modifying pre-existing wesnoth images (GPL v2.0 or later)
 
 
 ITEMS
@@ -163,6 +165,8 @@ civilian elves
 	base images from Shield/Tzalmavet, with modifications by dalas (GPL v2.0 or later)
 
 delfador
+alchemist
+moremirmu
 	base images from Maksiu, with modifications by dalas (CC BY-SA 4.0)
 
 halfelven-pikeman
@@ -200,7 +204,4 @@ outrigger
 
 vampire-lady
 	pre-existing wesnoth images from the "The Rise of Wesnoth" campaign (GPL v2.0 or later)
-
-alchemist
-	GreenScarab (GPL v2.0 or later)
 
