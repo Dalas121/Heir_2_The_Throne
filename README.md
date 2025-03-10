@@ -425,22 +425,27 @@ event: Kal Kartha; don't meet Karrag, but perhaps he's ill right now? Verify tim
 	something special if you have Ulfdain?
 	maybe you can buy ingredients to let Delfador summon more Granite Golems?
 		price would need to be reduced
+	buy more ingredients for making flashpowder? Make sure this doesn't cause lore issues
+		put the entire event in smalltalk, for simplicity? Remember to use {FILTER_CONDITION({NOT({HAVE_UNIT( id=Jeniver {FILTER_WML_OBJECT_ID disable_flashpowder} )})}
 
 event: characters we meet should make a big deal out of the sceptre
 	to justify everyone taking time off of a civil war to go find it
 
 S41: Cliffs of Thoria
 	give Warven lots of XP, so we don't have to worry about remembering his XP from S30
+	warven = double gold and income for Lisar
+		and have a herodeath if he dies
 
 S42: Snow Plains
 	gain a flaming sword for Delfador?
-		Konrad already gets the Bloodaxe; don't give him a second melee option here
 		maybe the sword requires magic to work
 		think Gandalf: staff and sword
-	OOORRR, maybe the flaming sword can weaken Asheviewe in the Weldyn fight somehow?
-	(or maybe not; snow plains doesn't really fit with the theme of this section - weakening Asheviere)
+	sword makes his elementals level up after each kill? (but no heal from level up?)
+		or something else to really encourage using a SMALL NUMBER of elementals?
 
 S43: Whitefangs
+dosh gets a special event here? Maybe he can become the new chief and use the whitefangs against Asheviere?
+	if so, make sure to explain why there'll be fewer whitefangs helping than there would have been opposing
 - make it clear that this isn't the end of the Whitefangs, just a change of power
 - Bazur should be the high chief? Maybe we're trying to help a rival ovethrow him?
 - once you help the new chief take over, Konrad asks if now they'll help fight Asheviere
@@ -448,13 +453,27 @@ S43: Whitefangs
 
 S44: Home of the North Elves
 - if stored_kalenz.length greater_than 0, that means Kalenz has previously "died" and retreated to the Lintanir
+special bonus if you have Chantal too?
 
 S45: Underground Channels
+	bigmap: delfador says he knew a grove of woses to be here once
+		(don't go to heavy on the TDG reference; wait until the wose says so)
+	woses give you keys, or something, that was dropped by a man from Weldyn who came here?
+		wouldn't make sense for woses to join you directly, I don't think
 
 Soradoc event:
+	halt!
+	the sceptre?!
+	whisper whisper whisper
+	you may pass. And if you do overthrow Asheviere, please remember our kindness today
+	
 	if Li'sar has the sceptre, Konrad must ask her for it.
 		this is an important interaction, so we have to do this on the bigmap where it's guaranteed, not with smalltalk where it might get missed
 		and vice versa
+	include Delfador's old HttT lines?
+		Listen, you whose eyes are fair but hide a vacuum, do you think I do not know what power can do to one’s soul? What evils a person is capable of when truth and righteousness are but scrolls that can be rewritten when a queen grows tired of them?
+		I do know the cup of bitterness poured out on Wesnoth by your mother, child. The land has been torn apart. The elves know this. The orcs know this. Undead can feel it. Large armies of men march across the plains hunting each other, and when no men remain, outsiders will claim Wesnoth as their home.
+		Enough! I can listen to no more of this. Princess, you may want to end your mother’s rule, but I will end her life as she ended the life of my father and my brothers. Asheviere’s masterwork of treachery will end, and it will end by my blade!
 
 S47: Test of the Clans
 
