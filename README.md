@@ -115,7 +115,7 @@ Li'sar
 //--------------------
 // GLOBAL INCLUDES
 //--------------------
-- to make it easy to tweak Konrad, please define side 1 with `{KONRAD_SIDE 75}`. `FOG=yes` and `SHROUD=yes` optional
+- to make it easy to tweak Konrad, please define side 1 with `{KONRAD_SIDE}`. `FOG=yes` and `SHROUD=yes` optional. Also `GOLD=#` (defaults to 75 in the campaign's first half, 125 in the second half)
 - to ensure your scenario's ToD reflects the overworld, use `{SCHEDULE_DYNAMIC_DAY}`, or `{SCHEDULE_DYNAMIC_NIGHT}`
 	- the first turn of each macro will always be respectively morning/midday or firstwatch/midnight (depending on the season)
 	- both macros take an optional `OFFSET` argument, to delay morning/midday or firstwatch/midnight
@@ -236,6 +236,7 @@ Example:
 // BACKSTORY/QUEST DIALOGUE
 //--------------------
 - 0-2 times in each scenario, try to include an opportunity for backstory/quest interactions between Konrad and his companions
+- 1 time per scenario is best
 - to play the dialogue, fire the "say_smalltalk" event
 	- this event will check your existing companions, and play some backstory- or quest-related dialogue for one of them, depending on what's previously been said
 	- Dalas is assigned to handle implementing this event
