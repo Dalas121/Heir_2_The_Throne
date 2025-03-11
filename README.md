@@ -160,6 +160,14 @@ Leveling units is fun! I want players to be able to continue to level units thro
 	- some campaigns use loyal icons for guards, some campaigns don't. For consistentcy, let's not use loyal icons for guards in HttT
 
 //--------------------
+// MAPS
+//--------------------
+credit yourself at the top of each scenario, e.g: # scenario by Dalas
+create variants for autumn and winter (if applicable), and use the use the `MAP_DYNAMIC` macro to load them
+	e.g. {MAP_DYNAMIC 02_Flight_of_the_Elves}
+	with files 02_Flight_of_the_Elves.map, 02_Flight_of_the_Elves-autumn.map, 02_Flight_of_the_Elves-winter.map
+
+//--------------------
 // TEAMS AND COLORS
 //--------------------
 (not mandatory, but let's try to stay more-or-less consistent please)
@@ -206,17 +214,15 @@ Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonu
 - Anekron's story
 - quest: what? Lintanir maybe? Maybe no quest at all?
 
-----Raewan:
+----Jeniver:
 - Custom unit, loyal and intelligent.
 - alchemist and researcher. Inquisitive and curious, but also a little naive and ditzy.
 - starts L3 so I only need to make one sprite. Throws smoke bombs (smoke) and uses a blowgun (poison). No melee. "Transmutation" ability, increasing your gold income.
 - portrait: https://github.com/wtactics/art/blob/master/WT/Potion%20Making/Potion%20Making.png
-- quest: bring her to the woses at the underground channels/grey grove. She's fascinated by them and asks you to let her stay behind.
 
 ----Dosh:
 - Troll. "Secret" companion: he normally guards the Ford of Abez and charges Konrad gold every time you want to cross
 - if you pay him enough gold, he'll give up his toll job and join you
-- Doesn't talk much; most players won't realize they can recruit him.
 - "You ok in da head, softskin? Das one-hunnerd fifty gold you done paid me. How much you really got left?"
 
 //--------------------
