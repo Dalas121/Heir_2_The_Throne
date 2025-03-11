@@ -484,6 +484,7 @@ S48: Dan'Tonk
 
 
 S50: Battle for Wesnoth
+	scenario number used in smalltalk
 
 
 
