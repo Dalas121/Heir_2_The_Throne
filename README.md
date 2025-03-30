@@ -382,7 +382,7 @@ Example:
 //--------------------
 // AREA 3 (NORTHLANDS)
 //--------------------
-[IN PROGRESS] S22 Glamdrol (Gothyoba)
+[IN PROGRESS] S22 Glamdrol (Dalas)
 - 2-skull difficulty, Rewards: Horn of Glamdrol (must be powerful, to compensate for difficulty and carryover when compared to Bloodaxe), Low carryover
 - Maybe multiple orcish clans are fighting for control of Glamdrol?
 	- if so, make sure to introduce at least 1 new clan. Not just Foxtails and Stoneskins
@@ -428,16 +428,14 @@ Example:
 //--------------------
 // AREA 5 (EASTERN WESNOTH)
 //--------------------
-S41: Snow Plains
+[NEEDS TESTING] S41: Snow Plains (Dalas)
 - 2-skull difficulty. Rewards: deprive Asheveire of magi
 
-S42: A Passing of the Torch
+[NEEDS TESTING] S42: A Crisis of Leadership (Dalas)
 - 2-skull difficulty. Rewards: deprive Asheviere of orcs
 dosh gets a special event here? Maybe he can become the new chief and use the whitefangs against Asheviere?
 	if so, make sure to explain why there'll be fewer whitefangs helping than there would have been opposing
 - Bazur should be the high chief? Maybe we're trying to help a rival ovethrow him?
-- once you help the new chief take over, Konrad asks if now they'll help fight Asheviere
-- the new chief laughs and threatens him instead
 
 S43: Cliffs of Thoria
 - 3-skull difficulty. Rewards: Li’sar gains 2x starting gold and income.
