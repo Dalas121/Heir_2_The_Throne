@@ -383,7 +383,7 @@ Example:
 // AREA 3 (NORTHLANDS)
 //--------------------
 [IN PROGRESS] S22 Glamdrol (Dalas)
-- 2-skull difficulty, Rewards: Horn of Glamdrol (must be powerful, to compensate for difficulty and carryover when compared to Bloodaxe), Low carryover
+- 2-skull difficulty, Rewards: Horn of Glamdrol, High carryover
 - Maybe multiple orcish clans are fighting for control of Glamdrol?
 	- if so, make sure to introduce at least 1 new clan. Not just Foxtails and Stoneskins
 	- can I tie in the "Bloody Sword Clan" from Northern Rebirth?
