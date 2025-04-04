@@ -61,7 +61,7 @@ function wesnoth.wml_actions.display_scenario_preview(cfg)
 	local title = cfg.title
 	local scenario = cfg.scenario -- e.g. "s01"
 	local preview_image = cfg.preview or "bigmap/preview-"..scenario..".png"
-	local difficulty =    cfg.difficulty and "bigmap/difficulty"..cfg.difficulty..".png" or "?" -- e.g. "difficulty1.png"
+	local difficulty =    cfg.difficulty and "bigmap/difficulty"..cfg.difficulty..".png" or "" -- e.g. "difficulty1.png"
 	local initial_gold =  cfg.initial_gold or "?";
 	
 	-------------------------
