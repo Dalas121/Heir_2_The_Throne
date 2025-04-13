@@ -171,8 +171,8 @@ create variants for autumn and winter (if applicable), and use the use the `MAP_
 // TEAMS AND COLORS
 //--------------------
 (not mandatory, but let's try to stay more-or-less consistent please)
-- Konrad: red
-- Asheviere/Army: purple
+- Konrad: blue
+- Asheviere/Army: wesred
 - Li'sar: lisarcolor
 - Elves: brightgreen
 - Dwarves: brown
