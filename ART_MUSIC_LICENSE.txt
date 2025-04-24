@@ -59,6 +59,7 @@ smoke
 ICONS
 ---------------
 hourglass
+warhorn
 	made by Dalas by modifying pre-existing wesnoth images (GPL v2.0 or later)
 
 
@@ -146,6 +147,10 @@ golem-crush
 gate-fall
 wind
 	pre-existing sound from the "The Eastern Invasion" campaign
+
+warhorn
+	by adharca with modifications by Dalas (CC0)
+	https://freesound.org/people/adharca/sounds/539956/?page=2#comments
 
 
 STORY

@@ -171,8 +171,8 @@ create variants for autumn and winter (if applicable), and use the use the `MAP_
 // TEAMS AND COLORS
 //--------------------
 (not mandatory, but let's try to stay more-or-less consistent please)
-- Konrad: red
-- Asheviere/Army: purple
+- Konrad: blue
+- Asheviere/Army: wesred
 - Li'sar: lisarcolor
 - Elves: brightgreen
 - Dwarves: brown
@@ -382,8 +382,8 @@ Example:
 //--------------------
 // AREA 3 (NORTHLANDS)
 //--------------------
-[IN PROGRESS] S22 Glamdrol (Gothyoba)
-- 2-skull difficulty, Rewards: Horn of Glamdrol (must be powerful, to compensate for difficulty and carryover when compared to Bloodaxe), Low carryover
+[COMPLETE] S22 Glamdrol (Dalas)
+- 2-skull difficulty, Rewards: Horn of Glamdrol, High carryover
 - Maybe multiple orcish clans are fighting for control of Glamdrol?
 	- if so, make sure to introduce at least 1 new clan. Not just Foxtails and Stoneskins
 	- can I tie in the "Bloody Sword Clan" from Northern Rebirth?
@@ -428,45 +428,23 @@ Example:
 //--------------------
 // AREA 5 (EASTERN WESNOTH)
 //--------------------
-event: Kal Kartha; don't meet Karrag, but perhaps he's ill right now? Verify timeline with THoT
-	something special if you have Ulfdain?
-	maybe you can buy ingredients to let Delfador summon more Granite Golems?
-		price would need to be reduced
-	buy more ingredients for making flashpowder? Make sure this doesn't cause lore issues
-		put the entire event in smalltalk, for simplicity? Remember to use {FILTER_CONDITION({NOT({HAVE_UNIT( id=Jeniver {FILTER_WML_OBJECT_ID disable_flashpowder} )})}
+[NEEDS TESTING] S41: Snow Plains (Dalas)
+- 2-skull difficulty. Rewards: deprive Asheveire of magi
 
-event: characters we meet should make a big deal out of the sceptre
-	to justify everyone taking time off of a civil war to go find it
-
-S41: Cliffs of Thoria
-	give Warven lots of XP, so we don't have to worry about remembering his XP from S30
-	warven = double gold and income for Lisar
-		and have a herodeath if he dies
-
-S42: Snow Plains
-	gain a flaming sword for Delfador?
-		maybe the sword requires magic to work
-		think Gandalf: staff and sword
-	sword makes his elementals level up after each kill? (but no heal from level up?)
-		or something else to really encourage using a SMALL NUMBER of elementals?
-
-S43: Whitefangs
+[NEEDS TESTING] S42: A Crisis of Leadership (Dalas)
+- 2-skull difficulty. Rewards: deprive Asheviere of orcs
 dosh gets a special event here? Maybe he can become the new chief and use the whitefangs against Asheviere?
 	if so, make sure to explain why there'll be fewer whitefangs helping than there would have been opposing
-- make it clear that this isn't the end of the Whitefangs, just a change of power
 - Bazur should be the high chief? Maybe we're trying to help a rival ovethrow him?
-- once you help the new chief take over, Konrad asks if now they'll help fight Asheviere
-- the new chief laughs and threatens him instead
 
-S44: Home of the North Elves
-- if stored_kalenz.length greater_than 0, that means Kalenz has previously "died" and retreated to the Lintanir
-special bonus if you have Chantal too?
+S43: Cliffs of Thoria
+- 3-skull difficulty. Rewards: Li’sar gains 2x starting gold and income.
+	And Lisar levels up to L4, preserving any XP she may have had beforehand
+	(and Warven joins her as a {ZONE_GUARDIAN} leader)
 
-S45: Underground Channels
+S44: Underground Channels
+- 2-skull difficulty. Rewards: Delfador learns to recruit Granite Golems (45g?)
 	bigmap: delfador says he knew a grove of woses to be here once
-		(don't go to heavy on the TDG reference; wait until the wose says so)
-	woses give you keys, or something, that was dropped by a man from Weldyn who came here?
-		wouldn't make sense for woses to join you directly, I don't think
 
 Soradoc event:
 	halt!
@@ -483,17 +461,17 @@ Soradoc event:
 		Enough! I can listen to no more of this. Princess, you may want to end your mother’s rule, but I will end her life as she ended the life of my father and my brothers. Asheviere’s masterwork of treachery will end, and it will end by my blade!
 
 S47: Test of the Clans
+- 3-skull difficulty. Rewards: deprive Asheviere of cavalry
 
 S48: Dan'Tonk
+- 3-skull difficulty. Rewards: deprive Asheviere of footmen
 - we actually sack the city this time?
 
-
-
+event: human characters we meet should make a big deal out of the sceptre
+	to justify everyone taking time off of a civil war to go find it
 
 S50: Battle for Wesnoth
 	scenario number used in smalltalk
-
-
 
 
 

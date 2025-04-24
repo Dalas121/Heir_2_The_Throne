@@ -54,24 +54,25 @@ end
 --###########################################################################################################################################################
 --                                                                 SCENARIO PREVIEW
 --###########################################################################################################################################################
-function display_scenario_preview(cfg)
+function wesnoth.wml_actions.display_scenario_preview(cfg)
 	--###############################
 	-- PREPARE ARGUMENTS
 	--###############################
 	local title = cfg.title
 	local scenario = cfg.scenario -- e.g. "s01"
 	local preview_image = cfg.preview or "bigmap/preview-"..scenario..".png"
-	local difficulty =    cfg.difficulty and "bigmap/difficulty"..cfg.difficulty..".png" or "?" -- e.g. "difficulty1.png"
+	local difficulty =    cfg.difficulty and "bigmap/difficulty"..cfg.difficulty..".png" or "" -- e.g. "difficulty1.png"
 	local initial_gold =  cfg.initial_gold or "?";
 	
 	-------------------------
 	-- REWARD: RECRUITS
 	-------------------------
+	local recruitcolor = cfg.recruitcolor and cfg.recruitcolor or "blue"
 	local recruitlabel = cfg.recruitlabel and cfg.recruitlabel or _"New Recruits:"
-	local recruit1     = cfg.recruit1     and cfg.recruit1.."~RC(magenta>red)" or "misc/blank-hex.png"
-	local recruit2     = cfg.recruit2     and cfg.recruit2.."~RC(magenta>red)" or "misc/blank-hex.png"
-	local recruit3     = cfg.recruit3     and cfg.recruit3.."~RC(magenta>red)" or "misc/blank-hex.png"
-	local recruit4     = cfg.recruit4     and cfg.recruit4.."~RC(magenta>red)" or "misc/blank-hex.png"
+	local recruit1     = cfg.recruit1     and cfg.recruit1.."~RC(magenta>"..recruitcolor..")" or "misc/blank-hex.png"
+	local recruit2     = cfg.recruit2     and cfg.recruit2.."~RC(magenta>"..recruitcolor..")" or "misc/blank-hex.png"
+	local recruit3     = cfg.recruit3     and cfg.recruit3.."~RC(magenta>"..recruitcolor..")" or "misc/blank-hex.png"
+	local recruit4     = cfg.recruit4     and cfg.recruit4.."~RC(magenta>"..recruitcolor..")" or "misc/blank-hex.png"
 	
 	-------------------------
 	-- REWARD: COMPANION
@@ -251,9 +252,9 @@ end
 
 
 --###########################################################################################################################################################
---                                                                 SCENARIO PREVIEW
+--                                                                 OVERWORLD TUTORIAL
 --###########################################################################################################################################################
-function display_overworld_tutorial()
+function wesnoth.wml_actions.display_overworld_tutorial()
 	--###############################
 	-- DEFINE GRID
 	--###############################
@@ -323,32 +324,86 @@ end
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 --###########################################################################################################################################################
---                                                                      "MAIN"
+--                                                                    LISAR TUTORIAL
 --###########################################################################################################################################################
--------------------------
--- DEFINE WML TAGS
--------------------------
-function wesnoth.wml_actions.display_scenario_preview(cfg)
-	display_scenario_preview(cfg)
+function wesnoth.wml_actions.display_lisar_tutorial()
+	--###############################
+	-- DEFINE GRID
+	--###############################
+	local grid = T.grid{ T.row{ 
+		T.column{ border="right,left,bottom", border_size=18, T.grid{ 
+			-------------------------
+			-- INTRO
+			-------------------------
+			T.row{ T.column{ T.image{  label="icons/banner3-narrow.png"  }}},
+			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='5000'> </span>"  }}}, 
+			T.row{ T.column{ 
+				horizontal_alignment="center",
+				T.label{  definition="title",  label=_"Li’sar’s Army",  }
+			}},
+			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}}, 
+			T.row{ T.column{
+				horizontal_alignment="left",
+				border="right,left", border_size=18,
+				T.label{
+					use_markup=true,
+					label=_"Li’sar and her army have been greatly weakened from their trial underground, but nonetheless remain a significant presence on the battlefield.",
+				}
+			}},
+			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}}, 
+			-------------------------
+			-- IMAGE
+			-------------------------
+			T.row{ T.column{ T.grid{ T.row{
+				T.column{
+					T.image{  label="bigmap/lisar-tutorial.png"  }
+				},
+				T.column{ T.label{  use_markup=true,  label="<span size='40000'> </span>"  }},
+				T.column{ 
+					horizontal_alignment="left",
+					T.label{
+						use_markup=true,
+						label=_"The princess’s army is under AI control by default, with a bonus to income. At the start of each scenario you will have the option to instead assume direct control over her units. Either way, Li’sar will benefit from Konrad’s early finish bonus.",
+					}
+				}
+			}}}},
+			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='9000'> </span>"  }}}, 
+			T.row{ T.column {T.image{  label="icons/banner2-narrow.png"  }}},
+			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='9000'> </span>"  }}}, 
+			-------------------------
+			-- BUTTONS
+			-------------------------
+			T.row{ T.column{ T.button{
+				return_value=1, use_markup=true,
+				label=_"Understood",
+			}}},
+		}},
+	}}
+	
+	--###############################
+	-- CREATE DIALOG
+	--###############################
+	local result = wesnoth.sync.evaluate_single(function()
+		local button = gui.show_dialog({
+			definition="menu",
+			T.helptip{ id="tooltip_large" }, -- mandatory field
+			T.tooltip{ id="tooltip_large" }, -- mandatory field
+			grid
+		})
+		return { button=button }
+	end)
 end
-function wesnoth.wml_actions.display_overworld_tutorial()
-	display_overworld_tutorial()
-end
+
+
+
+
+
+
+
+
+
+
+
 
 
