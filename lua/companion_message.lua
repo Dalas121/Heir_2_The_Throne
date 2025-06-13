@@ -1,12 +1,3 @@
-local function table_contains(table, value)
-	for index, sample in ipairs(table) do
-		if sample == value then
-			return true
-		end
-	end
-	return false
-end
-
 --###########################
 -- COMPANION MESSAGE
 --###########################
@@ -46,7 +37,7 @@ function wesnoth.wml_actions.companion_message(cfg)
 			-- PRIORITIZE
 			--------------------------
 			-- if we have a list of priority companions, and this companion isn't on the list, move on
-			if (cfg.priority and not table_contains(cfg.priority, companion.id)) then goto continue end
+			if (cfg.priority and not cfg.priority:find(companion.id)) then goto continue end
 
 			--------------------------
 			-- SAY MESSAGE
