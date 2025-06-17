@@ -343,15 +343,6 @@ function wesnoth.wml_actions.display_lisar_tutorial()
 				T.label{  definition="title",  label=_"Li’sar’s Army",  }
 			}},
 			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}}, 
-			T.row{ T.column{
-				horizontal_alignment="left",
-				border="right,left", border_size=18,
-				T.label{
-					use_markup=true,
-					label=_"Li’sar and her army have been greatly weakened from their trial underground, but nonetheless remain a significant presence on the battlefield.",
-				}
-			}},
-			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}}, 
 			-------------------------
 			-- IMAGE
 			-------------------------
@@ -359,12 +350,12 @@ function wesnoth.wml_actions.display_lisar_tutorial()
 				T.column{
 					T.image{  label="bigmap/lisar-tutorial.png"  }
 				},
-				T.column{ T.label{  use_markup=true,  label="<span size='40000'> </span>"  }},
+				T.column{ T.label{  use_markup=true,  label="<span size='50000'> </span>"  }},
 				T.column{ 
 					horizontal_alignment="left",
 					T.label{
 						use_markup=true,
-						label=_"The princess’s army is under AI control by default, with a bonus to income. At the start of each scenario you will have the option to instead assume direct control over her units. Either way, Li’sar will benefit from Konrad’s early finish bonus.",
+						label=_"Li’sar and her army have been greatly weakened\nfrom their trial underground, but nonetheless\nremain a significant presence on the battlefield.\n\nThe princess’s army is under AI control by default,\nwith a bonus to income. <b>At the start of each scenario\nyou will have the option to instead assume direct\ncontrol over her units.</b>\n\nEither way, Li’sar will have normal gold carryover\nand a normal early finish bonus.",
 					}
 				}
 			}}}},
