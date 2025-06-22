@@ -447,25 +447,15 @@ S44: Underground Channels
 	bigmap: delfador says he knew a grove of woses to be here once
 
 Soradoc event:
-	halt!
-	the sceptre?!
-	whisper whisper whisper
-	you may pass. And if you do overthrow Asheviere, please remember our kindness today
-	
-	if Li'sar has the sceptre, Konrad must ask her for it.
-		this is an important interaction, so we have to do this on the bigmap where it's guaranteed, not with smalltalk where it might get missed
-		and vice versa
-	include Delfador's old HttT lines?
-		Listen, you whose eyes are fair but hide a vacuum, do you think I do not know what power can do to one’s soul? What evils a person is capable of when truth and righteousness are but scrolls that can be rewritten when a queen grows tired of them?
-		I do know the cup of bitterness poured out on Wesnoth by your mother, child. The land has been torn apart. The elves know this. The orcs know this. Undead can feel it. Large armies of men march across the plains hunting each other, and when no men remain, outsiders will claim Wesnoth as their home.
-		Enough! I can listen to no more of this. Princess, you may want to end your mother’s rule, but I will end her life as she ended the life of my father and my brothers. Asheviere’s masterwork of treachery will end, and it will end by my blade!
 
 S47: Test of the Clans
 - 3-skull difficulty. Rewards: deprive Asheviere of cavalry
+make sure the clansmen say that they won't follow Konrad just because of the sceptre
 
 S48: Dan'Tonk
 - 3-skull difficulty. Rewards: deprive Asheviere of footmen
 - we actually sack the city this time?
+make sure the soldiers (led by Isolde?) say they won't follow Konrad just because of the sceptre
 
 event: human characters we meet should make a big deal out of the sceptre
 	to justify everyone taking time off of a civil war to go find it
