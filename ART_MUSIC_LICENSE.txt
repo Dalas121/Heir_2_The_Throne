@@ -127,6 +127,8 @@ raewan
 
 SCENERY
 ---------------
+waterfall
+	from the Animated Weather and Scenry add-on (Durzi)
 
 
 SOUNDS

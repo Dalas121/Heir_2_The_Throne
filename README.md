@@ -428,21 +428,21 @@ Example:
 //--------------------
 // AREA 5 (EASTERN WESNOTH)
 //--------------------
-[NEEDS TESTING] S41: Snow Plains (Dalas)
+[DONE] S41: Snow Plains (Dalas)
 - 2-skull difficulty. Rewards: deprive Asheveire of magi
 
-[NEEDS TESTING] S42: A Crisis of Leadership (Dalas)
+[DONE] S42: A Crisis of Leadership (Dalas)
 - 2-skull difficulty. Rewards: deprive Asheviere of orcs
 dosh gets a special event here? Maybe he can become the new chief and use the whitefangs against Asheviere?
 	if so, make sure to explain why there'll be fewer whitefangs helping than there would have been opposing
 - Bazur should be the high chief? Maybe we're trying to help a rival ovethrow him?
 
-S43: Cliffs of Thoria
+[IN PROGRESS] S43: Cliffs of Thoria (Dalas)
 - 3-skull difficulty. Rewards: Li’sar gains 2x starting gold and income.
 	And Lisar levels up to L4, preserving any XP she may have had beforehand
 	(and Warven joins her as a {ZONE_GUARDIAN} leader)
 
-S44: Underground Channels
+[DONE] S44: Underground Channels
 - 2-skull difficulty. Rewards: Delfador learns to recruit Granite Golems (45g?)
 	bigmap: delfador says he knew a grove of woses to be here once
 

@@ -77,8 +77,10 @@ function wesnoth.wml_actions.display_scenario_preview(cfg)
 	-------------------------
 	-- REWARD: COMPANION
 	-------------------------
-	local companion1 = cfg.companion1 and cfg.companion1.."~RC(magenta>red)~BLIT(misc/loyal-icon.png,5,10)" or "misc/blank-hex.png"
-	local companion2 = cfg.companion2 and cfg.companion2.."~RC(magenta>red)~BLIT(misc/loyal-icon.png,5,10)" or "misc/blank-hex.png"
+	local companioncolor = cfg.companioncolor and cfg.companioncolor or "blue"
+	local companionlabel = cfg.companionlabel and cfg.companionlabel or _"New Companions:"
+	local companion1     = cfg.companion1 and cfg.companion1.."~RC(magenta>"..companioncolor..")~BLIT(misc/loyal-icon.png,5,10)" or "misc/blank-hex.png"
+	local companion2     = cfg.companion2 and cfg.companion2.."~RC(magenta>"..companioncolor..")~BLIT(misc/loyal-icon.png,5,10)" or "misc/blank-hex.png"
 	
 	-------------------------
 	-- REWARD: OTHER
@@ -171,7 +173,7 @@ function wesnoth.wml_actions.display_scenario_preview(cfg)
 						vertical_alignment="top",
 						horizontal_alignment="left", 
 						T.grid{ T.row{ 
-							T.column{ T.label{  id="companion0",  use_markup=true,  label="New Companions:",  }},
+							T.column{ T.label{  id="companion0",  use_markup=true,  label=companionlabel,  }},
 							T.column{ T.image{  id="companion1",  label=companion1  }},
 							T.column{ T.image{  id="companion2",  label=companion2  }},
 						}},
