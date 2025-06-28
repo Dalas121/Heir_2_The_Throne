@@ -437,18 +437,18 @@ dosh gets a special event here? Maybe he can become the new chief and use the wh
 	if so, make sure to explain why there'll be fewer whitefangs helping than there would have been opposing
 - Bazur should be the high chief? Maybe we're trying to help a rival ovethrow him?
 
-[IN PROGRESS] S43: Cliffs of Thoria (Dalas)
+[DONE] S43: Cliffs of Thoria (Dalas)
 - 3-skull difficulty. Rewards: Li’sar gains 2x starting gold and income.
 	And Lisar levels up to L4, preserving any XP she may have had beforehand
 	(and Warven joins her as a {ZONE_GUARDIAN} leader)
 
-[DONE] S44: Underground Channels
+[DONE] S44: Underground Channels (Dalas)
 - 2-skull difficulty. Rewards: Delfador learns to recruit Granite Golems (45g?)
 	bigmap: delfador says he knew a grove of woses to be here once
 
-Soradoc event:
+[DONE] Soradoc event
 
-S47: Test of the Clans
+[IN PROGRESS] S47: Test of the Clans (Dalas)
 - 3-skull difficulty. Rewards: deprive Asheviere of cavalry
 make sure the clansmen say that they won't follow Konrad just because of the sceptre
 
