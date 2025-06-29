@@ -457,10 +457,7 @@ S48: Dan'Tonk
 - we actually sack the city this time?
 make sure the soldiers (led by Isolde?) say they won't follow Konrad just because of the sceptre
 
-event: human characters we meet should make a big deal out of the sceptre
-	to justify everyone taking time off of a civil war to go find it
-
-S50: Battle for Wesnoth
+[IN PROGRESS] S50: Battle for Wesnoth
 	scenario number used in smalltalk
 
 
