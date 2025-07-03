@@ -277,7 +277,7 @@ function wesnoth.wml_actions.display_overworld_tutorial()
 				border="right,left", border_size=18,
 				T.label{
 					use_markup=true,
-					label=_"The wide world of Wesnoth is full of all kinds of\ninteresting people! Unfortunately for Konrad, \nmost of them want to kill him.",
+					label=_"The Great Continent is a place of many possibilities.\nWhere shall you go? What shall you do?",
 				}
 			}},
 			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}}, 
