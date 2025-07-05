@@ -26,7 +26,7 @@ function wesnoth.wml_actions.companion_message(cfg)
 	--###########################
 	-- PICK COMPANION AND SPEAK
 	--###########################
-	function find_companion_and_speak()
+	function find_companion_and_speak(ignore_priority)
 		-- iterate in order of $companion_ids, so that whoever spoke last time is the lowest-priority this time
 		-- this helps balance out each companion's messages, stops randomness from preventing undo, and ensures that players get the same messages if they reload a save
 		--
@@ -37,7 +37,7 @@ function wesnoth.wml_actions.companion_message(cfg)
 			-- PRIORITIZE
 			--------------------------
 			-- if we have a list of priority companions, and this companion isn't on the list, move on
-			if (cfg.priority and not cfg.priority:find(companion.id)) then goto continue end
+			if (not ignore_priority and cfg.priority and not cfg.priority:find(companion.id)) then goto continue end
 
 			--------------------------
 			-- SAY MESSAGE
@@ -61,8 +61,7 @@ function wesnoth.wml_actions.companion_message(cfg)
 	--###########################
 	-- if we get here and haven't yet returned, try again without priority
 	if (cfg.priority) then
-		cfg.priority = nil
-		find_companion_and_speak()
+		find_companion_and_speak(true)
 	end
 
 	--###########################
