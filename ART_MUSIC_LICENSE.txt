@@ -63,6 +63,8 @@ ICONS
 hourglass
 warhorn
 	made by Dalas by modifying pre-existing wesnoth images (GPL v2.0 or later)
+crown 
+	Kutejnikov CC0 https://opengameart.org/content/crowns
 
 
 ITEMS
