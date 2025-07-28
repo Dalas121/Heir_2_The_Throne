@@ -9,13 +9,13 @@ local T = wml.tag
 function tprint (tbl, indent)
 	if not indent then indent = 0 end
 	local toprint = string.rep(" ", indent) .. "{\r\n"
-	indent = indent + 2 
+	indent = indent + 2
 	for k, v in pairs(tbl) do
 		toprint = toprint .. string.rep(" ", indent)
 		if (type(k) == "number") then
 			toprint = toprint .. "[" .. k .. "] = "
 		elseif (type(k) == "string") then
-			toprint = toprint  .. k ..  "= "   
+			toprint = toprint  .. k ..  "= "
 		end
 		if (type(v) == "number") then
 			toprint = toprint .. v .. ",\r\n"
@@ -63,7 +63,7 @@ function wesnoth.wml_actions.display_scenario_preview(cfg)
 	local preview_image = cfg.preview or "bigmap/preview-"..scenario..".png"
 	local difficulty =    cfg.difficulty and "bigmap/difficulty"..cfg.difficulty..".png" or "" -- e.g. "difficulty1.png"
 	local initial_gold =  cfg.initial_gold or "?";
-	
+
 	-------------------------
 	-- REWARD: RECRUITS
 	-------------------------
@@ -73,7 +73,7 @@ function wesnoth.wml_actions.display_scenario_preview(cfg)
 	local recruit2     = cfg.recruit2     and cfg.recruit2.."~RC(magenta>"..recruitcolor..")" or "misc/blank-hex.png"
 	local recruit3     = cfg.recruit3     and cfg.recruit3.."~RC(magenta>"..recruitcolor..")" or "misc/blank-hex.png"
 	local recruit4     = cfg.recruit4     and cfg.recruit4.."~RC(magenta>"..recruitcolor..")" or "misc/blank-hex.png"
-	
+
 	-------------------------
 	-- REWARD: COMPANION
 	-------------------------
@@ -81,12 +81,12 @@ function wesnoth.wml_actions.display_scenario_preview(cfg)
 	local companionlabel = cfg.companionlabel and cfg.companionlabel or _"New Companions:"
 	local companion1     = cfg.companion1 and cfg.companion1.."~RC(magenta>"..companioncolor..")~BLIT(misc/loyal-icon.png,5,10)" or "misc/blank-hex.png"
 	local companion2     = cfg.companion2 and cfg.companion2.."~RC(magenta>"..companioncolor..")~BLIT(misc/loyal-icon.png,5,10)" or "misc/blank-hex.png"
-	
+
 	-------------------------
 	-- REWARD: OTHER
 	-------------------------
 	local otherlabel = cfg.otherlabel and "\n"..cfg.otherlabel.."\n" or ""
-	
+
 	-------------------------
 	-- REWARD: GOLD
 	-------------------------
@@ -95,13 +95,13 @@ function wesnoth.wml_actions.display_scenario_preview(cfg)
 	if (gold==1  ) then gold="<span color='#a9a150'>LOW</span>" end
 	if (gold==2  ) then gold="<span color='#6ca364'>HIGH</span>" end
 	if (gold==nil) then gold = "" end
-		
+
 	--##############################
 	-- DEFINE GRID
 	--###############################
 	local grid = T.grid{ T.row{
-		T.column{ T.label{  use_markup=true,  label="<span size='40000'> </span>"  }}, 
-		T.column{ border="right,left,bottom", border_size=18, T.grid{ 
+		T.column{ T.label{  use_markup=true,  label="<span size='40000'> </span>"  }},
+		T.column{ border="right,left,bottom", border_size=18, T.grid{
 			-------------------------
 			-- TITLE
 			-------------------------
@@ -114,17 +114,17 @@ function wesnoth.wml_actions.display_scenario_preview(cfg)
 					horizontal_alignment="left",
 					label=preview_image,
 				}},
-				T.column{ T.label{ label="   " }}, 
+				T.column{ T.label{ label="   " }},
 				T.column{ T.grid{
 					-------------------------
 					-- TITLE AND DIFFICULTY
 					-------------------------
-					T.row{ T.column{ T.label{  use_markup=true,  label="<span size='5000'> </span>"  }}}, 
-					T.row{ T.column{ 
+					T.row{ T.column{ T.label{  use_markup=true,  label="<span size='5000'> </span>"  }}},
+					T.row{ T.column{
 						horizontal_alignment="left",
 						T.label{  definition="title",label=title,  }
-					}}, 
-					T.row{ T.column{ T.label{  use_markup=true,  label="<span size='5000'> </span>"  }}}, 
+					}},
+					T.row{ T.column{ T.label{  use_markup=true,  label="<span size='5000'> </span>"  }}},
 					T.row{ T.column{
 						horizontal_alignment="left",
 						T.grid{ T.row{
@@ -139,22 +139,22 @@ function wesnoth.wml_actions.display_scenario_preview(cfg)
 --							T.column{ T.label{  use_markup=true,  label=initial_gold,  }},
 --						}}
 --					}},
-					T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}}, 
+					T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}},
 					T.row{ T.column{ horizontal_alignment="left", T.image{  label="icons/banner2-half.png"  }}},
-					T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}}, 
-					
+					T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}},
+
 					-------------------------
 					-- REWARDS
 					-------------------------
-					T.row{ T.column{ 
+					T.row{ T.column{
 						horizontal_alignment="left", -- hopefully "reward" makes it clear that this is what you're expected to have after the scenario, not before
 						T.label{  use_markup=true,  label="Expected Gold Carryover Reward: <b>"..gold.."</b>",  },
 					}},
 					-- New Recruit
-					T.row{ T.column{ 
+					T.row{ T.column{
 						vertical_alignment="top",
 						horizontal_alignment="left",
-						T.grid{ T.row{ 
+						T.grid{ T.row{
 							T.column{ T.label{  id="recruit0",  use_markup=true,  label=recruitlabel,  }},
 							T.column{ T.image{  id="recruit1",  label=recruit1  }},
 							T.column{ T.image{  id="recruit2",  label=recruit2  }},
@@ -163,16 +163,16 @@ function wesnoth.wml_actions.display_scenario_preview(cfg)
 						}},
 					}},
 					-- Other (place this in the middle so that there's less margin between Recruit/Other; useful for Elensefar where you get both a recruit and an item)
-					T.row{ T.column{ 
+					T.row{ T.column{
 						vertical_alignment="top",
-						horizontal_alignment="left", 
+						horizontal_alignment="left",
 						T.label{  id="other0",  use_markup=true,  label=otherlabel  }
 					}},
 					-- New Companion
-					T.row{ T.column{ 
+					T.row{ T.column{
 						vertical_alignment="top",
-						horizontal_alignment="left", 
-						T.grid{ T.row{ 
+						horizontal_alignment="left",
+						T.grid{ T.row{
 							T.column{ T.label{  id="companion0",  use_markup=true,  label=companionlabel,  }},
 							T.column{ T.image{  id="companion1",  label=companion1  }},
 							T.column{ T.image{  id="companion2",  label=companion2  }},
@@ -180,7 +180,7 @@ function wesnoth.wml_actions.display_scenario_preview(cfg)
 					}},
 				}},
 			}}}},
-			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='5000'> </span>"  }}}, 
+			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='5000'> </span>"  }}},
 			-------------------------
 			-- BUTTONS
 			-------------------------
@@ -200,8 +200,8 @@ function wesnoth.wml_actions.display_scenario_preview(cfg)
 		}},
 		T.column{ T.label{  use_markup=true,  label="<span size='40000'> </span>"  }},
 	}}
-	
-	
+
+
 	--###############################
 	-- CREATE DIALOG
 	--###############################
@@ -211,7 +211,7 @@ function wesnoth.wml_actions.display_scenario_preview(cfg)
 				definition="menu",
 				T.helptip{ id="tooltip_large" }, -- mandatory field
 				T.tooltip{ id="tooltip_large" }, -- mandatory field
-				grid, 
+				grid,
 			},
 			-- preshow
 			function(dialog)
@@ -260,18 +260,18 @@ function wesnoth.wml_actions.display_overworld_tutorial()
 	--###############################
 	-- DEFINE GRID
 	--###############################
-	local grid = T.grid{ T.row{ 
-		T.column{ border="right,left,bottom", border_size=18, T.grid{ 
+	local grid = T.grid{ T.row{
+		T.column{ border="right,left,bottom", border_size=18, T.grid{
 			-------------------------
 			-- INTRO
 			-------------------------
 			T.row{ T.column{ T.image{  label="icons/banner3-narrow.png"  }}},
-			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='5000'> </span>"  }}}, 
-			T.row{ T.column{ 
+			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='5000'> </span>"  }}},
+			T.row{ T.column{
 				horizontal_alignment="center",
 				T.label{  definition="title",  label=_"Welcome to the Great Continent",  }
 			}},
-			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}}, 
+			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}},
 			T.row{ T.column{
 				horizontal_alignment="left",
 				border="right,left", border_size=18,
@@ -280,7 +280,7 @@ function wesnoth.wml_actions.display_overworld_tutorial()
 					label=_"The Great Continent is a place of many possibilities.\nWhere shall you go? What shall you do?",
 				}
 			}},
-			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}}, 
+			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}},
 			-------------------------
 			-- IMAGE
 			-------------------------
@@ -289,7 +289,7 @@ function wesnoth.wml_actions.display_overworld_tutorial()
 					T.image{  label="bigmap/overworld-tutorial.png"  }
 				},
 				T.column{ T.label{  use_markup=true,  label="<span size='40000'> </span>"  }},
-				T.column{ 
+				T.column{
 					horizontal_alignment="left",
 					T.label{
 						use_markup=true,
@@ -297,9 +297,9 @@ function wesnoth.wml_actions.display_overworld_tutorial()
 					}
 				}
 			}}}},
-			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='9000'> </span>"  }}}, 
+			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='9000'> </span>"  }}},
 			T.row{ T.column {T.image{  label="icons/banner2-narrow.png"  }}},
-			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='9000'> </span>"  }}}, 
+			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='9000'> </span>"  }}},
 			-------------------------
 			-- BUTTONS
 			-------------------------
@@ -309,7 +309,7 @@ function wesnoth.wml_actions.display_overworld_tutorial()
 			}}},
 		}},
 	}}
-	
+
 	--###############################
 	-- CREATE DIALOG
 	--###############################
@@ -333,18 +333,18 @@ function wesnoth.wml_actions.display_lisar_tutorial()
 	--###############################
 	-- DEFINE GRID
 	--###############################
-	local grid = T.grid{ T.row{ 
-		T.column{ border="right,left,bottom", border_size=18, T.grid{ 
+	local grid = T.grid{ T.row{
+		T.column{ border="right,left,bottom", border_size=18, T.grid{
 			-------------------------
 			-- INTRO
 			-------------------------
 			T.row{ T.column{ T.image{  label="icons/banner3-narrow.png"  }}},
-			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='5000'> </span>"  }}}, 
-			T.row{ T.column{ 
+			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='5000'> </span>"  }}},
+			T.row{ T.column{
 				horizontal_alignment="center",
 				T.label{  definition="title",  label=_"Li’sar’s Army",  }
 			}},
-			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}}, 
+			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}},
 			-------------------------
 			-- IMAGE
 			-------------------------
@@ -353,7 +353,7 @@ function wesnoth.wml_actions.display_lisar_tutorial()
 					T.image{  label="bigmap/lisar-tutorial.png"  }
 				},
 				T.column{ T.label{  use_markup=true,  label="<span size='50000'> </span>"  }},
-				T.column{ 
+				T.column{
 					horizontal_alignment="left",
 					T.label{
 						use_markup=true,
@@ -361,9 +361,9 @@ function wesnoth.wml_actions.display_lisar_tutorial()
 					}
 				}
 			}}}},
-			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='9000'> </span>"  }}}, 
+			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='9000'> </span>"  }}},
 			T.row{ T.column {T.image{  label="icons/banner2-narrow.png"  }}},
-			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='9000'> </span>"  }}}, 
+			T.row{ T.column{ T.label{  use_markup=true,  label="<span size='9000'> </span>"  }}},
 			-------------------------
 			-- BUTTONS
 			-------------------------
@@ -373,7 +373,7 @@ function wesnoth.wml_actions.display_lisar_tutorial()
 			}}},
 		}},
 	}}
-	
+
 	--###############################
 	-- CREATE DIALOG
 	--###############################
