@@ -68,6 +68,6 @@ function wesnoth.wml_actions.companion_message(cfg)
 	-- FALLBACK TO KONRAD
 	--###########################
 	local speaker_id = "Konrad"
-	if (cfg["message_"..speaker_id]) then wesnoth.wml_actions.message{ speaker=speaker_id, message=cfg["message_"..speaker_id] } end
+	if (cfg["fallback_"..speaker_id]) then wesnoth.wml_actions.message{ speaker=speaker_id, message=cfg["fallback_"..speaker_id] } end
 	return
 end
