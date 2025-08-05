@@ -1,28 +1,27 @@
-```text
+# Heir 2 the Throne
 
+## (Heir to the Throne Revision)
 
 
 Hello! This is a WIP HttT revision for Battle for Wesnoth. If you're interested in collaborating, please reach out to Dalas via the Wesnoth discord or forum.
 
-Status: Intro scenario mostly finished. Bigmap for next 3 scenarios mostly finished.
+**Status**: Finished, released for review and feedback
 
+## CONTRIBUTORS - READ THIS FIRST
 
-//############################
-// CONTRIBUTORS - READ THIS FIRST
-//############################
 - Right now, let's focus on writing the scenarios for Phase 1.
 - Read through this document. Some scenarios have more info, some have less.
 	- These are just my thoughts, not necessarily a must-have.
 - Pick out a scenario you're interested in working on. Let us know, then update this document to assign yourself.
 - Write the scenario WML, following the guidelines in this document, then make a PR so we can all try it out.
 
+## DESIGN OVERVIEW
 
-//########################################################
-//                     DESIGN OVERVIEW
-//########################################################
-//############################
-// THE OVERWORLD
-//############################
+<details>
+<summary>Click to expand</summary>
+
+### THE OVERWORLD
+
 - after each scenario the player gets sent to the "overworld", an in-game map of the great continent
 - the player chooses their next scenario via the overworld. Only some scenarios are available at a time, depending on the current "phase"
 - after playing a certain number of scenarios (varies by difficulty), the player is forcibly advanced to the next phase
@@ -34,30 +33,30 @@ Status: Intro scenario mostly finished. Bigmap for next 3 scenarios mostly finis
 	- reward: other
 - after playing each scenario, the season of the year changes. Spring, Summer, Fall, Winter. Summer/Winter seasons result in battle scenarios with longer/shorter daytime.
 
-//--------------------
-// REWARDS
-//--------------------
+### REWARDS
+
 - Konrad starts with 0 recruits. In Phase 1 and Phase 2, he builds up his recruit list depending on which scenarios he chooses to play.
 - many Phase 1 and Phase 2 scenarios also give loyal companions as rewards, who're auto-recalled in each scenario and have custom dialogue.
 - Phase 3 scenarios focus on hindering Asheviere. For example, completing "Test of the Clans" might get rid of Asheviere's cavalry in the final confrontation.
 	- possibly also scenarios that buff up Li'sar?
 - rewards can be given at the beginning of the scenario, at the end, in the overworld, or anywhere in between
 
+</details>
 
-//############################
-// NARRATIVE DESIGN
-//############################
-//--------------------
-// PLOT
-//--------------------
-Phase 1
+### NARRATIVE DESIGN
+<details>
+<summary>Click to expand</summary>
+
+#### PLOT
+
+##### Phase 1
 - Konrad and Delfador are driven from the Aethenwood by Asheviere's human armies
 - Konrad and Delfador complete 1 scenario together (limited choice here; only Exodus, Blackwater, or Pearls)
 - Delfador leaves to help in the defense of Elensefar
 - player plays 2-4 more phase 1 scenarios (varies by difficulty)
 - Elensefar falls. Delfador returns. Phase 1 scenarios remain accessible throughout phase 2
 
-Phase 2
+###### Phase 2
 - Li'sar follows Konrad north across the great river. Both race to get the sceptre
 - Li'sar's actions show she's a decent person, unlike her mother. We get some insight into her relationship with Asheviere.
 - player plays 2-3 more phase 2 scenarios (varies by difficulty)
@@ -65,7 +64,7 @@ Phase 2
 
 ----ONCE WE FINISH PHASE 2, LET'S STOP, POLISH, AND RELEASE TO GET FEEDBACK BEFORE MOVING FURTHER ON----
 
-Phase 2.5
+###### Phase 2.5
 - Konrad gets the sceptre first. Delfador collapses the cave behind them, (presumably) killing Li'sar. After this point, previous scenarios become unreachable.
 - surprise, Li'sar's back. Her army is much weaker
 - Konrad has a change of heart, and refuses to fight Li'sar. He joins her / is taken prisoner / something like that
@@ -74,14 +73,13 @@ Phase 2.5
 - Li'sar and Konrad fight Asheviere's ally Iliah'al (details TBD after AoA releases). They bond.
 	- Li'sar is always a separate (genuinely helpful) allied side, not directly under the player's control
 
-Phase 3
+##### Phase 3
 - we learn that Delfador (or maybe instead Kaylan/Ethiliel/someone?) has been captured by Asheviere, and will be executed in X months (not immediately, because Asheviere is trying to lure Konrad)
 - player plays 1-2 more phase 3 scenarios (varies by difficulty)
 - Konrad and Li'sar confront Asheviere at Weldyn. Delfador is rescued; Asheviere dies/flees/etc. Hooray!
 
-//--------------------
-// CHARACTERS
-//--------------------
+#### CHARACTERS
+
 Konrad (phase 1)
 - sees the good right in front of him (contrast this with Delfador)
 - calls people "Master", "Sir", "Uncle", "Ma'am", "Miss", "Aunt". Not every time, but occasionally.
@@ -108,13 +106,15 @@ Li'sar
 	- Bowmen get Marksman
 	- HI get March: "This unit ignores movement cost on most terrain."
 
+</details>
 
-//############################
-// SCENARIO DESIGN
-//############################
-//--------------------
-// GLOBAL INCLUDES
-//--------------------
+## SCENARIO DESIGN
+
+<details>
+<summary>Click to expand</summary>
+
+### GLOBAL INCLUDES
+
 - to make it easy to tweak Konrad, please define side 1 with `{KONRAD_SIDE}`. `FOG=yes` and `SHROUD=yes` optional. Also `GOLD=#` (defaults to 75 in the campaign's first half, 125 in the second half)
 - to ensure your scenario's ToD reflects the overworld, use `{SCHEDULE_DYNAMIC_DAY}`, or `{SCHEDULE_DYNAMIC_NIGHT}`
 	- the first turn of each macro will always be respectively morning/midday or firstwatch/midnight (depending on the season)
@@ -123,9 +123,8 @@ Li'sar
 	- companions need custom dialogue in many scenarios, to help them feel alive!
 - for recurring characters or NPCs, define them in unified_characters.cfg, add them to GLOBAL__AUTOSTORE_NPCs, and use UNSTORE_NPC to recall them
 
-//--------------------
-// DIFFICULTY
-//--------------------
+### DIFFICULTY
+
 Easy should be nigh-unloseable. Nightmare should be seriously difficult even for a veteran player, requiring careful strategy and probably several restarts (e.g. highest difficulty of EI/TDG)
 - assume the player is coming into the scenario with suitable units; i.e. don't balance Gryphon Mountain around massed Merfolk
 - guidelines for 1-skull, 2-skull, and 3-skull difficulties can be found in _main.cfg. Use the diff1, diff2, diff3, etc events (or equivalent armies) to playtest
@@ -136,9 +135,8 @@ Recommended difficulty modifiers:
 - Hard:      4x enemy strength, 100% xp to level, 11 scenarios
 - Nightmare: 4x enemy strength, 100% xp to level, 8 scenarios
 
-//--------------------
-// XP FEEDING
-//--------------------
+### XP ALLOCATION
+
 Leveling units is fun! I want players to be able to continue to level units throughout the campaign, instead of maxing-out their army halfway through. With this in mind, please try to restrict available XP.
 - small player armies; 50-75 initial gold (plus carryover) is a good guideline for the average scenario
 - use lower-level enemies where possible. 1 Warlord is easy to farm for XP; 3 Grunts are much harder; 6 Goblins even more so.
@@ -146,9 +144,8 @@ Leveling units is fun! I want players to be able to continue to level units thro
 - enemies should retreat and regroup where appropriate, instead of trickling. See EI's Xenophobia for an example.
 - end scenarios sooner rather than later. If there's no threat after the first 10 turns, don't ask the player to survive for 20.
 
-//--------------------
-// AI DESIGN
-//--------------------
+### AI DESIGN
+
 - use `{SILENTLY_LIMIT_LEADER_MOVES}` to prevent AI leaders from running too far from their keeps. This macro provides a balance between the over-aggressive default behavior and the too-passive `passive_leader=yes`
 - where applicable, reminder to have AI retreat and regroup instead of trickling. See EI's Xenophobia for an example.
 - where applicable, AI should be less aggressive at unfavorable ToD (regardless of the player's favorable ToD). See EI's Xenophobia for an example.
@@ -159,17 +156,14 @@ Leveling units is fun! I want players to be able to continue to level units thro
 - when creating AI guards, I suggest using MAIs instead of status=guardian. For example, `{ZONE_GUARDIAN 14 14 x,y,radius=11,12,2}`. This also lets you sync up multiple guards so they fight together instead of being lured out 1-by-1.
 	- some campaigns use loyal icons for guards, some campaigns don't. For consistentcy, let's not use loyal icons for guards in HttT
 
-//--------------------
-// MAPS
-//--------------------
+### MAPS
 credit yourself at the top of each scenario, e.g: # scenario by Dalas
 create variants for autumn and winter (if applicable), and use the use the `MAP_DYNAMIC` macro to load them
 	e.g. {MAP_DYNAMIC 02_Flight_of_the_Elves}
 	with files 02_Flight_of_the_Elves.map, 02_Flight_of_the_Elves-autumn.map, 02_Flight_of_the_Elves-winter.map
 
-//--------------------
-// TEAMS AND COLORS
-//--------------------
+### TEAMS AND COLORS
+
 (not mandatory, but let's try to stay more-or-less consistent please)
 - Konrad: blue
 - Asheviere/Army: wesred
@@ -181,97 +175,112 @@ create variants for autumn and winter (if applicable), and use the use the `MAP_
 - Undead: white
 - Drakes: orange
 
-//--------------------
-// COMPANIONS
-//--------------------
+### COMPANIONS
+
 Each companion has a personality and a quest - a specific scenario that provides a special bonus if they get there.
 Maybe the quest reward is automatic (just complete the scenario), or maybe there's some special bonus objective.
 Quest rewards should be minor bonuses, not major rewards. Perhaps you get a bonus ability, or maybe you get the option to "trade in" your companion for some more significant bonus.
 
-----Moremirmu
+##### Moremirmu
+```
 - warrior monk. Someone who'll blast away zombies while quoting scripture (no specific religions plz; neither IRL ones nor Wesnoth ones)
 "For at the end of days, the texts prophesy a great destruction, yea, the sun itself shall rain down from the heavens as sulfur and fire!"
 "And lo! The unclean shall be smitten down, and lo! There shall be peace eternal for all men."
 "But until then, ’tis up to I to do the smiting! [attacks some undead]"
 - quest: bring him to Valley of Death and rescue his home.
+```
 
-----Ulfdain:
+##### Ulfdain:
+```
 - ulfserker. Loyal and healthy.
 - speaks in a... interesting manner. Takes offense easily.
 - ran away from Knalga when he was a child. Now the Dwarven Doors have fallen, Knalga is under siege, and he has no idea what happened to his family.
 "C’mere and try it, ye yellow-bellied, cow-handed bluderbuss of a princess! Jus’ gimme the chance an’ I’ll rip that head right off yer ninnyhammerin’ neck, ye white-livered gasser!"
 "Come an’ git some, ye nigmenog bolting-hutch of beastliness! Ah dare ye to square up an’ fight me, dwarf-to-dwarf!"
 - quest: bring him back to West Knalga, and reclaim his father's bloodaxe.
+```
 
-----Harper:
-- it's Harper
+##### Harper:
+```
+- it's Harper (from the Liberty mainline campaign)
 - should we give her personality some kind of gimmick to help her stand out?  My memory on Liberty may no longer be accurate - I haven't played it since before the gender change
 - quest: Halstead. No reward, but Harper comments on the battle
 - quest: Dalben. Harper scrounges up a small amount of gold
 - quest: Dwarven Doors. Harper gets Uncle Somf as another companion.
+```
 
-----Chantal:
+##### Chantal:
+```
 - Anekron's story
 - quest: what? Lintanir maybe? Maybe no quest at all?
+```
 
-----Jeniver:
+##### Jeniver:
+```
 - Custom unit, loyal and intelligent.
 - alchemist and researcher. Inquisitive and curious, but also a little naive and ditzy.
 - starts L3 so I only need to make one sprite. Throws smoke bombs (smoke) and uses a blowgun (poison). No melee. "Transmutation" ability, increasing your gold income.
 - portrait: https://github.com/wtactics/art/blob/master/WT/Potion%20Making/Potion%20Making.png
+```
 
-----Dosh:
+##### Dosh:
+```
 - Troll. "Secret" companion: he normally guards the Ford of Abez and charges Konrad gold every time you want to cross
 - if you pay him enough gold, he'll give up his toll job and join you
 - "You ok in da head, softskin? Das one-hunnerd fifty gold you done paid me. How much you really got left?"
+```
 
-//--------------------
-// "ADVISOR" DIALOGUE
-//--------------------
-- when something game-relevant needs to be said, please use the macro `{FIND_COMPANION_AND_SAY}`
+### "ADVISOR" DIALOGUE
+
+- when something game-relevant needs to be said, please use `[companion_message]`
 - this is perfect for "advisor" type dialogue with uncertain companions
-Example:
-{FIND_COMPANION_AND_SAY
-    PRIORITY=Moremirmu
-    MESSAGE_MOREMIRMU=_"Dark magic, Konrad! But the Lords of Light have shown me the way to victory — with the blessing of this holy water, we shall douse the graves and break the curse!"
-    MESSAGE_ULFDAIN=  _"What sort o’ greasy tallow-keech magic be this? Ah’ know jus’ the ticket — we’ll drown the graves in holy water; that’ll keep the rottin’ buggers down!"
-    FALLBACK_KONRAD=  _"That graveyard is filled with some kind of dark magic. If we want to stop more undead from rising, we'll need to douse the graves with these vials of holy water."
-}
+```ini
+	[companion_message]
+		message_Delfador=_"We must make haste if we wish to save that warrior, Konrad! I sense magical power in him, but one man alone will not prevail against the hordes of undead that roam this peninsula."
+		message_Kalenz=_"We must make haste if we wish to save that warrior, Konrad! I sense magical power in him, but one man alone will not prevail against the hordes of undead that roam this peninsula."
+		message_Harper=_"20 against 1 is pretty long odds, Konrad. If we’re goin’ to help that warrior before he’s overwhelmed, we’d better hurry things up."
+		message_Ulfdain=_"20-’gainst-1 fer that warrior, now them’s long odds e’en if he were a dwarf! Tha’ long-staff sixpenny sorcerer’ll be having a change o’ heart — literally! — once we’re through with ’im!"
+		message_Jeniver=_"Oh, oh my. That magical warrior looks rather, err, powerful, doesn’t he? But that’s also a lot, really quite many undead surrounding him. We’d better hurry if we want to save him."
+		message_Dosh=_"Dat holy man be lookin’ mighty strong, but Dosh is thinking there’s too many o’ dem undead e’en for him. We’d better be helpin’ him out, Konrad."
+		fallback_Konrad=_"We’d better move quickly and help fight! That warrior looks powerful, but the necromancer has the advantage of numbers."
+	[/companion_message]
+```
 
-//--------------------
-// BACKSTORY/QUEST DIALOGUE
-//--------------------
+### BACKSTORY/QUEST DIALOGUE
+
 - 0-2 times in each scenario, try to include an opportunity for backstory/quest interactions between Konrad and his companions
 - 1 time per scenario is best
 - to play the dialogue, fire the "say_smalltalk" event
 	- this event will check your existing companions, and play some backstory- or quest-related dialogue for one of them, depending on what's previously been said
 	- Dalas is assigned to handle implementing this event
 
-//--------------------
-// OTHER
-//--------------------
+### OTHER
+
 - if your scenario has a time limit, please include at least a basic "time over" cutscene as well as "we're running out of time" dialogue some turns beforehand
 	- instead of using `name=time over`, trigger this event on `side 1 turn {SCENARIO_TURN_LIMIT} end`, so that we don't waste the player's time when they've already lost
 - please include an achievement in every scenario! Could be a difficult challenge, a hint towards some content the player might miss, or anything else.
 - please avoid giving the player non-loyal companions. This is partially a style thing, partially to give players fewer "I'll reload if this unit dies" units, and partially to keep the overworld rewards preview simpler
 - include PO hints! If we don't do them now we'll need to do them later.
 
+</details>
 
-//########################################################
-//                         TASKLIST
-//########################################################
-//############################
-// OTHER
-//############################
-[IN PROGRESS] Konrad Artwork (Mechanical)
-[IN PROGRESS] S00: The Great Continent (Dalas)
+## TASKLIST
 
+<details>
+<summary>Click to expand</summary>
+### OTHER
 
-//############################
-// SCENARIOS TO WRITE
-//############################
-(Occasional gaps in scenario numbers are deliberate. That way if we need to add a new scenario sometime we don't have to renumber everything.)
+- [IN PROGRESS] Konrad Artwork (Mechanical)
+- [IN PROGRESS] S00: The Great Continent (Dalas)
+</details>
 
+### SCENARIOS TO WRITE
+
+- (Occasional gaps in scenario numbers are deliberate. That way if we need to add a new scenario sometime we don't have to renumber everything.)
+
+<details>
+<summary>Click to expand</summary>
+```txt
 //--------------------
 // AREA 1 (WESTERN WESNOTH)
 //--------------------
@@ -459,7 +468,5 @@ make sure the soldiers (led by Isolde?) say they won't follow Konrad just becaus
 
 [IN PROGRESS] S50: Battle for Wesnoth
 	scenario number used in smalltalk
-
-
-
 ```
+</details>
