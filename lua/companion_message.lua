@@ -49,19 +49,19 @@ function wesnoth.wml_actions.companion_message(cfg)
  				table.remove( companion_ids, i )
  				table.insert( companion_ids, companion )
 				wml.array_variables["companion_ids"] = companion_ids
-				return
+				return true
 			end
 			::continue::
 		end
 	end
-	find_companion_and_speak()
+	if find_companion_and_speak() then return end
 
 	--###########################
 	-- RETRY WITHOUT PRIORITY
 	--###########################
 	-- if we get here and haven't yet returned, try again without priority
 	if (cfg.priority) then
-		find_companion_and_speak(true)
+		if find_companion_and_speak(true) then return end
 	end
 
 	--###########################
