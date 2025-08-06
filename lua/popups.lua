@@ -58,11 +58,21 @@ function wesnoth.wml_actions.display_scenario_preview(cfg)
 	--###############################
 	-- PREPARE ARGUMENTS
 	--###############################
-	local title = cfg.title
-	local scenario = cfg.scenario -- e.g. "s01"
-	local preview_image = cfg.preview or "bigmap/preview-"..scenario..".png"
-	local difficulty =    cfg.difficulty and "bigmap/difficulty"..cfg.difficulty..".png" or "" -- e.g. "difficulty1.png"
-	local initial_gold =  cfg.initial_gold or "?";
+	local title           = cfg.title
+	local scenario        = cfg.scenario -- e.g. "s01"
+	local preview_image   = cfg.preview or "bigmap/preview-"..scenario..".png"
+	local difficulty      = cfg.difficulty and "bigmap/difficulty"..cfg.difficulty..".png" or "" -- e.g. "difficulty1.png"
+	local difficultylabel = cfg.difficulty and _"Difficulty: " or ""
+	
+	-------------------------
+	-- REWARD: GOLD
+	-------------------------
+	-- hopefully "reward" makes it clear that this is what you're expected to have after the scenario, not before
+	local gold = cfg.gold
+	if (gold==0  ) then goldlabel=_"Expected Gold Carryover Reward: <b><span color='#ad6a61'>NONE</span></b>" end
+	if (gold==1  ) then goldlabel=_"Expected Gold Carryover Reward: <b><span color='#a9a150'>LOW</span></b>"  end
+	if (gold==2  ) then goldlabel=_"Expected Gold Carryover Reward: <b><span color='#6ca364'>HIGH</span></b>" end
+	if (gold==nil) then goldlabel = "" end
 	
 	-------------------------
 	-- REWARD: RECRUITS
@@ -86,15 +96,6 @@ function wesnoth.wml_actions.display_scenario_preview(cfg)
 	-- REWARD: OTHER
 	-------------------------
 	local otherlabel = cfg.otherlabel and "\n"..cfg.otherlabel.."\n" or ""
-	
-	-------------------------
-	-- REWARD: GOLD
-	-------------------------
-	local gold = cfg.gold
-	if (gold==0  ) then gold="<span color='#ad6a61'>NONE</span>" end -- color is used for S31 POI sacrifice preview text
-	if (gold==1  ) then gold="<span color='#a9a150'>LOW</span>" end
-	if (gold==2  ) then gold="<span color='#6ca364'>HIGH</span>" end
-	if (gold==nil) then gold = "" end
 		
 	--##############################
 	-- DEFINE GRID
@@ -128,17 +129,10 @@ function wesnoth.wml_actions.display_scenario_preview(cfg)
 					T.row{ T.column{
 						horizontal_alignment="left",
 						T.grid{ T.row{
-							T.column{ T.label{  use_markup=true,  label=_"Difficulty: ",  }},
+							T.column{ T.label{  use_markup=true,  label=difficultylabel,  }},
 							T.column{ T.image{  label=difficulty,  }},
 						}}
 					}},
---					T.row{ T.column{
---						horizontal_alignment="left",
---						T.grid{ T.row{
---							T.column{ T.label{  use_markup=true,  label=_"Starting Gold: ",  }},
---							T.column{ T.label{  use_markup=true,  label=initial_gold,  }},
---						}}
---					}},
 					T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}}, 
 					T.row{ T.column{ horizontal_alignment="left", T.image{  label="icons/banner2-half.png"  }}},
 					T.row{ T.column{ T.label{  use_markup=true,  label="<span size='15000'> </span>"  }}}, 
@@ -147,8 +141,8 @@ function wesnoth.wml_actions.display_scenario_preview(cfg)
 					-- REWARDS
 					-------------------------
 					T.row{ T.column{ 
-						horizontal_alignment="left", -- hopefully "reward" makes it clear that this is what you're expected to have after the scenario, not before
-						T.label{  use_markup=true,  label="Expected Gold Carryover Reward: <b>"..gold.."</b>",  },
+						horizontal_alignment="left",
+						T.label{  use_markup=true,  label=goldlabel,  },
 					}},
 					-- New Recruit
 					T.row{ T.column{ 
